@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>nola event map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">  
+    <link href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+    <script type="text/javascript" src="js/date-utils.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>        
+    <style>
+    .ui-header {
+        min-height: 55px;
+    }
+    .ui-header .icon.logo {
+        font-size: 50px;
+        top: 18px;
+        left: 10px;
+        position: relative;
+    }
+    nav #actions li {
+        display: inline-block;
+        padding: 0 5px;
+        border: 1px dotted grey;
+    }
+    nav #actions li.toggled {
+        background-color: lightgrey;
+    }
+    .ui-header nav {
+        text-align: center;
+        margin-top: -10px;        
+    }
+    .ui-header .icon {
+        font-size: 40px;
+    }
+    #search {
+        height: 2em;
+    }
+    </style>
+</head>
+<body>
+<div data-role="page">
+
+    <div data-role="header" data-theme="a" data-position="fixed">
+        <span class="icon logo">
+            &#9884;
+        </span>
+        <nav>
+            <ul id="actions">
+                <li><span class="icon map">M</span></li>
+                <li><span class="icon star">&#8902;</span></li>
+                <li data-toggletarget="#search-area"><span class="icon search">?</span></li>
+            </ul>
+        </nav>
+        <div id="search-area" style="display: none">
+            <input type="search" id="search" data-theme="c" placeholder="Search Act, Venue, Category" value="" />            
+        </div>
+    </div>
+
+    <div data-role="content"  data-theme="c">   
+<script>
+</script>
+
+
+<style>
+	.event-image {
+		max-width: 55px;
+		max-height: 55px;
+	}
+	.ui-collapsible-heading-toggle .image {
+		max-width: 11%;
+		display: inline-block;
+	}
+	.ui-collapsible-heading-toggle .details {
+		width: 89%;
+		display: inline-block;
+	}	
+	.left {
+		float: left;
+	}
+	.details {
+		padding-left: .2em;
+	}
+	.event-name {
+		width: 100%;
+		display: block;
+		line-height: 1em;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+	.source {
+		width: 100%;
+		display: block;
+		line-height: 1em;		
+	}
+	.venue:after {
+		content: ", ";
+	}
+	#events-list .icon {
+		margin-right: 1em;
+	}
+	.icon.info:after{
+		content: "\2139";
+	}
+	.icon.music:after{
+		content: "\266A";
+	}
+	.icon.gcal:after{
+		content: "\0BF0";
+	}
+</style>
+
+<div id="events-list" data-role="collapsible-set">
+
+</div>
+
+
+
+
+<script id="event-template" type="text/x-handlebars-template">
+	<div data-role="collapsible" class="event">
+		<h3 class="ui-helper-clearfix">
+			<span class="left image">{{eventImage}}</span>
+			<span class="left details">
+				<span class="event-name">{{eventName}}</span>
+				<span class="venue">{{venue}}</span>
+				<span class="time">{{time time}}</span>
+				<span class="source">{{html source}}</span>
+			</span>
+		</h3>
+		<div class="description">
+			{{html description}}
+			<ul class="event-links">
+				{{#each links}}
+				<li>{{eventLink this}}</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>	
+</script>
+
+
+<script>
+	$(document).on('pageinit', window.codemkrs);
+</script>
+    </div>
+    <div data-role="footer" data-theme="a" class="ui-bar">
+    </div>
+</div>
+
+</body>
+</html>
