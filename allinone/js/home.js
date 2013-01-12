@@ -24,18 +24,61 @@ window.allEvents = _.map(_.range(35), function(i) {
 window.codemkrs = function() {
 	extendHandlebars();
 	initToggles();
-	initFilters();
 
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-		,$events 	= $('#events-list')
-		,allEvents 	= window.allEvents 		//todo JSON get
+		,allEvents 		= window.allEvents 		//todo JSON get
+		,$filters   	= initFilters() 
 		;
-	$events
-		.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') )
-		.trigger('create');
-
+		runCurrentFilter(allEvents, eventTemplate);
+		$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
 };
 
+
+//////////////////////////////////////////////////////
+// Filters
+/////////////////////////////////////////////////////
+function runCurrentFilter(allEvents, eventTemplate) {
+	var  $events 	= $('#events-list')
+		,selVal		= function(name) { return $('#'+name+'-filter').val() }
+		,events = _.chain(allEvents)
+				.filter(filterRanking(selVal('ranking')))
+				.filter(filterDay(selVal('day')))
+				.filter(filterDistance(selVal('distance')))
+				.sortBy('time')
+				.value()
+		;
+	$events
+		.html(_.reduce(_.map(events,eventTemplate), add2, '') )
+		.trigger('create');
+}
+
+function initFilters() {
+	var  $day = $('#day-filter')
+		,days = _.map(_.range(3), function(d) { return new Date().add({days: d}) })
+		;
+	$day.html(
+		_.map(days, function(d) {
+			return '<option value='+d.getTime()+'>'+d.toFormat('DDD MMM D')+'</option>'
+		}).join('')
+	).find('option:first').prop('selected', true).trigger('change');
+	return $('#filters-area select');
+}
+
+function filterRanking(ranking) { return function(ev) {
+	return !ranking || ev.ranking >= ranking;
+}}
+function filterDay(daytime) { 
+	var day = new Date(parseInt(daytime, 10)).getDay();
+	return function(ev) { 
+		return day == new Date(ev.time).getDay()
+	}
+}
+function filterDistance(distance) { return function(ev) {
+	return true; //Implement this
+}}
+//////////////////////////////////////////////////////
+// Toggle Buttons
+/////////////////////////////////////////////////////
 $.widget('codemkrs.toggleAreaTab', {
     options: {
          target: null
@@ -50,17 +93,6 @@ $.widget('codemkrs.toggleAreaTab', {
     }, this) }
 });
 
-function initFilters() {
-	var  $day = $('#day-filter')
-		,days = _.map(_.range(3), function(d) { return new Date().add({days: d}) })
-		;
-	$day.html(
-		_.map(days, function(d) {
-			return '<option value='+d.getTime()+'>'+d.toFormat('DDD MMM D')+'</option>'
-		}).join('')
-	).find('option:first').prop('selected', true).trigger('change');
-}
-
 function initToggles() {
     $('[data-toggletarget]').each(function() {
         $(this).toggleAreaTab({
@@ -74,6 +106,8 @@ function initToggles() {
         });
     });	
 }
+///////////////////////////////////////////////////
+
 function extendHandlebars() {
 	Handlebars.registerHelper('html', function(html) {
 	  return new Handlebars.SafeString(html);
