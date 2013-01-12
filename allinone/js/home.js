@@ -9,6 +9,7 @@ window.allEvents = _.map(_.range(35), function(i) {
 		,price: null
 		,description: "<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>"
 		,source: '<a href="http://cheezburger.com/6924526080">This guy\'s blog</a>'
+		,ranking: _.random(1)||null
 		,links: [
 			{
 			 	 type: ['music', 'gcal', 'info'][_.random(2)]
@@ -23,6 +24,7 @@ window.allEvents = _.map(_.range(35), function(i) {
 window.codemkrs = function() {
 	extendHandlebars();
 	initToggles();
+	initFilters();
 
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
 		,$events 	= $('#events-list')
@@ -31,7 +33,6 @@ window.codemkrs = function() {
 	$events
 		.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') )
 		.trigger('create');
-
 
 };
 
@@ -48,6 +49,17 @@ $.widget('codemkrs.toggleAreaTab', {
         if(swtch) this._trigger('collapse');
     }, this) }
 });
+
+function initFilters() {
+	var  $day = $('#day-filter')
+		,days = _.map(_.range(3), function(d) { return new Date().add({days: d}) })
+		;
+	$day.html(
+		_.map(days, function(d) {
+			return '<option value='+d.getTime()+'>'+d.toFormat('DDD MMM D')+'</option>'
+		}).join('')
+	).find('option:first').prop('selected', true).trigger('change');
+}
 
 function initToggles() {
     $('[data-toggletarget]').each(function() {

@@ -38,27 +38,19 @@
     </div>
 
     <div data-role="content"  data-theme="c">   
-    	<div id="filters-area" style="display: none">
+    	<div id="filters-area">
     		<fieldset data-role="controlgroup" data-type="horizontal">
-		        <label for="select-choice-month">Month</label>
-		        <select name="select-choice-month" id="select-choice-month" data-mini="">
-		            <option>Month</option>
-		            <option value="jan">January</option>
-		            <!-- etc. -->
+		        <select id="ranking-filter" data-mini="true">
+		            <option selected value="best">Best</option>
+		            <option value="all">All</option>
 		        </select>
 		    
-		        <label for="select-choice-day">Day</label>
-		        <select name="select-choice-day" id="select-choice-day" data-mini="">
-		            <option>Day</option>
-		            <option value="1">1</option>
-		            <!-- etc. -->
+		        <select id="location-filter" data-mini="true">
+		            <option selected value="1">Within 1 Mile</option>
+		            <option value="100">Anywhere</option>
 		        </select>
 		    
-		        <label for="select-choice-year">Year</label>
-		        <select name="select-choice-year" id="select-choice-year" data-mini="">
-		            <option>Year</option>
-		            <option value="2011">2011</option>
-		            <!-- etc. -->
+		        <select id="day-filter" data-mini="true">
 		        </select>
     		</fieldset>
     	</div>
