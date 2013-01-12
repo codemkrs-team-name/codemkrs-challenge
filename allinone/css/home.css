@@ -1,0 +1,73 @@
+.ui-header {
+    min-height: 55px;
+}
+.ui-header .icon.logo {
+    font-size: 50px;
+    top: 18px;
+    left: 10px;
+    position: absolute;
+}
+nav #actions li {
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px dotted grey;
+}
+nav #actions li.toggled {
+    background-color: lightgrey;
+}
+.ui-header nav {
+    text-align: center;
+    margin-top: -10px;        
+}
+.ui-header .icon {
+    font-size: 40px;
+}
+#search {
+    height: 2em;
+}
+
+.event-image {
+    max-width: 55px;
+    max-height: 55px;
+}
+.ui-collapsible-heading-toggle .image {
+    max-width: 11%;
+    display: inline-block;
+}
+.ui-collapsible-heading-toggle .details {
+    width: 89%;
+    display: inline-block;
+}   
+.left {
+    float: left;
+}
+.details {
+    padding-left: .2em;
+}
+.event-name {
+    width: 100%;
+    display: block;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.source {
+    width: 100%;
+    display: block;
+    line-height: 1em;       
+}
+.venue:after {
+    content: ", ";
+}
+#events-list .icon {
+    margin-right: 1em;
+}
+.icon.info:after{
+    content: "\2139";
+}
+.icon.music:after{
+    content: "\266A";
+}
+.icon.gcal:after{
+    content: "\0BF0";
+}
