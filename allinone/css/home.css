@@ -71,3 +71,7 @@ nav #actions li.toggled {
 .icon.gcal:after{
     content: "\0BF0";
 }
+
+#filters-area {
+    text-align: center;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">  
     <link href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,41 +17,12 @@
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
     <script type="text/javascript" src="js/date-utils.min.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>        
-    <style>
-    .ui-header {
-        min-height: 55px;
-    }
-    .ui-header .icon.logo {
-        font-size: 50px;
-        top: 18px;
-        left: 10px;
-        position: absolute;
-    }
-    nav #actions li {
-        display: inline-block;
-        padding: 0 5px;
-        border: 1px dotted grey;
-    }
-    nav #actions li.toggled {
-        background-color: lightgrey;
-    }
-    .ui-header nav {
-        text-align: center;
-        margin-top: -10px;        
-    }
-    .ui-header .icon {
-        font-size: 40px;
-    }
-    #search {
-        height: 2em;
-    }
-    </style>
 </head>
 <body>
 <div data-role="page">
 
     <div data-role="header" data-theme="a" data-position="fixed">
-        <span class="icon logo">
+        <span class="icon logo" data-toggletarget="#filters-area">
             &#9884;
         </span>
         <nav>
@@ -66,64 +38,36 @@
     </div>
 
     <div data-role="content"  data-theme="c">   
-<script>
-</script>
+    	<div id="filters-area" style="display: none">
+    		<fieldset data-role="controlgroup" data-type="horizontal">
+		        <label for="select-choice-month">Month</label>
+		        <select name="select-choice-month" id="select-choice-month" data-mini="">
+		            <option>Month</option>
+		            <option value="jan">January</option>
+		            <!-- etc. -->
+		        </select>
+		    
+		        <label for="select-choice-day">Day</label>
+		        <select name="select-choice-day" id="select-choice-day" data-mini="">
+		            <option>Day</option>
+		            <option value="1">1</option>
+		            <!-- etc. -->
+		        </select>
+		    
+		        <label for="select-choice-year">Year</label>
+		        <select name="select-choice-year" id="select-choice-year" data-mini="">
+		            <option>Year</option>
+		            <option value="2011">2011</option>
+		            <!-- etc. -->
+		        </select>
+    		</fieldset>
+    	</div>
+		<div id="events-list" data-role="collapsible-set"> </div>
 
-
-<style>
-	.event-image {
-		max-width: 55px;
-		max-height: 55px;
-	}
-	.ui-collapsible-heading-toggle .image {
-		max-width: 11%;
-		display: inline-block;
-	}
-	.ui-collapsible-heading-toggle .details {
-		width: 89%;
-		display: inline-block;
-	}	
-	.left {
-		float: left;
-	}
-	.details {
-		padding-left: .2em;
-	}
-	.event-name {
-		width: 100%;
-		display: block;
-		line-height: 1em;
-		font-weight: bold;
-		font-size: 1.5em;
-	}
-	.source {
-		width: 100%;
-		display: block;
-		line-height: 1em;		
-	}
-	.venue:after {
-		content: ", ";
-	}
-	#events-list .icon {
-		margin-right: 1em;
-	}
-	.icon.info:after{
-		content: "\2139";
-	}
-	.icon.music:after{
-		content: "\266A";
-	}
-	.icon.gcal:after{
-		content: "\0BF0";
-	}
-</style>
-
-<div id="events-list" data-role="collapsible-set">
-
+    </div>
+    <div data-role="footer" data-theme="a" class="ui-bar">
+    </div>
 </div>
-
-
-
 
 <script id="event-template" type="text/x-handlebars-template">
 	<div data-role="collapsible" class="event">
@@ -151,10 +95,6 @@
 <script>
 	$(document).on('pageinit', window.codemkrs);
 </script>
-    </div>
-    <div data-role="footer" data-theme="a" class="ui-bar">
-    </div>
-</div>
 
 </body>
 </html>

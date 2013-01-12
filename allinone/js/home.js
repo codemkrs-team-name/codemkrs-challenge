@@ -37,7 +37,7 @@ window.codemkrs = function() {
 
 $.widget('codemkrs.toggleAreaTab', {
     options: {
-        target: null
+         target: null
     }
     ,_create: function() {
         this.element.toggle(this.onOff(true), this.onOff(false));
@@ -45,14 +45,21 @@ $.widget('codemkrs.toggleAreaTab', {
     ,onOff: function(swtch) {return _.bind(function(){
         this.element.toggleClass('toggled', swtch);
         $(this.options.target)[swtch?'slideDown':'slideUp']();
+        if(swtch) this._trigger('collapse');
     }, this) }
 });
 
 function initToggles() {
     $('[data-toggletarget]').each(function() {
         $(this).toggleAreaTab({
-            target: $(this).data('toggletarget')
-        })
+             target: $(this).data('toggletarget')
+        	,collapse: function() {
+        		$(':codemkrs-toggleAreaTab').not(this).each(function(){
+        			$(this).removeClass('toggled');
+        			$($(this).toggleAreaTab('option', 'target')).slideUp();
+        		});
+        	}
+        });
     });	
 }
 function extendHandlebars() {
