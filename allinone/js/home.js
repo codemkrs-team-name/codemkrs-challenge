@@ -31,12 +31,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		$events.find('.event-body')
 			.filter(hasTextContents)
 			.seeMoreCollapsible();
-		$(document).trigger('create');
 		updateFilters();
 	});
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
 	_.delay(scrollToHash, 2000);
+	setupInfoPopup();
 	$('#title').click(function() {
 		//TODO - GM - reset to default state somehow
 	});
@@ -319,6 +319,38 @@ function scrollToHash() {
 	});
 }
 ///////////////////////////////////////////////////
+function setupInfoPopup() {
+	//TODO - GM - OMFG hacky but popups are all crazy but apparently the poup thing is awful
+	
+	$('#events-list').on('click', '.info-popup-trigger', function(){
+		try {
+			$(':mobile-popup').popup('destroy').remove();
+		} catch(e) { }
+		var  html = $(this).closest('.event')
+					.find('.event-links-container')
+					.html()
+			,fix = {position: 'fixed',top: 0, bottom: 0, right: 0, left: 0 }
+			,$background = $('<div>').css($.extend({
+				 opacity: .3
+				,'background-color': 'black'
+				,'z-index': 1000
+			}, fix)).appendTo('body')
+			,$popup = $('<div class="ui-popup ui-overlay-shadow ui-corner-all">').html(html)
+				.css({
+					 position: 'fixed'
+					,'z-index': 1000
+					,'background-color': 'lavenderBlush'
+					,top: '30%', left: '30%'
+				}).appendTo('body')
+			;
+
+		$background.click(function(){
+			$background.remove();
+			$popup.remove();
+		});
+	});
+}
+///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
 	  	return new Handlebars.SafeString(html);
@@ -326,7 +358,7 @@ function extendHandlebars() {
 	Handlebars.registerHelper('infoButton', function() {
 		if(!_.any(this.links)) return ''
 		var target = '#'+'eventlinks-'+this._id;
-	  	return new Handlebars.SafeString('<a class="ico ico-info" href="'+target+'" data-position-to="window" data-rel="popup"></a>');
+	  	return new Handlebars.SafeString('<a class="ico ico-info info-popup-trigger"></a>');
 	});
 	var now = new Date(), dateFormat = 'H:MI PP';
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
