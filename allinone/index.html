@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Gigs Guru: Live &amp; Tight!</title>
+	<title>gigs guru - live &amp; tight!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">  
 	<link type="text/css" href="//code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
@@ -26,7 +26,9 @@
 
   		<div data-role="header" data-theme="a" data-position="fixed"  style="border: 0px;">
   			<div id="header">
-	  			<img id='logo' src='img/logo.png' />
+				<div id='title'>
+					<img id='logo' src='img/logo.png' /><span>gigs guru</span>
+				</div>
 	
 	  			<nav>
 	  				<ul id="actions">
@@ -94,6 +96,7 @@
          {{/each}}
        </ul>
      </div>
+	 <div style="clear:left"/>
      <div class="actions">
        {{favoriteEvent}}
        {{#if phone}}
