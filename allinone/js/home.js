@@ -2,7 +2,7 @@
 
 var pageHref = location.href.replace(/#.*/, '');
 
-var currentLocation = {lat:29.948697,lon:-90.104522}; // z=17
+var currentLocation = {lat:29.948697,lon:-90.104522}; //New Orleans
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 var updateFilters;
 
@@ -188,7 +188,8 @@ function gettingEvents() {
 
 	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
-			ev.time = ev.time*1000;			//unix seconds to milliseconds
+			ev.time = new Date().add({hours: _.random(72)});
+			// ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
@@ -335,10 +336,16 @@ function extendHandlebars() {
 	});
 
 	var appendTwitterButtonScript = _.debounce(function(){
-		$('body').append('<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>');
+		$('body').append('<script>!function(d,s,id){'
+			+'var js,fjs=d.getElementsByTagName(s)[0];'
+			+'if(!d.getElementById(id)){js=d.createElement(s);'
+			+'js.id=id;js.src="https://platform.twitter.com/widgets.js";'
+			+'fjs.parentNode.insertBefore(js,fjs);}}'
+		+'(document,"script","twitter-wjs");</script>');
 	}, 10);
 	Handlebars.registerHelper('twitterButton', function() {
-		// return '';
+		return ''; //TODO - GM - this should render only for currently viewable items. causing immense slowdown otherwise
+
 		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
  			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
 			;
