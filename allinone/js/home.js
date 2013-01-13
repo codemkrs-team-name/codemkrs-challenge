@@ -193,9 +193,9 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
-		this.element.hide();
-		this.$collapser = $('<button class="seeMoreCollapsible-collapser">').text("See More")
-			.insertBefore(this.element).button({mini: true});
+		this.element.addClass('collapsed');
+		this.$collapser = $('<div class="ico collapser ico-double-angle-up">').html('U')
+			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
 	}
 	,showMore: function(swtch) { return _.bind(function(){
