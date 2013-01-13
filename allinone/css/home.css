@@ -250,6 +250,7 @@ li.event {
 }
 
 #favorite-area {
+	text-align: center;
 	font-size: 16px;
 	padding: 13px 18px 11px;
 	color: #222;
@@ -272,4 +273,9 @@ li.event {
 
 .event .actions iframe {
     float: right;
+}
+
+#map-view {
+    background-color:lightgrey;
+	width: 100%;
 }

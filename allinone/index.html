@@ -16,8 +16,10 @@
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.0/underscore.string.min.js "></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
-      <script type="text/javascript" src="js/date-utils.min.js"></script>
-      <script type="text/javascript" src="js/home.js"></script>        
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcFDXKtixWgcVRXGi4OEGVyOAlOYsjNMU&sensor=true"></script>
+      <script type="text/javascript" src="js/date-utils.min.js"></script>    
+      <script type="text/javascript" src="js/map.js"></script>   
+      <script type="text/javascript" src="js/home.js"></script>         
   </head>
   <body>
   	<div data-role="page">
@@ -36,33 +38,37 @@
   			</div>
 
 	  		<div id="favorite-area" style="display:none;">
-	  			Now displaying your favorites.
+	  			Favorites
 	  		</div>    
 	  		<div id="search-area" style="display:none;">
 	  			<input type="search" id="search" data-theme="c" placeholder="Search Act, Venue, Category" value="" />
-	  		</div>    
+	  		</div>        
   		</div>
 
-  		<div data-role="content"  data-theme="c">   
-  			<div id="filters-area">
-  				<fieldset data-role="controlgroup" data-type="horizontal">
-  					<select id="ranking-filter" data-native-menu="false" data-mini="true">
-  						<option value="1">Best</option>
-  						<option selected value="0">All</option>
-  					</select>
-
-  					<select id="distance-filter" data-native-menu="false" data-mini="true">
-  						<option selected value="1">&lt; 1 Mile</option>
-  						<option value="1000">Anywhere</option>
-  					</select>
-
-  					<select id="day-filter" data-native-menu="false" data-mini="true">
-  					</select>
-  				</fieldset>
-  			</div>
-  			<ul id="events-list" > </ul>
-			<div style="display:none;" id="no-results">
-				No results to display.
+  		<div data-role="content"  data-theme="c">
+  			<div id="list-view">
+	  			<div id="filters-area">
+	  				<fieldset data-role="controlgroup" data-type="horizontal">
+	  					<select id="ranking-filter" data-native-menu="false" data-mini="true">
+	  						<option value="1">Best</option>
+	  						<option selected value="0">All</option>
+	  					</select>
+	
+	  					<select id="distance-filter" data-native-menu="false" data-mini="true">
+	  						<option selected value="1">&lt; 1 Mile</option>
+	  						<option value="1000">Anywhere</option>
+	  					</select>
+	
+	  					<select id="day-filter" data-native-menu="false" data-mini="true">
+	  					</select>
+	  				</fieldset>
+	  			</div>
+	  			<ul id="events-list" > </ul>
+				<div style="display:none;" id="no-results">
+					No results to display.
+				</div>
+			</div>
+			<div id="map-view">
 			</div>
   		</div>
   	</div>

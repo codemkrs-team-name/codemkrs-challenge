@@ -1,8 +1,9 @@
 (function(){
+var EVENTS_FILE = '/events.json';
 
 var pageHref = location.href.replace(/#.*/, '');
 
-var currentLocation = null;
+var currentLocation = {lat:29.948697,lon:-90.104522}; // z=17
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 var updateFilters;
 
@@ -11,44 +12,54 @@ extendHandlebars();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
 	initToggles();
-	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-		,$filters   	= initFilters()
+	var  $filters   	= initFilters()
+		,eventTemplate 	= Handlebars.compile($("#event-template").html())
+		,$events 	= $('#events-list')
 		;
-	updateFilters = _.debounce(function() {
-		runCurrentFilter(allEvents, eventTemplate);
-	}, 300);
+	updateFilters = function() {
+		return runCurrentFilter(allEvents);
+	};
 		
+	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
+	$events.find('.event-body')
+		.filter(hasTextContents)
+		.seeMoreCollapsible();
 	updateFilters();
 	$filters.on('change', updateFilters);
+	$("#search").keydown(_.debounce(updateFilters, 250));
 	scrollToHash();
 });
 
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
-function runCurrentFilter(allEvents, eventTemplate) {
-	var  $events 	= $('#events-list')
-		,$noResults = $('#no-results')
+function runCurrentFilter(allEvents) {
+	var $noResults = $('#no-results')
 		,events = filterEvents(allEvents);
 		;
+	
+	$('.event').hide();
+	if (mode == 'map') return events;
 	if (!events.length) {
 		$noResults.show();
-		return $events.hide();
+		return events;
 	}
-		
+	
 	$noResults.hide();
-	$events.show();
-	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
-	$events.find('a.favorite').favoriteMarker({
-		events: allEvents
+	_(events).each(function(ev) {
+		$('#' + ev._id).show();
 	});
-	$events.find('.event-body')
-		.filter(hasTextContents)
-		.seeMoreCollapsible()
+	return events;
 }
 
 function filterEvents(allEvents) {
-	var results = _.chain(allEvents);
+	var results = _.chain(allEvents).filter(function(ev) {
+		console.log(new Date(ev.time) + ' | ' + new Date(new Date().getTime() - 1000*60*60));
+		return ev.time >= new Date().getTime() - 1000*60*60;
+	});
 	if (mode =='favorite') {
 		results = results.filter(function(ev) {
 			return +localStorage['favorites:'+ev._id];
@@ -61,13 +72,14 @@ function filterEvents(allEvents) {
 			.filter(filterRanking(selVal('ranking')))
 			.filter(filterDay(selVal('day')))
 			.filter(filterDistance(selVal('distance')));
+	} else if (mode == 'map') {
+		results = results.filter(filterDay(new String(new Date().getTime())));
 	}
 	return results.sortBy('time').value();
 }
 
 function filterSearch(keywords) {
-	if (!keywords || !keywords.trim())
-		return _.identity;
+	if (!keywords || !keywords.trim()) return false;
 	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
@@ -113,6 +125,12 @@ function filterDistance(distance) { return function(ev) {
 // Toggle Buttons
 /////////////////////////////////////////////////////
 
+function resize() {
+	$("#map-view").height($(window).height() - $("#map-view").offset().top);
+}
+
+$(window).resize(resize);
+
 $.widget('codemkrs.toggleAreaTab', {
     options: {
          target: null
@@ -121,11 +139,30 @@ $.widget('codemkrs.toggleAreaTab', {
         this.element.toggle(this.onOff(true), this.onOff(false));
     }
     ,onOff: function(swtch) {return _.bind(function(){
+    	var selectedMode = this.element.attr('mode')
+    		,$mapview = $("#map-view")
+			,$listview = $("#list-view")
+		;
         this.element.toggleClass('toggled', swtch);
         $(this.options.target)[swtch?'slideDown':'slideUp']();
         if(swtch) this._trigger('collapse');
-        mode = swtch ? this.element.attr('mode') : 'default';
-        updateFilters();
+        mode = swtch ? selectedMode : 'default';
+    	if (selectedMode == 'map') {
+    		$mapview[swtch?'show':'hide']();
+    		$listview[swtch?'hide':'show']();
+			var events = updateFilters();
+    		if (swtch) {
+    			map.center(currentLocation);
+				_(events).each(function(ev) {
+					map.addMarker("<b>" + ev.eventName + "</b><br />" + ev.venue + ", " + new Date(ev.time).toFormat('H:MI PP'), ev.location);
+				});
+    			resize();
+    		}
+    	} else {
+			updateFilters();
+    		$mapview.hide();
+    		$listview.show();
+    	}
     }, this) }
 });
 
@@ -145,7 +182,7 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON('events.json').pipe(function massageData(allEvents){
+	return $.getJSON(EVENTS_FILE).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
@@ -210,9 +247,14 @@ $.widget('codemkrs.favoriteMarker', {
  		else
  			localStorage.removeItem(key);
 		this._tagElement(isFavorite);
+		if (!isFavorite && mode == 'favorite') {
+			$("#" + this._eventId).slideUp(function() {
+				updateFilters();
+			});
+		}
 	},
 	_tagElement: function(isFavorite) {
- 		this.element.toggleClass('selected', isFavorite);		
+ 		this.element.toggleClass('ico-star-2', isFavorite).toggleClass('ico-star', !isFavorite);	
 	}
 });
 
@@ -256,7 +298,9 @@ function extendHandlebars() {
 		if (!timestamp) return '';
 		var date = new Date(timestamp);
 		var dateFormat = 'H:MI PP';
-		if (date.getDay() != ((new Date()).getDay())) dateFormat = 'DDD ' + dateFormat;
+		var now = new Date();
+		if (timestamp > now.getTime()+1000*60*60*24*7) dateFormat = 'M/D, ' + dateFormat;
+		if (date.getDay() != now.getDay()) dateFormat = 'DDD ' + dateFormat;
 	  	return date.toFormat(dateFormat);
 	}));
 	Handlebars.registerHelper('eventImage', function() {
