@@ -1,5 +1,7 @@
 (function(){
 
+var pageHref = location.href.replace(/#.*/, '');
+
 var currentLocation = null;
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 var updateFilters;
@@ -18,7 +20,7 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		
 	updateFilters();
 	$filters.on('change', updateFilters);
-	$("#search").keydown(updateFilters);
+	scrollToHash();
 });
 
 //////////////////////////////////////////////////////
@@ -147,7 +149,7 @@ function gettingEvents() {
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
-			ev._id = ev.time +'-'+ev.eventName;
+			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
 		})
 	});
@@ -216,16 +218,35 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
+		this._showHideElement(true);
+		if(this.element.height() <= this.contentsHeight())
+			return;
 		this.element.addClass('collapsed');
 		this.$collapser = $('<div class="ico collapser ico-double-angle-up">')
 			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
+		this.showMore(false)();
+	}
+	,_showHideElement: function(swtch) {
+		this.element.css('max-height', swtch? '':'4.8em');		
+	}
+	,contentsHeight: function() {
+		var childrenHeights = this.element.children().map(function(){return $(this).height() });
+		return _.reduce(childrenHeights, add2, 0);
 	}
 	,showMore: function(swtch) { return _.bind(function(){
-		this.element[swtch?'slideDown': 'slideUp']();
+		this._showHideElement(swtch);
+		this.$collapser.toggleClass('ico-double-angle-down ico-double-angle-up');
 	}, this) }
 
 });
+///////////////////////////////////////////////////
+function scrollToHash() {
+	if(!location.hash) return;
+	$('html, body').animate({
+    	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
+	});
+}
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
@@ -246,7 +267,16 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
-	  	return new Handlebars.SafeString('<a class="favorite" href="javascript:void(0)" data-eventidentifier="'+this._id+'">F</a>');
+	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
+	});
+	Handlebars.registerHelper('twitterButton', function() {
+		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
+ 			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
+			;
+	  	return new Handlebars.SafeString(
+	  		 '<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>'
+	  		+'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>'
+	  		);
 	});
 }
 //////////////////////////////////////////////////

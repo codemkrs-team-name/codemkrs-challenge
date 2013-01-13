@@ -68,64 +68,66 @@
   	</div>
 
   	<script id="event-template" type="text/x-handlebars-template">
-  	<li class="event ui-helper-clearfix">
-  	<div class="event-header">
-  	<div class="image">{{eventImage}}</div>
-  	<div class="details">
-  	<span class="event-name">{{eventName}}</span>
-  	<span class="venue">{{venue}}</span>
-  	<span class="time">{{time time}}</span>
-  	<span class="source">{{html source}}</span>
-  	</div>
-  	</div>
-  	<div class="event-body">
-  	<div class="description">
-  	{{html description}}
-  	</div>
-  	<ul class="event-links">
-  	{{#each links}}
-  	<li>{{eventLink this}}</li>
-  	{{/each}}
-  	</ul>
-  	</div>
-  	<div class="actions">
-  	{{favoriteEvent}}
-  	{{#if phone}}
-  	<a class="phone" href="tel:{{phone}}">P</a>
-  	{{/if}}
-  	</div>
-  	</li>	
+  	<li class="event ui-helper-clearfix" id="{{_id}}">
+     <div class="event-header">
+       <div class="image">{{eventImage}}</div>
+       <div class="details">
+         <span class="event-name">{{eventName}}</span>
+         <span class="venue">{{venue}}</span>
+         <span class="time">{{time time}}</span>
+         <span class="source">{{html source}}</span>
+       </div>
+     </div>
+     <div class="event-body">
+       <div class="description">
+         {{html description}}
+       </div>
+       <ul class="event-links">
+         {{#each links}}
+         <li>{{eventLink this}}</li>
+         {{/each}}
+       </ul>
+     </div>
+     <div class="actions">
+       {{favoriteEvent}}
+       {{#if phone}}
+       <a class="phone ico ico-phone" href="tel:{{phone}}"></a>
+       {{/if}}
+       {{twitterButton}}
+     </div>
+   </li>	
   	</script>
   	<script id="event-template-josh" type="text/x-handlebars-template">
 
+	<div class="event myEvent">
+	  <span class="image left">{{eventImage}}</span>
+	  <h3>{{eventName}}</h3>  
+	  <ul class='eventDetails'>
+	    <li class="venue">{{venue}}</li>
+	    <li class="time">{{time time}}</li>
+	    <li class="source">{{html source}}</li>     
+	  </ul>
 
-  	<div class="event myEvent">
-  	<span class="image left">{{eventImage}}</span>
-  	<h3>{{eventName}}</h3>	
-  	<ul class='eventDetails'>
-  	<li class="venue">{{venue}}</li>
-  	<li class="time">{{time time}}</li>
-  	<li class="source">{{html source}}</li>			
-  	</ul>
+	  <div class="description">
+	    {{html description}}
+	    <ul class="event-links">
+	      {{#each links}}
+	      <li>{{eventLink this}}</li>
+	      {{/each}}
+	    </ul>
+	  </div>
 
-  	<div class="description">
-  	{{html description}}
-  	<ul class="event-links">
-  	{{#each links}}
-  	<li>{{eventLink this}}</li>
-  	{{/each}}
-  	</ul>
-  	</div>
+	  <ul class="actions">
+	    <li><span class='ico ico-star'>&nbsp;</span></li>
+	    <li><span class='ico ico-twitter-old'>&nbsp;</span></li>
+	    <li><span class='ico ico-facebook'>&nbsp;</span></li>
+	    <li><span class='ico ico-phone'>&nbsp;</span></li>
+	    <li><span class='ico ico-map'>&nbsp;</span></li>
 
-  	<ul class="actions">
-  	<li><span class='ico ico-star'>&nbsp;</span></li>
-  	<li><span class='ico ico-twitter-old'>&nbsp;</span></li>
-  	<li><span class='ico ico-facebook'>&nbsp;</span></li>
-  	<li><span class='ico ico-phone'>&nbsp;</span></li>
-  	<li><span class='ico ico-map'>&nbsp;</span></li>
-  	</ul>
+	  </ul>
 
-  	</div>	
+	</div>  
+
   	</script>
   </body>
   </html>

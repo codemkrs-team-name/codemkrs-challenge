@@ -224,15 +224,7 @@ nav #actions li.toggled {
 .eventDetials {list-style:none;}
 .eventDetails li {display:inline;}
 .actions {
-    height: 40px; 
-    list-style:none; 
-    background-color:#450f3e; 
-    display: inline-block; 
-    float: right; 
-    border-radius: 5px 0px 0px 5px;
 }
-.actions li {float:right; width: 50px; text-align: center;}
-.actions li .ico {font-size: 2em; color:#fff;}
 #events-list .actions >div{
     display: inline-block;
 }
@@ -241,9 +233,9 @@ nav #actions li.toggled {
 }
 li.event {
     display: block;
+    margin-bottom: 1em;
 }
 .event-body.collapsed {
-    max-height: 4.8em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -271,4 +263,13 @@ li.event {
 .ui-body-c, .ui-overlay-c {
 	background-color: #f1f1f1;
 	background-image: none;
+}
+.event .actions a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.event .actions iframe {
+    float: right;
 }
