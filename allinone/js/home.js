@@ -56,9 +56,9 @@ function runCurrentFilter(allEvents) {
 }
 
 function filterEvents(allEvents) {
+	var nowSeconds = new Date().getTime() - 1000*60*60;
 	var results = _.chain(allEvents).filter(function(ev) {
-		console.log(new Date(ev.time) + ' | ' + new Date(new Date().getTime() - 1000*60*60));
-		return ev.time >= new Date().getTime() - 1000*60*60;
+		return ev.time >= nowSeconds;
 	});
 	if (mode =='favorite') {
 		results = results.filter(function(ev) {
@@ -79,7 +79,7 @@ function filterEvents(allEvents) {
 }
 
 function filterSearch(keywords) {
-	if (!keywords || !keywords.trim()) return false;
+	if (!keywords || !keywords.trim()) return fn(false);
 	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
@@ -332,5 +332,5 @@ function hasTextContents() {
 }
 function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
-
+function fn(val) { return function fn() { return val } }
 })();
