@@ -47,7 +47,7 @@
 		    
 		        <select id="distance-filter" data-native-menu="false" data-mini="true">
 		            <option selected value="1">Within 1 Mile</option>
-		            <option value="100">Anywhere</option>
+		            <option value="1000">Anywhere</option>
 		        </select>
 		    
 		        <select id="day-filter" data-native-menu="false" data-mini="true">
@@ -80,8 +80,21 @@
 				{{/each}}
 			</ul>
 		</div>
+		<div class="actions">
+			{{favoriteEvent}}
+			{{#if phone}}
+				<a class="phone" href="tel:{{phone}}">P</a>
+			{{/if}}
+		</div>
 	</div>	
 </script>
-
+<style>
+	#events-list .actions >div{
+    	display: inline-block;
+	}
+	.favorite.selected {
+		color: green;
+	}
+</style>
 </body>
 </html>
