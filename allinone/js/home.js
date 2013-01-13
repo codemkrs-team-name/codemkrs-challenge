@@ -6,33 +6,54 @@ startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
-	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-		,$filters   	= initFilters() 
-		;
 	initToggles();
-	runCurrentFilter(allEvents, eventTemplate);
-	$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
-
+	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
+		,$filters   	= initFilters()
+		,updateFilters = function() { runCurrentFilter(allEvents, eventTemplate) };
+		;
+		
+	updateFilters();
+	$filters.on('change', updateFilters);
+	$("#search").keydown(_.debounce(updateFilters, 500));
+	$("#search").blur(updateFilters);
 });
-
-console && console.log("Gigs Guru: Live and Tight");
 
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
+function filterSearch(keywords) {
+	if (!keywords || !keywords.trim())
+		return _.identity;
+	keywords = _.string.slugify(keywords).split('-');
+	return function(ev) {
+		var nameKeywords = _.string.slugify(ev.eventName).split('-');
+		var venueKeywords = _.string.slugify(ev.venue).split('-');
+		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
+		var matches = _.filter(keywords, function(keyword) {
+			return _.string.include(eventKeywords, keyword);
+		});
+		return matches.length == keywords.length;
+	}
+}
+
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
+		,$search 	= $('#search')
 		,selVal		= function(name) { return $('#'+name+'-filter').val() }
 		,events = _.chain(allEvents)
 				.filter(filterRanking(selVal('ranking')))
 				.filter(filterDay(selVal('day')))
 				.filter(filterDistance(selVal('distance')))
+				.filter(filterSearch($search.is(':visible') && $search.val()))
 				.sortBy('time')
 				.value()
 		;
-	$events
-		.html(_.reduce(_.map(events,eventTemplate), add2, '') )
-		.trigger('create');
+	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
+	$events.trigger('create');
+
 }
 
 function initFilters() {
@@ -47,6 +68,34 @@ function initFilters() {
 	return $('#filters-area select');
 }
 
+$.widget('codemkrs.favoriteMarker', {
+	options: {
+		events: []
+	}
+	,_create: function() {
+		this._eventId = this.element.data('eventidentifier');
+		this._tagElement(this.favorite());
+		this.element.click(_.bind(function(){
+			this.favorite(!this.favorite());
+		}, this));
+	}
+	,favorite: function(isFavorite) {
+		var  x
+			,key = 'favorites:'+this._eventId
+			;
+		if(_.isUndefined(isFavorite))
+			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
+		if(isFavorite == true)
+ 			localStorage[key] = '1';
+ 		else
+ 			localStorage.removeItem(key);
+		this._tagElement(isFavorite);
+	},
+	_tagElement: function(isFavorite) {
+ 		this.element.toggleClass('selected', isFavorite);		
+	}
+});
+
 function filterRanking(ranking) { 
 	ranking = +ranking;
 	return function(ev) {
@@ -54,9 +103,9 @@ function filterRanking(ranking) {
 	}
 }
 function filterDay(daytime) { 
-	var day = new Date(parseInt(daytime, 10)).getDay();
+	var date = new Date(parseInt(daytime, 10)).toFormat('YYYY-MM-DD');
 	return function(ev) { 
-		return day == new Date(ev.time).getDay()
+		return date == ev._date;
 	}
 }
 function filterDistance(distance) { return function(ev) {
@@ -97,36 +146,15 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON('events.json').pipe(stubAmmendEvents);
-
-	//  $.Deferred(function(d){
-	// 	d.resolve( _.map(_.range(35), function(i) {
-	// 		return {
-	// 			 eventName: "Here is some event "+i
-	// 			,venue: "Venue "+_.random(10)
-	// 			,location: null
-	// 			,time: new Date(1358014168714).add({hours: _.random(72)}).getTime()
-	// 			,image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSHHZb6Dt0Sssbz0nzT-MUvgwmtf11T2DzVkDC1ONsO2z62num'
-	// 			,price: null
-	// 			,description: "<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>"
-	// 			,source: '<a href="http://cheezburger.com/6924526080">This guy\'s blog</a>'
-	// 			,ranking: _.random(1)||null
-	// 			,links: [
-	// 				{
-	// 				 	 type: ['music', 'gcal', 'info'][_.random(2)]
-	// 				 	,text: "Text "+i
-	// 					,link: 'https://play.google.com/music/listen?u=1'
-	// 				}
-	// 			]
-	// 		};
-	// 	}) );
-	// });
-}
-function stubAmmendEvents(allEvents){
-	return _.map(allEvents, function(ev) {
-		ev.time = new Date().add({hours: _.random(72)}).getTime();
-		return ev;
-	})
+	return $.getJSON('events.json').pipe(function massageData(allEvents){
+		return _.map(allEvents, function(ev) {
+			ev.ranking = _.random(1);
+			ev.time = ev.time*1000;			//unix seconds to milliseconds
+			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
+			ev._id = ev.time +'-'+ev.eventName;
+			return ev;
+		})
+	});
 }
 ///////////////////////////////////////////////////
 
@@ -163,19 +191,25 @@ function deg2rad(deg) {
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
-	  return new Handlebars.SafeString(html);
+	  	return new Handlebars.SafeString(html);
 	}));
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
-	  return !timestamp ? '' : new Date(timestamp).toFormat('H:MM PP');
+		if (!timestamp) return '';
+		var date = new Date(timestamp);
+		var dateFormat = 'H:MI PP';
+		if (date.getDay() != ((new Date()).getDay())) dateFormat = 'DDD ' + dateFormat;
+	  	return date.toFormat(dateFormat);
 	}));
 	Handlebars.registerHelper('eventImage', function() {
 		if(!this.image) return '';
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
+	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
 	}));
-
+	Handlebars.registerHelper('favoriteEvent', function() {
+	  	return new Handlebars.SafeString('<a class="favorite" href="javascript:void(0)" data-eventidentifier="'+this._id+'">F</a>');
+	});
 }
 
 function add2(x, y) { return x+y }
