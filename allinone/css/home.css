@@ -225,9 +225,9 @@ nav #actions li.toggled {
 }
 li.event {
     display: block;
+    margin-bottom: 1em;
 }
 .event-body.collapsed {
-    max-height: 4.8em;
     overflow: hidden;
     text-overflow: ellipsis;
 }

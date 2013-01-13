@@ -226,13 +226,25 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
+		this._showHideElement(true);
+		if(this.element.height() <= this.contentsHeight())
+			return;
 		this.element.addClass('collapsed');
 		this.$collapser = $('<div class="ico collapser ico-double-angle-up">')
 			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
+		this.showMore(false)();
+	}
+	,_showHideElement: function(swtch) {
+		this.element.css('max-height', swtch? '':'4.8em');		
+	}
+	,contentsHeight: function() {
+		var childrenHeights = this.element.children().map(function(){return $(this).height() });
+		return _.reduce(childrenHeights, add2, 0);
 	}
 	,showMore: function(swtch) { return _.bind(function(){
-		this.element[swtch?'slideDown': 'slideUp']();
+		this._showHideElement(swtch);
+		this.$collapser.toggleClass('ico-double-angle-down ico-double-angle-up');
 	}, this) }
 
 });
