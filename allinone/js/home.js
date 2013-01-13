@@ -255,7 +255,7 @@ $.widget('codemkrs.seeMoreCollapsible',{
 function scrollToHash() {
 	if(!location.hash) return;
 	$('html, body').animate({
-    	scrollTop: $(location.hash).offset().top
+    	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
 	});
 }
 ///////////////////////////////////////////////////
@@ -282,7 +282,7 @@ function extendHandlebars() {
 	});
 	Handlebars.registerHelper('twitterButton', function() {
 	  	return new Handlebars.SafeString(
-	  		 '<a href="https://twitter.com/share'+$.param({url: pageHref+'#'+this._id })+'" class="twitter-share-button" data-lang="en">Tweet</a>'
+	  		 '<a href="https://twitter.com/share'+$.param({url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' })+'" class="twitter-share-button" data-lang="en">Tweet</a>'
 	  		+'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>'
 	  		);
 	});
