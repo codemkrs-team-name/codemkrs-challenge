@@ -328,11 +328,17 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
+		var linkTypes = {
+			venue: 'More info about this venue',
+			artist: link.text || 'More info about this artist',
+			gcal: 'View this event on Google Calendar',
+			artist_tip: 'Leave this artist a tip',
+		};
 	  	return new Handlebars.SafeString([
 	  		 '<a href="'+link.link+'">'
 	  		,'<span class="icon '+link.type+'"></span>'
 	  		,'<span class="link-name">'
-	  			,(link.text||link.type)
+	  			,linkTypes[link.type]
 	  		,'</span></a>'
 	  	].join(''));
 	}));
@@ -366,7 +372,6 @@ function extendHandlebars() {
 		appendTwitterButtonScript();
 	  	return new Handlebars.SafeString('<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>');
 	});
-
 }
 //////////////////////////////////////////////////
 function hasTextContents() {
