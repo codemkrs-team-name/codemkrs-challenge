@@ -4,12 +4,12 @@ var currentLocation = null;
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
-initToggles();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
 		,$filters   	= initFilters() 
 		;
+	initToggles();
 	runCurrentFilter(allEvents, eventTemplate);
 	$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
 
@@ -62,7 +62,7 @@ function filterDay(daytime) {
 function filterDistance(distance) { return function(ev) {
 	if(!currentLocation || !ev.location)
 		return true;
-	return distance <= haversineDistance(currentLocation, ev.location);
+	return distance >= haversineDistance(currentLocation, ev.location);
 }}
 //////////////////////////////////////////////////////
 // Toggle Buttons
@@ -145,18 +145,21 @@ function startWatchingLocation(callback) {
 		callback({lat: position.coords.latitude, lon: position.coords.longitude});
 	}
 }
-function haversineDistance(a, b) {
-	var  dLat 	= (b.lat-a.lat).toRad()
-		,dLon 	= (b.lon-a.lon).toRad()
-		,alat 	= a.lat.toRad()
-		,blat 	= b.lat.toRad()
-		,a 		= Math.sin(dLat/2) * Math.sin(dLat/2) +
-	    		  Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(alat) * Math.cos(blat) 
-		,c 		= 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)) 
-		;
-		return c * 6371; // km
+
+function haversineDistance(a,b) {
+	var  R = 3963.2 // Radius of the earth in mi
+		,dLat = deg2rad(b.lat-a.lat)
+		,dLon = deg2rad(b.lon-a.lon) 
+		,f = 	Math.sin(dLat/2) * Math.sin(dLat/2) +
+    			Math.cos(deg2rad(a.lat)) * Math.cos(deg2rad(b.lat)) * 
+    			Math.sin(dLon/2) * Math.sin(dLon/2)
+  		,c = 2 * Math.atan2(Math.sqrt(f), Math.sqrt(1-f)); 
+  return d = R * c; // Distance in mi
 }
 
+function deg2rad(deg) {
+  return deg * (Math.PI/180)
+}
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
