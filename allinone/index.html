@@ -83,7 +83,7 @@
 		<div class="actions">
 			{{favoriteEvent}}
 			{{#if phone}}
-				<a class="phone" href="tel:{{phone}}"></a>
+				<a class="phone" href="tel:{{phone}}">P</a>
 			{{/if}}
 		</div>
 	</div>	
@@ -91,6 +91,9 @@
 <style>
 	#events-list .actions >div{
     	display: inline-block;
+	}
+	.favorite.selected {
+		color: green;
 	}
 </style>
 </body>

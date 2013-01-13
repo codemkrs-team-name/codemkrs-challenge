@@ -30,9 +30,12 @@ function runCurrentFilter(allEvents, eventTemplate) {
 				.sortBy('time')
 				.value()
 		;
-	$events
-		.html(_.reduce(_.map(events,eventTemplate), add2, '') )
-		.trigger('create');
+	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
+	$events.trigger('create');
+
 }
 
 function initFilters() {
@@ -46,6 +49,31 @@ function initFilters() {
 	).find('option:first').prop('selected', true).trigger('change');
 	return $('#filters-area select');
 }
+
+$.widget('codemkrs.favoriteMarker', {
+	options: {
+		events: []
+	}
+	,_create: function() {
+		this._eventId = this.element.data('eventidentifier');
+		this._tagElement(this.favorite());
+		this.element.click(_.bind(function(){
+			this.favorite(!this.favorite());
+		}, this));
+	}
+	,favorite: function(isFavorite) {
+		var  x
+			,key = 'favorites:'+this._eventId
+			;
+		if(_.isUndefined(isFavorite))
+			return (x = localStorage[key]) ? JSON.parse(x) : false;
+		localStorage[key] = JSON.stringify(isFavorite == true);
+		this._tagElement(isFavorite);
+	},
+	_tagElement: function(isFavorite) {
+ 		this.element.toggleClass('selected', isFavorite);		
+	}
+});
 
 function filterRanking(ranking) { 
 	ranking = +ranking;
@@ -97,37 +125,14 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON('events.json').pipe(massageData);
-
-	//  $.Deferred(function(d){
-	// 	d.resolve( _.map(_.range(35), function(i) {
-	// 		return {
-	// 			 eventName: "Here is some event "+i
-	// 			,venue: "Venue "+_.random(10)
-	// 			,location: null
-	// 			,time: new Date(1358014168714).add({hours: _.random(72)}).getTime()
-	// 			,image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSHHZb6Dt0Sssbz0nzT-MUvgwmtf11T2DzVkDC1ONsO2z62num'
-	// 			,price: null
-	// 			,description: "<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>"
-	// 			,source: '<a href="http://cheezburger.com/6924526080">This guy\'s blog</a>'
-	// 			,ranking: _.random(1)||null
-	// 			,links: [
-	// 				{
-	// 				 	 type: ['music', 'gcal', 'info'][_.random(2)]
-	// 				 	,text: "Text "+i
-	// 					,link: 'https://play.google.com/music/listen?u=1'
-	// 				}
-	// 			]
-	// 		};
-	// 	}) );
-	// });
-}
-function massageData(allEvents){
-	return _.map(allEvents, function(ev) {
-		ev.ranking = _.random(1);
-		ev.time = ev.time*1000;			//unix seconds to milliseconds
-		return ev;
-	})
+	return $.getJSON('events.json').pipe(function massageData(allEvents){
+		return _.map(allEvents, function(ev) {
+			ev.ranking = _.random(1);
+			ev.time = ev.time*1000;			//unix seconds to milliseconds
+			ev._id = ev.time +'-'+ev.eventName;
+			return ev;
+		})
+	});
 }
 ///////////////////////////////////////////////////
 
@@ -164,22 +169,21 @@ function deg2rad(deg) {
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
-	  return new Handlebars.SafeString(html);
+	  	return new Handlebars.SafeString(html);
 	}));
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
-	  return !timestamp ? '' : new Date(timestamp).toFormat('H:MM PP');
+	  	return !timestamp ? '' : new Date(timestamp).toFormat('H:MM PP');
 	}));
 	Handlebars.registerHelper('eventImage', function() {
 		if(!this.image) return '';
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
+	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
-	  return new Handlebars.SafeString('<a>F</a>');
+	  	return new Handlebars.SafeString('<a class="favorite" href="javascript:void(0)" data-eventidentifier="'+this._id+'">F</a>');
 	});
-
 }
 
 function add2(x, y) { return x+y }
