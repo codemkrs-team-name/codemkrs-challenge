@@ -1,18 +1,16 @@
 (function(){
 
-window.codemkrs = function() { 
-	extendHandlebars();
-	initToggles();
-	$.when(gettingEvents(), pageInitializing()).done(function(allEvents){
+extendHandlebars();
+initToggles();
+$.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
-		var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-			,$filters   	= initFilters() 
-			;
-			runCurrentFilter(allEvents, eventTemplate);
-			$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
+	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
+		,$filters   	= initFilters() 
+		;
+	runCurrentFilter(allEvents, eventTemplate);
+	$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
 
-	})
-};
+});
 
 
 //////////////////////////////////////////////////////
