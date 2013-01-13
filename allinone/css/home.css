@@ -234,3 +234,12 @@ li.event {
 
 #actions li {height: 56px;}
 
+.event .actions a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.event .actions iframe {
+    float: right;
+}

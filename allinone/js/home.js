@@ -1,5 +1,7 @@
 (function(){
 
+var pageHref = location.href.replace(/#.*/, '');
+
 var currentLocation = null;
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 
@@ -276,7 +278,13 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
-	  	return new Handlebars.SafeString('<a class="favorite" href="javascript:void(0)" data-eventidentifier="'+this._id+'">F</a>');
+	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
+	});
+	Handlebars.registerHelper('twitterButton', function() {
+	  	return new Handlebars.SafeString(
+	  		 '<a href="https://twitter.com/share'+$.param({url: pageHref+'#'+this._id })+'" class="twitter-share-button" data-lang="en">Tweet</a>'
+	  		+'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>'
+	  		);
 	});
 }
 //////////////////////////////////////////////////
