@@ -1,5 +1,4 @@
 (function(){
-var EVENTS_FILE = '/events.json';
 
 var pageHref = location.href.replace(/#.*/, '');
 
@@ -182,10 +181,12 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
+	var eventsUrl = 'events.json?'+$.param({_:new Date().getTime()});
+
 	if( !~(location.search||'').indexOf('nocache') ) //if no nocache flag in the querystring
 		var gettingFromLocal = gettingFromLocalStorage()
 
-	return gettingFromLocal || $.getJSON(EVENTS_FILE).pipe(function massageData(allEvents){
+	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
@@ -303,7 +304,7 @@ $.widget('codemkrs.seeMoreCollapsible',{
 });
 ///////////////////////////////////////////////////
 function scrollToHash() {
-	if(!location.hash) return;
+	if(!location.hash || ~location.hash.indexOf('#!') ) return;
 	$('html, body').animate({
     	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
 	});
@@ -337,6 +338,7 @@ function extendHandlebars() {
 		$('body').append('<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>');
 	}, 10);
 	Handlebars.registerHelper('twitterButton', function() {
+		// return '';
 		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
  			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
 			;
