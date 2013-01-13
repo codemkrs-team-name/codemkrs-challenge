@@ -1,6 +1,7 @@
 (function(){
 
 var currentLocation = null;
+var showingFavorites = false;
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
@@ -14,6 +15,11 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		
 	updateFilters();
 	$filters.on('change', updateFilters);
+	$("#favorite").click(function() {
+		$(this).toggleClass('ico-star').toggleClass('ico-star-2');
+		showingFavorites = !showingFavorites;
+		updateFilters();
+	});
 	$("#search").keydown(_.debounce(updateFilters, 500));
 	$("#search").blur(updateFilters);
 });
@@ -36,23 +42,38 @@ function filterSearch(keywords) {
 	}
 }
 
+function filterEvents(allEvents) {
+	var results = _.chain(allEvents);
+	if (showingFavorites) {
+		results.filter(function(ev) {
+			return +localStorage['favorites:'+ev._id];
+		});
+	} else {
+		var $search 	= $('#search')
+			,selVal		= function(name) { return $('#'+name+'-filter').val() }
+			;
+		results
+			.filter(filterRanking(selVal('ranking')))
+			.filter(filterDay(selVal('day')))
+			.filter(filterDistance(selVal('distance')))
+			.filter(filterSearch($search.is(':visible') && $search.val()))
+	}
+	return results.sortBy('time').value();
+}
+
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
-		,$search 	= $('#search')
-		,selVal		= function(name) { return $('#'+name+'-filter').val() }
-		,events = _.chain(allEvents)
-				.filter(filterRanking(selVal('ranking')))
-				.filter(filterDay(selVal('day')))
-				.filter(filterDistance(selVal('distance')))
-				.filter(filterSearch($search.is(':visible') && $search.val()))
-				.sortBy('time')
-				.value()
+		,events = filterEvents(allEvents);
 		;
-	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
-	$events.find('a.favorite').favoriteMarker({
-		events: allEvents
-	});
-	$events.trigger('create');
+	if (!events.length) {
+		$events.html("No results to display.");
+	} else {
+		$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
+		$events.find('a.favorite').favoriteMarker({
+			events: allEvents
+		});
+		$events.trigger('create');
+	}
 
 }
 
