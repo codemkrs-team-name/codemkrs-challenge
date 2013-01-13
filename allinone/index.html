@@ -5,13 +5,13 @@
 	<title>Gigs Guru: Live &amp; Tight!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">  
-	<link href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
-	<link href="css/home.css" rel="stylesheet">
+	<link type="text/css" href="//code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
+	<link type="text/css" href="css/home.css" rel="stylesheet">
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-      <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.8.2.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.0/underscore.string.min.js "></script>
@@ -22,21 +22,26 @@
   <body>
   	<div data-role="page">
 
-  		<div data-role="header" data-theme="a" data-position="fixed">
-  			<img id='logo' src='img/logo.png' data-toggletarget="#filters-area" />
+  		<div data-role="header" data-theme="a" data-position="fixed"  style="border: 0px;">
+  			<div id="header">
+	  			<img id='logo' src='img/logo.png' />
+	
+	  			<nav>
+	  				<ul id="actions">
+	  					<li data-toggletarget="#map-area" mode="map"><span id="map-button" class="ico ico-map">&nbsp;</span></li>
+	  					<li data-toggletarget="#favorite-area" mode="favorite"><span id="favorite-button" class="ico ico-star">&nbsp;</span></li>
+	  					<li data-toggletarget="#search-area" mode="search"><span id="search-button" class="ico ico-search">&nbsp;</span></li>
+	  				</ul>
+	  			</nav>
+  			</div>
 
-  			<nav>
-  				<ul id="actions">
-  					<li><span id="map" class="ico ico-map">&nbsp;</span></li>
-  					<li><span id="favorite" class="ico ico-star">&nbsp;</span></li>
-  					<li data-toggletarget="#search-area"><span class="ico ico-search">&nbsp;</span></li>
-  				</ul>
-  			</nav>
+	  		<div id="favorite-area" style="display:none;">
+	  			Now displaying your favorites.
+	  		</div>    
+	  		<div id="search-area" style="display:none;">
+	  			<input type="search" id="search" data-theme="c" placeholder="Search Act, Venue, Category" value="" />
+	  		</div>    
   		</div>
-
-  		<div id="search-area" style="display:none;">
-  			<input type="search" id="search" data-theme="c" placeholder="Search Act, Venue, Category" value="" />
-  		</div>    
 
   		<div data-role="content"  data-theme="c">   
   			<div id="filters-area">
@@ -56,9 +61,9 @@
   				</fieldset>
   			</div>
   			<ul id="events-list" > </ul>
-
-  		</div>
-  		<div data-role="footer" data-theme="a" class="ui-bar">
+			<div style="display:none;" id="no-results">
+				No results to display.
+			</div>
   		</div>
   	</div>
 

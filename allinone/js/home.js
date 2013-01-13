@@ -2,6 +2,7 @@
 
 var currentLocation = null;
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
+var updateFilters;
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
@@ -10,33 +11,14 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	initToggles();
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
 		,$filters   	= initFilters()
-		,updateFilters = function() {
-			var updateModeButton = function(name, icon) {
-				var button = $("#" + name + "-button");
-				if (mode != name) button.addClass('ico-'+icon).removeClass('ico-star-2');
-				else button.addClass('ico-star-2').removeClass('ico-'+icon);
-			}
-			updateModeButton('favorites', 'star');
-			updateModeButton('search', 'search');
-			updateModeButton('map', 'map');
-			
-			runCurrentFilter(allEvents, eventTemplate);
-		}
-		, modeButton = function(name) {
-			$("#" + name + "-button").click(function() {
-				mode = (mode == name) ? 'default' : name;
-				console.log(mode);
-				updateFilters();
-			});
-		}
 		;
+	updateFilters = _.debounce(function() {
+		runCurrentFilter(allEvents, eventTemplate);
+	}, 300);
 		
 	updateFilters();
 	$filters.on('change', updateFilters);
-	modeButton('favorites');
-	modeButton('search');
-	modeButton('map');
-	$("#search").keydown(_.debounce(updateFilters, 500));
+	$("#search").keydown(updateFilters);
 });
 
 //////////////////////////////////////////////////////
@@ -44,11 +26,16 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 /////////////////////////////////////////////////////
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
+		,$noResults = $('#no-results')
 		,events = filterEvents(allEvents);
 		;
-	if (!events.length)
-		return $events.html("No results to display.");
-
+	if (!events.length) {
+		$noResults.show();
+		return $events.hide();
+	}
+		
+	$noResults.hide();
+	$events.show();
 	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
 	$events.find('a.favorite').favoriteMarker({
 		events: allEvents
@@ -60,7 +47,7 @@ function runCurrentFilter(allEvents, eventTemplate) {
 
 function filterEvents(allEvents) {
 	var results = _.chain(allEvents);
-	if (mode =='favorites') {
+	if (mode =='favorite') {
 		results = results.filter(function(ev) {
 			return +localStorage['favorites:'+ev._id];
 		});
@@ -123,6 +110,7 @@ function filterDistance(distance) { return function(ev) {
 //////////////////////////////////////////////////////
 // Toggle Buttons
 /////////////////////////////////////////////////////
+
 $.widget('codemkrs.toggleAreaTab', {
     options: {
          target: null
@@ -134,6 +122,8 @@ $.widget('codemkrs.toggleAreaTab', {
         this.element.toggleClass('toggled', swtch);
         $(this.options.target)[swtch?'slideDown':'slideUp']();
         if(swtch) this._trigger('collapse');
+        mode = swtch ? this.element.attr('mode') : 'default';
+        updateFilters();
     }, this) }
 });
 

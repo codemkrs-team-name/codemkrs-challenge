@@ -87,34 +87,44 @@ body {
     font-size:14px; 
 }
 
-.ui-header,
-.ui-footer { background-color: #450f3e !important; }
+.ui-content {
+	padding: 0;
+}
 
-.ui-header {
-    min-height: 55px;
+.ui-input-search {
+	margin: 0;
 }
 
 .ui-header {
-    background-color:#450f3e !important;
     background-image:none;
-    min-height: 55px;
+    background-color:transparent;
 }
 
-#logo {float:left;}
-
-nav {
-    margin-top:10px;    
+#header {
+    background-color:#450f3e !important;
+    /*min-height: 55px;*/
 }
+
+#header {
+	width: 100%;
+	height: 44px;
+}
+
+#logo {float:left; display:none;}
 
 nav #actions li {
     display: inline-block;
-    padding: 5px;
-    width:50px;
+    padding: 5px 8px 0 8px;
+    width:32px;
     float:right;
 }
 
+
+
+#actions { margin: 0; }
+
 #actions .ico {
-    font-size:3em;  
+    font-size:2.25em;  
 }
 
 #actions .ico.hover {
@@ -123,6 +133,7 @@ nav #actions li {
 
 nav #actions li.toggled {
     background-color: lightgrey;
+    color: #450f3e;
 }
 .ui-header nav {
     text-align: center;
@@ -183,6 +194,11 @@ nav #actions li.toggled {
 .venue:after {
     content: ", ";
 }
+#events-list {
+	padding-left: 5px;
+	margin: 12px 0 6px;
+}
+
 #events-list .icon {
     margin-right: 1em;
 }
@@ -235,10 +251,24 @@ li.event {
     text-align: center;
 }
 
-#search-area {
-    padding:10px;
+#search-area, #favorite-area {
+	border-bottom: 1px solid #ccc;
+	padding: 6px 4px 5px;
     background-color:lightgrey;
 }
 
-#actions li {height: 56px;}
+#favorite-area {
+	font-size: 16px;
+	padding: 13px 18px 11px;
+	color: #222;
+	text-shadow:1px 1px 1px white;
+}
+#no-results {
+	padding: 12px 18px;
+	font-size: 16px;
+}
 
+.ui-body-c, .ui-overlay-c {
+	background-color: #f1f1f1;
+	background-image: none;
+}
