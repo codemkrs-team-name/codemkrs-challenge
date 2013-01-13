@@ -97,7 +97,7 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON('events.json').pipe(stubAmmendEvents);
+	return $.getJSON('events.json').pipe(massageData);
 
 	//  $.Deferred(function(d){
 	// 	d.resolve( _.map(_.range(35), function(i) {
@@ -122,9 +122,10 @@ function gettingEvents() {
 	// 	}) );
 	// });
 }
-function stubAmmendEvents(allEvents){
+function massageData(allEvents){
 	return _.map(allEvents, function(ev) {
 		ev.ranking = _.random(1);
+		ev.time = ev.time*1000;			//unix seconds to milliseconds
 		return ev;
 	})
 }
