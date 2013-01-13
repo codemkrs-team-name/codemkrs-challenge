@@ -62,7 +62,7 @@ function filterEvents(allEvents) {
 	});
 	if (mode =='favorite') {
 		results = results.filter(function(ev) {
-			return +localStorage['favorites:'+ev._id];
+			return getLocalStorage('favorites:'+ev._id);
 		});
 	} else if (mode == 'search') {
 		results = results.filter(filterSearch($('#search').val()));
@@ -182,14 +182,33 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON(EVENTS_FILE).pipe(function massageData(allEvents){
+	if( !~(location.search||'').indexOf('nocache') ) //if no nocache flag in the querystring
+		var gettingFromLocal = gettingFromLocalStorage()
+
+	return gettingFromLocal || $.getJSON(EVENTS_FILE).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
 		})
+	}).done(function storeEvents(allEvents){
+		setLocalStorage('lastEvents',{
+			 lastRun: new Date().getTime()
+			,events: allEvents
+		});
 	});
+
+	function gettingFromLocalStorage() {
+		var  store = getLocalStorage('lastEvents')
+			,lastRun = store && store.lastRun && new Date(store.lastRun)
+			;
+		if(!store || !store.events || !lastRun)
+			return null;
+		if(lastRun >= new Date().add({hours: -6}))	//happened more recently than 6 hours ago
+			return $.Deferred(resolveDeferred(store.events));
+		return null;
+	}
 }
 ///////////////////////////////////////////////////
 
@@ -241,9 +260,9 @@ $.widget('codemkrs.favoriteMarker', {
 			,key = 'favorites:'+this._eventId
 			;
 		if(_.isUndefined(isFavorite))
-			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
+			return getLocalStorage(key) == true;	//GM - oh yeah, totally necessary
 		if(isFavorite == true)
- 			localStorage[key] = '1';
+ 			setLocalStorage(key, 1);
  		else
  			localStorage.removeItem(key);
 		this._tagElement(isFavorite);
@@ -333,4 +352,15 @@ function hasTextContents() {
 function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
 function fn(val) { return function fn() { return val } }
+function resolveDeferred(val) { return function resolvedDeferred(d) { d.resolve(val) } }
+
+function getLocalStorage(key) {
+	var v = localStorage[key];
+	if(!v) return v;
+	try { return JSON.parse(v) } catch(e) {}
+	return  null; 
+}
+function setLocalStorage(key, obj) {
+	localStorage[key] = JSON.stringify(obj);
+}
 })();
