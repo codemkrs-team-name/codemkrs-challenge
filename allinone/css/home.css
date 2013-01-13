@@ -26,7 +26,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"]:before {
 */
-.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .venue:before, .artist_tip:before, .ico-dollar:before, .ico-info:before {
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .artist_tip:before, .ico-dollar:before, .ico-info:before {
     font-family: 'gigsguru';
     speak: none;
     font-style: normal;
@@ -76,8 +76,9 @@ you can use the generic selector below, but it's slower:
 .ico-cd:before {
     content: "\e00b";
 }
-.ico-office:before, .venue:before {
+.ico-office:before {
     content: "\e00c";
+	margin-right: 5px;
 }
 .ico-user:before, .artist:before {
     content: "\e00d";
@@ -169,7 +170,7 @@ nav #actions li.toggled {
 }   
 
 .event-header {
-	margin: 5px;
+	margin: 6px 5px 2px;	
 }
 .event-header > .image {
 	float: left;
@@ -286,11 +287,16 @@ li.event {
 	background-image: none;
 }
 .event .actions a {
-    text-decoration: none;
-    color: #333;
-	padding-left: 4px;
+	text-decoration: none;
+	color: #777;
+	padding: 6px 0 2px 4px;
 	vertical-align: bottom;
-    font-size: 1.5em;
+	font-size: 28px;
+	min-width: 28px;
+	line-height: 28px;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0 1px 1px white,0 2px 1px white;
 }
 
 .event .actions iframe {
