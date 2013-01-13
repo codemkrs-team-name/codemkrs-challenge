@@ -208,15 +208,7 @@ nav #actions li.toggled {
 .eventDetials {list-style:none;}
 .eventDetails li {display:inline;}
 .actions {
-    height: 40px; 
-    list-style:none; 
-    background-color:#450f3e; 
-    display: inline-block; 
-    float: right; 
-    border-radius: 5px 0px 0px 5px;
 }
-.actions li {float:right; width: 50px; text-align: center;}
-.actions li .ico {font-size: 2em; color:#fff;}
 #events-list .actions >div{
     display: inline-block;
 }
