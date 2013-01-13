@@ -22,11 +22,10 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 // Filters
 /////////////////////////////////////////////////////
 function filterSearch(keywords) {
+	if (!keywords || !keywords.trim())
+		return _.identity;
+	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
-		if (_.isString(keywords) && _.isEmpty(keywords.trim())) {
-			return true;
-		}
-		keywords = _.string.slugify(keywords).split('-');
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
 		var venueKeywords = _.string.slugify(ev.venue).split('-');
 		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
@@ -42,12 +41,13 @@ function filterSearch(keywords) {
 
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
+		,$search 	= $('#search')
 		,selVal		= function(name) { return $('#'+name+'-filter').val() }
 		,events = _.chain(allEvents)
 				.filter(filterRanking(selVal('ranking')))
 				.filter(filterDay(selVal('day')))
 				.filter(filterDistance(selVal('distance')))
-				.filter(filterSearch($('#search').val()))
+				.filter(filterSearch($search.is(':visible') && $search.val()))
 				.sortBy('time')
 				.value()
 		;
