@@ -36,21 +36,17 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 // Filters
 /////////////////////////////////////////////////////
 function runCurrentFilter(allEvents) {
-	var $noResults = $('#no-results')
+	var  $noResults = $('#no-results')
+		,$events = $('#events-list')
 		,events = filterEvents(allEvents);
 		;
 	
-	$('.event').hide();
 	if (mode == 'map') return events;
-	if (!events.length) {
-		$noResults.show();
-		return events;
-	}
 	
-	$noResults.hide();
-	_.each(events, function(ev) {
-		$('#' + ev._id).show();
-	});
+	$noResults.toggle(_.any(events.length));
+	$events.toggle(!_.any(events.length));
+	$events.children('.event').hide();
+	$(_.map(events, function(ev) { return '#'+ev._id }).join(',')).show()
 	return events;
 }
 
