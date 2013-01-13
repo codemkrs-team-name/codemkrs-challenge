@@ -46,7 +46,7 @@
 		        </select>
 		    
 		        <select id="distance-filter" data-native-menu="false" data-mini="true">
-		            <option selected value="1">Within 1 Mile</option>
+		            <option selected value="1">&lt; 1 Mile</option>
 		            <option value="1000">Anywhere</option>
 		        </select>
 		    
@@ -54,7 +54,7 @@
 		        </select>
     		</fieldset>
     	</div>
-		<div id="events-list" data-role="collapsible-set"> </div>
+		<ul id="events-list" > </ul>
 
     </div>
     <div data-role="footer" data-theme="a" class="ui-bar">
@@ -62,18 +62,20 @@
 </div>
 
 <script id="event-template" type="text/x-handlebars-template">
-	<div data-role="collapsible" data-iconpos="right" class="event">
-		<h3 class="ui-helper-clearfix">
-			<span class="left image">{{eventImage}}</span>
-			<span class="left details">
+	<li class="event ui-helper-clearfix">
+		<div class="ui-helper-clearfix">
+			<div class="left image">{{eventImage}}</div>
+			<div class="left details">
 				<span class="event-name">{{eventName}}</span>
 				<span class="venue">{{venue}}</span>
 				<span class="time">{{time time}}</span>
 				<span class="source">{{html source}}</span>
-			</span>
-		</h3>
-		<div class="description">
-			{{html description}}
+			</div>
+		</div>
+		<div class="event-body">
+			<div class="description">
+				{{html description}}
+			</div>
 			<ul class="event-links">
 				{{#each links}}
 				<li>{{eventLink this}}</li>
@@ -86,7 +88,7 @@
 				<a class="phone" href="tel:{{phone}}">P</a>
 			{{/if}}
 		</div>
-	</div>	
+	</li>	
 </script>
 <script id="event-template-josh" type="text/x-handlebars-template">
 

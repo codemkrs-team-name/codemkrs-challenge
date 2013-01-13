@@ -9,6 +9,14 @@
     font-style: normal;
 }
 
+/* From jQuery Ui */
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons 
 [data-icon]:before {
     font-family: 'icomoon';
@@ -203,4 +211,7 @@ nav #actions li.toggled {
 }
 .favorite.selected {
     color: green;
+}
+li.event {
+    display: block;
 }
