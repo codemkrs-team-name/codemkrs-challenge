@@ -1,36 +1,17 @@
 (function(){
-window.allEvents = _.map(_.range(35), function(i) {
-	return {
-		 eventName: "Here is some event "+i
-		,venue: "Venue "+_.random(10)
-		,location: null
-		,time: new Date(1358014168714).add({hours: _.random(72)}).getTime()
-		,image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSHHZb6Dt0Sssbz0nzT-MUvgwmtf11T2DzVkDC1ONsO2z62num'
-		,price: null
-		,description: "<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>"
-		,source: '<a href="http://cheezburger.com/6924526080">This guy\'s blog</a>'
-		,ranking: _.random(1)||null
-		,links: [
-			{
-			 	 type: ['music', 'gcal', 'info'][_.random(2)]
-			 	,text: "Text "+i
-				,link: 'https://play.google.com/music/listen?u=1'
-			}
-		]
-	};
-});
 
-
-window.codemkrs = function() {
+window.codemkrs = function() { 
 	extendHandlebars();
 	initToggles();
+	$.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
-	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-		,allEvents 		= window.allEvents 		//todo JSON get
-		,$filters   	= initFilters() 
-		;
-		runCurrentFilter(allEvents, eventTemplate);
-		$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
+		var  eventTemplate 	= Handlebars.compile($("#event-template").html())
+			,$filters   	= initFilters() 
+			;
+			runCurrentFilter(allEvents, eventTemplate);
+			$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
+
+	})
 };
 
 
@@ -108,6 +89,40 @@ function initToggles() {
 }
 ///////////////////////////////////////////////////
 
+function gettingEvents() {
+	return $.Deferred(function(d){
+		d.resolve( _.map(_.range(35), function(i) {
+			return {
+				 eventName: "Here is some event "+i
+				,venue: "Venue "+_.random(10)
+				,location: null
+				,time: new Date(1358014168714).add({hours: _.random(72)}).getTime()
+				,image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSHHZb6Dt0Sssbz0nzT-MUvgwmtf11T2DzVkDC1ONsO2z62num'
+				,price: null
+				,description: "<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>"
+				,source: '<a href="http://cheezburger.com/6924526080">This guy\'s blog</a>'
+				,ranking: _.random(1)||null
+				,links: [
+					{
+					 	 type: ['music', 'gcal', 'info'][_.random(2)]
+					 	,text: "Text "+i
+						,link: 'https://play.google.com/music/listen?u=1'
+					}
+				]
+			};
+		}) );
+	});
+}
+
+///////////////////////////////////////////////////
+
+function pageInitializing() {
+	return $.Deferred(function(d){
+		$(document).on('pageinit', function() { d.resolve() });
+	});
+}
+
+///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', function(html) {
 	  return new Handlebars.SafeString(html);
