@@ -31,6 +31,7 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		$events.find('.event-body')
 			.filter(hasTextContents)
 			.seeMoreCollapsible();
+		$(document).trigger('create');
 		updateFilters();
 	});
 	$filters.on('change', updateFilters);
@@ -292,7 +293,7 @@ $.widget('codemkrs.seeMoreCollapsible',{
 		this.showMore(false)();
 	}
 	,_showHideElement: function(swtch) {
-		this.element.css('max-height', swtch? '':'4.8em');		
+		this.element.css('max-height', swtch? '':'4.7em');		
 	}
 	,contentsHeight: function() {
 		var childrenHeights = this.element.children().map(function(){return $(this).height() });
@@ -317,11 +318,15 @@ function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
 	  	return new Handlebars.SafeString(html);
 	}));
+	Handlebars.registerHelper('infoButton', function() {
+		if(!_.any(this.links)) return ''
+		var target = '#'+'eventlinks-'+this._id;
+	  	return new Handlebars.SafeString('<a class="ico ico-info" href="'+target+'" data-position-to="window" data-rel="popup"></a>');
+	});
+	var now = new Date(), dateFormat = 'H:MI PP';
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
 		if (!timestamp) return '';
 		var date = new Date(timestamp);
-		var dateFormat = 'H:MI PP';
-		var now = new Date();
 		if (timestamp > now.getTime()+1000*60*60*24*7) dateFormat = 'M/D, ' + dateFormat;
 		if (date.getDay() != now.getDay()) dateFormat = 'DDD ' + dateFormat;
 	  	return date.toFormat(dateFormat);
@@ -335,11 +340,10 @@ function extendHandlebars() {
 			venue: 'More info about this venue',
 			artist: link.text || 'More info about this artist',
 			gcal: 'View this event on Google Calendar',
-			artist_tip: 'Leave this artist a tip',
+			artist_tip: link.text||'Leave this artist a tip',
 		};
 	  	return new Handlebars.SafeString([
-	  		 '<a href="'+link.link+'">'
-	  		,'<span class="icon '+link.type+'"></span>'
+	  		 '<a href="'+link.link+'" target="_blank">'
 	  		,'<span class="link-name">'
 	  			,linkTypes[link.type]
 	  		,'</span></a>'
