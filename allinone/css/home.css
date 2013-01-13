@@ -1,3 +1,79 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons 
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}*/
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-pin:before, .ico-star:before, .ico-star-2:before, .ico-search:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.ico-map:before {
+	content: "\e000";
+}
+.ico-map-2:before {
+	content: "\e001";
+}
+.ico-map-pin-fill:before {
+	content: "\e002";
+}
+.ico-pin:before {
+	content: "\e003";
+}
+.ico-star:before {
+	content: "\e004";
+}
+.ico-star-2:before {
+	content: "\e005";
+}
+.ico-search:before {
+	content: "\e006";
+}
+.ico-phone:before {
+	content: "\e007";
+}
+.ico-twitter-old:before {
+	content: "\e00a";
+}
+.ico-facebook:before {
+	content: "\e009";
+}
+.ico-list:before {
+	content: "\e008";
+}
+
+
+
+.ui-header {
+	background-color: #450f3e !important;
+    min-height: 55px;
+}
+
 .ui-header {
     min-height: 55px;
 }
@@ -70,6 +146,9 @@ nav #actions li.toggled {
 }
 .icon.gcal:after{
     content: "\0BF0";
+}
+.icons.venue:after{
+    content: "\2302";
 }
 
 #filters-area {
