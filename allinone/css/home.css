@@ -50,7 +50,7 @@ you can use the generic selector below, but it's slower:
     content: "\e005";
 }
 .ico-phone:before {
-    content: "\e007";
+	content: "\e007";
 }
 .ico-twitter-old:before {
     content: "\e00a";
@@ -259,7 +259,11 @@ nav #actions li.toggled {
 .actions {
 	background-color: #e8e8e8;
 	padding: 3px 2px 0;
+	text-align:center;
 }
+
+.actions a {display:block; margin-right: 15px; margin-left:15px;}
+
 #events-list .actions >div{
     display: inline-block;
 }
@@ -276,7 +280,7 @@ li.event {
 	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
 	border-radius: 4px;
 	border: 1px solid #ddd;
-	margin: 0 5px 6px 5px;
+	margin: 0 5px 8px 5px;
 	padding: 0;
 	background-color: #f7f7f7;
 }
