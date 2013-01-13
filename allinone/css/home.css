@@ -86,6 +86,34 @@ you can use the generic selector below, but it's slower:
 .ico-dollar:before, .artist_tip:before {
 	content: "\e00e";
 }
+.ico-info:before {
+	content: "\e00f";
+}
+.ico-angle-down:before {
+	content: "\f107";
+}
+.ico-angle-up:before {
+	content: "\f106";
+}
+.ico-arrow-up-alt1:before {
+	content: "\e010";
+}
+.ico-arrow-down-alt1:before {
+	content: "\e011";
+}
+
+
+.ui-icon-arrow-d {
+	background-image:none;
+	background:none;
+	border-radius:0px;
+	font-size: 1.3em;
+	color:#450f3e;
+}
+.ui-icon-arrow-d:before {
+	
+	content: "\e011";
+}
 
 body {
     
