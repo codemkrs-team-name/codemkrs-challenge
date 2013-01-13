@@ -64,7 +64,7 @@
 	  					</select>
 	  				</fieldset>
 	  			</div>
-	  			<ul id="events-list"> </ul>
+  			<ul id="events-list"> </ul>
 				<div style="display:none;" id="no-results">
 					No results to display.
 				</div>
@@ -89,13 +89,16 @@
        <div class="description">
          {{html description}}
        </div>
-       <ul class="event-links">
-         {{#each links}}
-         <li>{{eventLink this}}</li>
-         {{/each}}
-       </ul>
-     </div>
-	 <div style="clear:left"/>
+		{{#if links}}
+		<div id="eventlinks-{{_id}}" data-role="popup">
+	       <ul class="event-links">
+	         {{#each links}}
+	         <li>{{eventLink this}}</li>
+	         {{/each}}
+	       </ul>
+		</div>
+		{{/if}}
+	 </div>
      <div class="actions">
        {{favoriteEvent}}
        {{#if phone}}
@@ -103,8 +106,10 @@
        {{/if}}
        {{mapLink}}
        {{twitterButton}}
+       {{infoButton}}
      </div>
    </li>	
   	</script>
+
   </body>
   </html>
