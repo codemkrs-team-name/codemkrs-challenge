@@ -60,8 +60,9 @@ function filterDay(daytime) {
 	}
 }
 function filterDistance(distance) { return function(ev) {
-	if(!currentLocation)
+	if(!currentLocation || !ev.location)
 		return true;
+	return distance <= haversineDistance(currentLocation, ev.location);
 }}
 //////////////////////////////////////////////////////
 // Toggle Buttons
@@ -139,7 +140,21 @@ function pageInitializing() {
 
 function startWatchingLocation(callback) {
 	if(!navigator || !navigator.geolocation) return;
-	navigator.geolocation.watchPosition(callback);
+	navigator.geolocation.watchPosition(update);  // GM - No work in browser sad face
+	function update(position){
+		callback({lat: position.coords.latitude, lon: position.coords.longitude});
+	}
+}
+function haversineDistance(a, b) {
+	var  dLat 	= (b.lat-a.lat).toRad()
+		,dLon 	= (b.lon-a.lon).toRad()
+		,alat 	= a.lat.toRad()
+		,blat 	= b.lat.toRad()
+		,a 		= Math.sin(dLat/2) * Math.sin(dLat/2) +
+	    		  Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(alat) * Math.cos(blat) 
+		,c 		= 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)) 
+		;
+		return c * 6371; // km
 }
 
 ///////////////////////////////////////////////////
