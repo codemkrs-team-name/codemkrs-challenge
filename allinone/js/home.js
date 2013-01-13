@@ -1,6 +1,7 @@
 (function(){
 
 var currentLocation = null;
+var showingFavorites = false;
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
@@ -14,8 +15,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		
 	updateFilters();
 	$filters.on('change', updateFilters);
+	$("#favorite").click(function() {
+		$(this).toggleClass('ico-star').toggleClass('ico-star-2');
+		showingFavorites = !showingFavorites;
+		updateFilters();
+	});
 	$("#search").keydown(_.debounce(updateFilters, 500));
-	$("#search").blur(updateFilters);
 });
 
 //////////////////////////////////////////////////////
@@ -23,16 +28,11 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 /////////////////////////////////////////////////////
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
-		,$search 	= $('#search')
-		,selVal		= function(name) { return $('#'+name+'-filter').val() }
-		,events = _.chain(allEvents)
-				.filter(filterRanking(selVal('ranking')))
-				.filter(filterDay(selVal('day')))
-				.filter(filterDistance(selVal('distance')))
-				.filter(filterSearch($search.is(':visible') && $search.val()))
-				.sortBy('time')
-				.value()
+		,events = filterEvents(allEvents);
 		;
+	if (!events.length)
+		return $events.html("No results to display.");
+
 	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
 	$events.find('a.favorite').favoriteMarker({
 		events: allEvents
@@ -40,7 +40,25 @@ function runCurrentFilter(allEvents, eventTemplate) {
 	$events.find('.event-body')
 		.filter(hasTextContents)
 		.seeMoreCollapsible()
-	$(':mobile-button').trigger('create')
+}
+
+function filterEvents(allEvents) {
+	var results = _.chain(allEvents);
+	if (showingFavorites) {
+		results = results.filter(function(ev) {
+			return +localStorage['favorites:'+ev._id];
+		});
+	} else {
+		var $search 	= $('#search')
+			,selVal		= function(name) { return $('#'+name+'-filter').val() }
+			;
+		results = results
+			.filter(filterRanking(selVal('ranking')))
+			.filter(filterDay(selVal('day')))
+			.filter(filterDistance(selVal('distance')))
+			.filter(filterSearch($search.is(':visible') && $search.val()));
+	}
+	return results.sortBy('time').value();
 }
 
 function filterSearch(keywords) {
