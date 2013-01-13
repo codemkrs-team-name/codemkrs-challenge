@@ -335,8 +335,11 @@ function extendHandlebars() {
 	});
 	Handlebars.registerHelper('mapLink', function() {
 		if(!this.location || !this.location.lat || !this.location.lon) return '';
-		var link = 'https://maps.google.com/?'+$.param({ z:16, ll:(''+this.location.lat+','+this.location.lon) });
-	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank" class="ico ico-map-pin-fill"></a>');
+		https://maps.google.com/?z=16&q=This+is+text+in+my+bubble@29.956763%2C-90.067645
+		var  locStr = ''+this.location.lat+','+this.location.lon
+			,link = 'https://maps.google.com/?'+$.param({ z:16, q:((this.venue||'').replace("@", "at")+'@'+locStr) })
+			; 
+	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank"  class="ico ico-map-pin-fill"></a>');
 	});
 
 	var appendTwitterButtonScript = _.debounce(function(){
