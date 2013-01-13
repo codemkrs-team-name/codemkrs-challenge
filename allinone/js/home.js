@@ -20,37 +20,39 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	};
 		
 	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
-	$events.find('.event-body')
-		.filter(hasTextContents)
-		.seeMoreCollapsible();
 	$events.find('a.favorite').favoriteMarker({
 		events: allEvents
 	});
-	updateFilters();
+	_.defer(function(){		
+		//GM - OK, so in order for this widget to initialize correctly
+		//it HAS to be visible at the time of initialization to calculate content vs container height
+		//SOOOO wait for the current event loop to finish (thanks jqm)
+		//then do all this. Because of reasons
+		$events.find('.event-body')
+			.filter(hasTextContents)
+			.seeMoreCollapsible();
+		updateFilters();
+	});
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
-	scrollToHash();
+	_.delay(scrollToHash, 2000);
 });
 
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
 function runCurrentFilter(allEvents) {
-	var $noResults = $('#no-results')
+	var  $noResults = $('#no-results')
+		,$events = $('#events-list')
 		,events = filterEvents(allEvents);
 		;
 	
-	$('.event').hide();
 	if (mode == 'map') return events;
-	if (!events.length) {
-		$noResults.show();
-		return events;
-	}
 	
-	$noResults.hide();
-	_.each(events, function(ev) {
-		$('#' + ev._id).show();
-	});
+	$noResults.toggle(_.any(events.length));
+	$events.toggle(!_.any(events.length));
+	$events.children('.event').hide();
+	$(_.map(events, function(ev) { return '#'+ev._id }).join(',')).show()
 	return events;
 }
 
@@ -78,7 +80,7 @@ function filterEvents(allEvents) {
 }
 
 function filterSearch(keywords) {
-	if (!keywords || !keywords.trim()) return fn(false);
+	if (!keywords || !keywords.trim()) return fn(true);
 	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
@@ -304,9 +306,10 @@ $.widget('codemkrs.seeMoreCollapsible',{
 });
 ///////////////////////////////////////////////////
 function scrollToHash() {
-	if(!location.hash || ~location.hash.indexOf('#!') ) return;
+	if(!location.hash || !~location.hash.indexOf('#!') ) return;
+	var $event = $('#'+location.hash.replace(/^#!/, '')).show()
 	$('html, body').animate({
-    	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
+    	scrollTop: $event.offset().top-100
 	});
 }
 ///////////////////////////////////////////////////
