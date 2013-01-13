@@ -61,6 +61,7 @@ var map = {
 			this._markers = [];
 			this._handle.setCenter(coords);
 		}
+		map.setLocation(loc);
 	}
 };
 
