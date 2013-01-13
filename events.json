@@ -3,1207 +3,6 @@
     "ranking": 0, 
     "description": null, 
     "links": [], 
-    "image": {
-      "src": "http://farm7.staticflickr.com/6006/5972879176_da4e775946_s.jpg", 
-      "href": "http://www.flickr.com/photos/64597899@N07/5972879176"
-    }, 
-    "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Apple Barrel", 
-    "eventName": "Kenny Claiborne and Blood from a Stone", 
-    "phone": "5049499399", 
-    "location": {
-      "lat": 29.9639416, 
-      "lon": -90.057763
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.maisondupuy.com", 
-        "text": "Maison Dupuy website"
-      }
-    ], 
-    "image": null, 
-    "address": "1001 Rue Toulouse<br>\nNew Orleans, LA 70112", 
-    "venue": "Bistreaux", 
-    "eventName": "Aaron Lopez-Barrantes", 
-    "phone": "5045868000", 
-    "location": {
-      "lat": 29.9592378, 
-      "lon": -90.0683742
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "venue": "Buffa's Lounge", 
-    "eventName": "Royal Rounders", 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p> Seth Kaufman, the unsuspecting man behind the band Floating Action, lives in Asheville, North Carolina, and maybe more than it usually would, that piece of biographical information about him says a lot. He lives there, in one of the prettiest cities in this great and great big old country, cuddled up against the Blue Ridge Mountains, and he takes advantage of all of its splendors, it seems. He greedily and voraciously fills his available time with hiking and wiffle ball games, picnics and other outdoorsy activities that no matter how much any jerk will want to argue with you...</p>", 
-    "links": [
-      {
-        "link": "http://www.google.com/calendar/event?eid=aWJuMWdpZGRtOWR0a2sxaWRtMmdvYXVkZ2MgbWF0dGhldy5yLnJvc2VudGhhbEBt", 
-        "type": "gcal"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Carbon+Poppies", 
-        "text": "Carbon Poppies"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Floating+Action", 
-        "text": "Floating Action"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/thecirclebar", 
-        "text": "http://www.myspace.com/thecirclebar"
-      }
-    ], 
-    "tags": "folk,indie pop,lo-fi,indie,sxsw 2009", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/62792051.jpg", 
-      "href": "http://www.last.fm/music/Floating+Action"
-    }, 
-    "address": "1032 Saint Charles Avenue<br>\nNew Orleans, LA 70130", 
-    "venue": "Circle Bar", 
-    "eventName": "Floating Action + Lackadasies + Carbon Poppies", 
-    "phone": "5045882616", 
-    "location": {
-      "lat": 29.9428686, 
-      "lon": -90.072702
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.tropicalisle.com", 
-        "text": "http://www.tropicalisle.com"
-      }
-    ], 
-    "image": null, 
-    "address": "727 Bourbon Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Funky Pirate", 
-    "eventName": "Blues Masters feat. Big Al", 
-    "phone": "5045231960", 
-    "location": {
-      "lat": 29.959226, 
-      "lon": -90.06519
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Carl+LeBlanc", 
-        "text": "Carl LeBlanc"
-      }
-    ], 
-    "tags": "jazz,blues,roots,new orleans,under 2000 listeners", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/9745207.jpg", 
-      "href": "http://www.last.fm/music/Carl+LeBlanc"
-    }, 
-    "address": "300 Bourbon Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Irvin Mayfield's Jazz Playhouse", 
-    "eventName": "Carl LeBlanc", 
-    "phone": "5045532270", 
-    "location": {
-      "lat": 29.955649, 
-      "lon": -90.067995
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://margaritaville.com", 
-        "text": "http://margaritaville.com"
-      }
-    ], 
-    "image": null, 
-    "address": "1104 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Margaritaville", 
-    "eventName": "Ted Graham's All-Stars", 
-    "phone": "5045922565", 
-    "location": {
-      "lat": 29.9599009, 
-      "lon": -90.0598873
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Lionel+Ferbos", 
-        "text": "Lionel Ferbos"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.palmcourtjazz.com/", 
-        "text": "Home page"
-      }
-    ], 
-    "tags": "new orleans,louisiana", 
-    "image": {
-      "src": "http://farm9.staticflickr.com/8013/7141190619_758179419a_s.jpg", 
-      "href": "http://www.flickr.com/photos/31081764@N06/7141190619"
-    }, 
-    "address": "1204 Decatur<br>\nNew Orleans, LA", 
-    "venue": "Palm Court Jazz Cafe", 
-    "eventName": "Lionel Ferbos and Palm Court Jazz Band", 
-    "location": {
-      "lat": 29.9607933, 
-      "lon": -90.0590994
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "venue": "Paragon Casino &#038; Resort", 
-    "eventName": "Irma Thomas", 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "venue": "Pontchartrain, the", 
-    "eventName": "Philip Melancon", 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.preservationhall.com", 
-        "text": "http://www.preservationhall.com"
-      }
-    ], 
-    "image": null, 
-    "address": "726 Saint Peters Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Preservation Hall", 
-    "eventName": "Seva Venet and the Storyville String Band CD-release party", 
-    "phone": "5045222841", 
-    "location": {
-      "lat": 29.9583033, 
-      "lon": -90.0652395
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Chris Thomas King (born October 14, 1962 in Baton Rouge, Louisiana) is an American blues musician and actor. He is the son of blues musician Tabby Thomas.  In the 2000 movie O' Brother, Where Art Thou?, he played legendary bluesman Tommy Johnson. On the \u201cO Brother\u2026\u201d soundtrack he plays Skip James\u2019 \u201cHard Time Killing Floor Blues\u201d. In the 2004 movie Ray, he played bandleader Lowell Fulson. He has also appeared in several documentaries about the blues and about music.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Chris+Thomas+King", 
-        "text": "Chris Thomas King"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.snugjazz.com", 
-        "text": "http://www.snugjazz.com"
-      }
-    ], 
-    "tags": "blues,singer-songwriter,folk,alt-country,delta blues", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/382515.jpg", 
-      "href": "http://www.last.fm/music/Chris+Thomas+King"
-    }, 
-    "address": "626 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Snug Harbor", 
-    "eventName": "Chris Thomas King", 
-    "phone": "5049490696", 
-    "location": {
-      "lat": 29.9641609, 
-      "lon": -90.0578676
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>After 16 years with the popular rock band Cowboy Mouth, Paul Sanchez has stepped out on his own. He is a cat with eight lives used up and he's damn glad to be here. Paul is a troubadour from New Orleans. He is a storyteller, his own as well as ours. He is a student and a teacher. A traveler that finds home in a thousand different faces every night.   For more than 16 years, Paul and the other members of Cowboy Mouth embraced, embodied, preached and shouted at the top of their lungs the joys of their hometown, New Orleans.</p><p>Bluesmen like LITTLE FREDDIE KING are unfortunately, a disappearing breed, making his music so important, both as a good-time blast of backstreet grit and as a document of an artist who is among the last of his kind.   Son of a Mississippi share chopper, Freddie jumped a train for New Orleans at the age of 14-years old, never looking back. \n Born in McComb, Mississippi (1940) Freddie is the last of the great delta style country guitar players. In the 50s he was busy playing and learning from Babe Stovall, Polka Dot Slim and his friend Slim Harpo.  </p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Paul+Sanchez", 
-        "text": "Paul Sanchez"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Little+Freddie+King", 
-        "text": "Little Freddie King"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Pfister+Sisters", 
-        "text": "Pfister Sisters"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
-      }
-    ], 
-    "tags": "under 2000 listeners,new orleans,singer-songwriter,blues,electric blues,fat possum,folk,winnipeg folk fest 2008", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/3233375.jpg", 
-      "href": "http://www.last.fm/music/Paul+Sanchez"
-    }, 
-    "address": "501 Napoleon Avenue<br>\nNew Orleans, LA 70115", 
-    "venue": "Tipitina's French Quarter", 
-    "eventName": "HBO's Treme presents My Lil' Darlin' All-Star Revue feat. Paul Sanchez and the Rolling Road Show, Little Freddie King, Guitar Lightin\u2019 Lee, Robert Parker, the Pfister Sisters, Clarence \u201cFrogman\u201d Henry and others", 
-    "phone": "5048958477", 
-    "location": {
-      "lat": 29.9174145, 
-      "lon": -90.1008856
-    }, 
-    "time": 1358042400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.marignytheatre.org", 
-        "text": "Marigny Theatre & AllWays Lounge website"
-      }
-    ], 
-    "image": null, 
-    "address": "2240 St. Claude Ave.<br>\nNew Orleans, LA", 
-    "venue": "AllWays Lounge", 
-    "eventName": "Lonesome Leash", 
-    "location": {
-      "lat": 29.9685463, 
-      "lon": -90.0556742
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Soul+Project", 
-        "text": "Soul Project"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
-      }
-    ], 
-    "tags": "funk,english,soulful,new orleans,under 2000 listeners", 
-    "image": null, 
-    "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
-    "eventName": "Soul Project, Kidnapped Orchestra", 
-    "phone": "5045997770", 
-    "location": {
-      "lat": 29.9617354, 
-      "lon": -90.0583406
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm", 
-        "text": "Hotel Monteleone website"
-      }
-    ], 
-    "image": {
-      "src": "http://farm4.staticflickr.com/3354/3334397331_b333dc3ded_s.jpg", 
-      "href": "http://www.flickr.com/photos/33934821@N03/3334397331"
-    }, 
-    "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Carousel Bar (Hotel Monteleone)", 
-    "eventName": "Prima Jazz Band", 
-    "phone": "8005359595", 
-    "location": {
-      "lat": 29.9543519, 
-      "lon": -90.067991
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": {
-      "src": "http://farm8.staticflickr.com/7102/7266872936_1577eeace3_s.jpg", 
-      "href": "http://www.flickr.com/photos/89826592@N00/7266872936"
-    }, 
-    "address": "501 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Check Point Charlie", 
-    "eventName": "the Bedlamville Triflers, Circle Jerk, the Ramones tribute bands", 
-    "phone": "5049497012", 
-    "location": {
-      "lat": 29.9622459, 
-      "lon": -90.0579716
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "address": "2441 Bayou Road<br>\nNew Orleans, LA", 
-    "venue": "Club Caribbean", 
-    "eventName": "Dancehall Explosion", 
-    "location": {
-      "lat": 29.9758474, 
-      "lon": -90.0760593
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Jazz Trumpeter Jeremy Davenport was raised in  St. Louis, Mo  and became a merit scholar at the prestigious Manhattan School of music, Davenport also began private study with revered jazz musicians <a href=\"http://www.last.fm/music/Raymond+Mase\" class=\"bbcode_artist\">Raymond Mase</a> and <a href=\"http://www.last.fm/music/Wynton+Marsalis\" class=\"bbcode_artist\">Wynton Marsalis</a>. He went on to study at the University of New Orleans with the patriarch of the Marsalis family, music educator and jazz pianist <a href=\"http://www.last.fm/music/Ellis+Marsalis\" class=\"bbcode_artist\">Ellis Marsalis</a>.  His talents flourished and he was honored to become the youngest performer on four world tours with <a href=\"http://www.last.fm/music/+noredirect/Harry+Connick+Jr\" class=\"bbcode_artist\">Harry Connick Jr</a>.`s Big Band.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Jeremy+Davenport", 
-        "text": "Jeremy Davenport"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.ritzcarlton.com", 
-        "text": "http://www.ritzcarlton.com"
-      }
-    ], 
-    "tags": "jazz,club jazz,cool jazz,male jazz vocal,jazz trumpet", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/8387681.jpg", 
-      "href": "http://www.last.fm/music/Jeremy+Davenport"
-    }, 
-    "address": "921 Canal Street<br>\nNew Orleans, LA 70112", 
-    "venue": "Davenport Lounge (Ritz-Carlton)", 
-    "eventName": "Jeremy Davenport", 
-    "phone": "5045241331", 
-    "location": {
-      "lat": 29.954851, 
-      "lon": -90.071132
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Hardcore / Metal / Progressive.  From, Rockland County, \n NEW YORK, \n USA.  Atlas Shrugged  had a pretty distinct sound, although one can definitely hear influences of bands such as <a href=\"http://www.last.fm/music/Burn\" class=\"bbcode_artist\">Burn</a>, <a href=\"http://www.last.fm/music/Quicksand\" class=\"bbcode_artist\">Quicksand</a>, <a href=\"http://www.last.fm/music/Bad+Brains\" class=\"bbcode_artist\">Bad Brains</a> and <a href=\"http://www.last.fm/music/Voivod\" class=\"bbcode_artist\">Voivod</a>. Rocking &amp; grooving hardcore with the passionate spoken/screamed vocals of Chris Weinblad, who also did, and still does, <span title=\"Unknown label\" class=\"bbcode_unknown\">Trip Machine Laboratories</span>. Band released their split 7&quot; with <a href=\"http://www.last.fm/music/New+Day+Rising\" class=\"bbcode_artist\">New Day Rising</a>. Their final release/7&quot; before their demise in 1998 was 'Old Familiar Face'. They did record a few more songs in 1998 tho, however they never got released at the time.</p><p>Thre are at least four bands with this name.  a) a solo acoustic indie act currently based and playing in London (no known success)\n b) a british Rock band, successful in the 70's with the song &quot;Hiroshima&quot;\n c) a Jazz band\n d) a punk/rock band from Melbourne, Australia (disbanded in 2007). Released two full length albums: &quot;Standing Still&quot; and &quot;Kicking Goals, Banging Goals And High Fives All Round&quot;.   ----------------  More information relating to (c) above:  </p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Atlas+Shrugged", 
-        "text": "Atlas Shrugged"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Wishful+Thinking", 
-        "text": "Wishful Thinking"
-      }
-    ], 
-    "tags": "hardcore,progressive metalcore,math metal,all,90s emo,classic rock,70s,rock,pop punk,australian", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/3408782.jpg", 
-      "href": "http://www.last.fm/music/Atlas+Shrugged"
-    }, 
-    "address": "1511 South Rendon<br>\nNew Orleans, LA", 
-    "venue": "Hangar 13", 
-    "eventName": "the Seventh Seal, Atlas Shrugged, Wishful Thinking", 
-    "location": {
-      "lat": 29.9549303, 
-      "lon": -90.1047306
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Yonder Mountain String Band Biography, June 2009\n  \n Yonder Mountain String Band has always played music by its own set of rules.  Bending bluegrass, rock and countless other influences that the band cites, Yonder has pioneered a sound of their own.  With their traditional lineup of  instruments, the band may look like a traditional bluegrass band at first glance but they\u2019ve created their own music that transcends any genre.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Yonder+Mountain+String+Band", 
-        "text": "Yonder Mountain String Band"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.hob.com/venues/clubvenues/neworleans", 
-        "text": "New Orleans House of Blues website"
-      }
-    ], 
-    "tags": "bluegrass,jam,jam band,acoustic,newgrass", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/23142279.jpg", 
-      "href": "http://www.last.fm/music/Yonder+Mountain+String+Band"
-    }, 
-    "address": "225 Decatur Street<br>\nNew Orleans, LA 70130", 
-    "venue": "House of Blues", 
-    "eventName": "Yonder Mountain String Band", 
-    "phone": "5045292583", 
-    "location": {
-      "lat": 29.9531604, 
-      "lon": -90.0661661
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.tropicalisle.com", 
-        "text": "http://www.tropicalisle.com"
-      }
-    ], 
-    "image": {
-      "src": "http://farm6.staticflickr.com/5047/5313427141_341768bb25_s.jpg", 
-      "href": "http://www.flickr.com/photos/29957220@N02/5313427141"
-    }, 
-    "address": "435 Bourbon Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Little Tropical Isle", 
-    "eventName": "Frank Fairbanks", 
-    "phone": "5045294109", 
-    "location": {
-      "lat": 29.9569036, 
-      "lon": -90.0672551
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": {
-      "src": "http://farm5.staticflickr.com/4132/5138603988_9de27ba8f9_s.jpg", 
-      "href": "http://www.flickr.com/photos/12786044@N00/5138603988"
-    }, 
-    "address": "635 Bourbon St<br>\nNew Orleans, LA 70130", 
-    "venue": "My Bar", 
-    "eventName": "LC Smoove", 
-    "phone": "5046790010", 
-    "location": {
-      "lat": 29.9584974, 
-      "lon": -90.0658243
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Dana+Abbott", 
-        "text": "Dana Abbott"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.oldpointbar.com", 
-        "text": "http://www.oldpointbar.com"
-      }
-    ], 
-    "image": null, 
-    "address": "545 Patterson Street Algiers Point<br>\nNew Orleans, LA 70114", 
-    "venue": "Old Point Bar", 
-    "eventName": "Dana Abbott", 
-    "phone": "5043640950", 
-    "location": {
-      "lat": 29.955501, 
-      "lon": -90.050453
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Honey Island Swamp Band came together after <a href=\"http://www.last.fm/music/Aaron+Wilkinson\" class=\"bbcode_artist\">Aaron Wilkinson</a> (acoustic guitar, mandolin, vocals) and <a href=\"http://www.last.fm/music/Chris+Mule\" class=\"bbcode_artist\">Chris Mule</a> (electric guitar, vocals) were marooned in San Francisco after the levee breaches following Hurricane Katrina devastated New Orleans in 2005.  Wilkinson and Mule had a chance encounter with fellow New Orleans evacuees <a href=\"http://www.last.fm/music/Sam+Price\" class=\"bbcode_artist\">Sam Price</a> (bass, vocals) and <span title=\"Unknown artist\" class=\"bbcode_unknown\">Garland Paul</span> (drums, vocals) at the John Lee Hooker\u2019s Boom Boom Room on Fillmore Street.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Honey+Island+Swamp+Band", 
-        "text": "Honey Island Swamp Band"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Tommy+Malone", 
-        "text": "Tommy Malone"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.rockandbowl.com", 
-        "text": "Mid-City Lanes Rock 'n' Bowl website"
-      }
-    ], 
-    "tags": "new orleans,seen live", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/59713563.jpg", 
-      "href": "http://www.last.fm/music/Honey+Island+Swamp+Band"
-    }, 
-    "address": "3016 S. Carrollton Avenue<br>\nNew Orleans, LA 70118", 
-    "venue": "Rock \u2018n' Bowl", 
-    "eventName": "Tommy Malone, Honey Island Swamp Band", 
-    "phone": "5048611700", 
-    "location": {
-      "lat": 29.960865, 
-      "lon": -90.115774
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>There are at least TWO bands known as The Bills  The Bills (New Orleans, LA)  Delinquent Horror Surf  When polluted, oil-slicked waves...  ...crash upon the beaches of a mist-shrouded graveyard full of old, 'B' horror movies under a full moon, you can hear the shriek of 'The Bills' pervade the air.  Their music is based not only on old school, drive-in films, but also a life of crime. It is whispered that every time the intro to 'Straight From the Gutter' is played, a bum is brutally stabbed in an alleyway.</p><p>Hawg Jaw was formed in August of 1996. Over 9 years and 6 line ups later, still dishing out hardcore drenched slop/brutality in midcity New Orleans.  Hawg Jaw have released several self released demo's and 7 &quot;, and have played countless shows with both local, and national touring bands.  Mike Dares - Vocals\n Gary Mader - Guitars\n Paul Webb - Bass\n Matt Williams - Drums</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Bills", 
-        "text": "The Bills"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Hawg+Jaw", 
-        "text": "Hawg Jaw"
-      }
-    ], 
-    "tags": "surf,horror surf,gothabilly,canadian,psychobilly,sludge,sludgecore,hardcore,stoner rock,stoner", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/38099649.jpg", 
-      "href": "http://www.last.fm/music/The+Bills"
-    }, 
-    "address": "2227 St. Claude Ave<br>\nNew Orleans, LA", 
-    "venue": "Siberia", 
-    "eventName": "Severin Lagarde Benefit feat. Hawg Jaw, the Bills, Fat Stupid Ugly People, Dummy Dumpster, Soulfire", 
-    "location": {
-      "lat": 29.9688884, 
-      "lon": -90.0559478
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>The Mumbles is a keyboard-driven rock n' roll band formed in November 2005 by Robert Cowlin and James Ward.  They had been listening to lots of Gothic rock at the time and wanted to craft their own style of music using elements of the bands they were inspired by.  The Mumbles didn't have access to a lot of equipment so they had to make do with what little they had (a keyboard). They originally decided that James would sing and Robert would play the keyboard because he had taken lessons a few years earlier.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Mumbles", 
-        "text": "The Mumbles"
-      }
-    ], 
-    "tags": "gothic rock,post-punk,under 2000 listeners,goth,mumbles", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/38538895.jpg", 
-      "href": "http://www.last.fm/music/The+Mumbles"
-    }, 
-    "address": "536 Frenchmen St.<br>\nNew Orleans, LA", 
-    "venue": "Three Muses", 
-    "eventName": "the Mumbles", 
-    "location": {
-      "lat": 29.9632712, 
-      "lon": -90.0577468
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.tropicalisle.com", 
-        "text": "http://www.tropicalisle.com"
-      }
-    ], 
-    "image": {
-      "src": "http://farm9.staticflickr.com/8464/8366678864_d27ec42116_s.jpg", 
-      "href": "http://www.flickr.com/photos/11607158@N03/8366678864"
-    }, 
-    "address": "600 Bourbon Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Tropical Isle Original", 
-    "eventName": "Late As Usual", 
-    "phone": "5045291728", 
-    "location": {
-      "lat": 29.9578319, 
-      "lon": -90.0663256
-    }, 
-    "time": 1358046000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.clubampersand.com", 
-        "text": "http://www.clubampersand.com"
-      }
-    ], 
-    "image": null, 
-    "address": "1100 Tulane Avenue<br>\nNew Orleans, LA 70112", 
-    "venue": "Ampersand", 
-    "eventName": "Open Tryouts for AmpsGirls and NeonGoGos feat. Beverly Skillz", 
-    "phone": "5045873737", 
-    "location": {
-      "lat": 29.9540717, 
-      "lon": -90.0739962
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Quintessential+Octopus", 
-        "text": "The Quintessential Octopus"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.banksstreetbar.com/", 
-        "text": "Banks Street Bar website"
-      }
-    ], 
-    "image": null, 
-    "address": "4401 Banks Street<br>\nNew Orleans, LA 70119", 
-    "venue": "Banks Street Bar", 
-    "eventName": "the Quintessential Octopus, Handsome Beast", 
-    "phone": "5044860258", 
-    "location": {
-      "lat": 29.9744629, 
-      "lon": -90.1065036
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
-      }
-    ], 
-    "image": {
-      "src": "http://farm3.staticflickr.com/2438/4016731074_f4f2a9c781_s.jpg", 
-      "href": "http://www.flickr.com/photos/40469887@N08/4016731074"
-    }, 
-    "address": "532 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Blue Nile", 
-    "eventName": "Balcony Room: call club", 
-    "phone": "5049482583", 
-    "location": {
-      "lat": 29.9632291, 
-      "lon": -90.0577415
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm", 
-        "text": "Hotel Monteleone website"
-      }
-    ], 
-    "image": {
-      "src": "http://farm9.staticflickr.com/8077/8269908977_3ecfdaa306_s.jpg", 
-      "href": "http://www.flickr.com/photos/58147157@N05/8269908977"
-    }, 
-    "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Carousel Bar (Hotel Monteleone)", 
-    "eventName": "Lena Prima Band", 
-    "phone": "8005359595", 
-    "location": {
-      "lat": 29.9543519, 
-      "lon": -90.067991
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p> Seth Kaufman, the unsuspecting man behind the band Floating Action, lives in Asheville, North Carolina, and maybe more than it usually would, that piece of biographical information about him says a lot. He lives there, in one of the prettiest cities in this great and great big old country, cuddled up against the Blue Ridge Mountains, and he takes advantage of all of its splendors, it seems. He greedily and voraciously fills his available time with hiking and wiffle ball games, picnics and other outdoorsy activities that no matter how much any jerk will want to argue with you...</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Lackadaisies", 
-        "text": "Lackadaisies"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Floating+Action", 
-        "text": "Floating Action"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/thecirclebar", 
-        "text": "http://www.myspace.com/thecirclebar"
-      }
-    ], 
-    "tags": "folk,indie pop,lo-fi,indie,sxsw 2009", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/62792051.jpg", 
-      "href": "http://www.last.fm/music/Floating+Action"
-    }, 
-    "address": "1032 Saint Charles Avenue<br>\nNew Orleans, LA 70130", 
-    "venue": "Circle Bar", 
-    "eventName": "Floating Action, Lackadaisies", 
-    "phone": "5045882616", 
-    "location": {
-      "lat": 29.9428686, 
-      "lon": -90.072702
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/dragonsdennola", 
-        "text": "Dragon's Den on MySpace"
-      }
-    ], 
-    "image": null, 
-    "address": "435 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Dragon's Den", 
-    "eventName": "MashOUT hosted by jusCookie with E.F. Cuttin", 
-    "phone": "5049491750", 
-    "location": {
-      "lat": 29.962371, 
-      "lon": -90.057442
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>The Quickening were borne a 3 piece punk band some 12 years ago in Brisbane Australia, and for that reason have had trouble shaking their image as a punk band, all be it a increasingly outdated one.\n The Quickening have always been renouned for their technical proficency, both in a live and recorded capacity. The addition of a 2nd guitarist in 2007 gave the band an opportunity to solidify their technical prowess and develop their ever broardening style. And to be cocks....\n </p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Quickening", 
-        "text": "The Quickening"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://thehowlinwolf.com", 
-        "text": "Howlin' Wolf website"
-      }
-    ], 
-    "tags": "punk rock,hardcore punk,punk,progressive rock,post-hardcore", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/27735.jpg", 
-      "href": "http://www.last.fm/music/The+Quickening"
-    }, 
-    "address": "901 S. Peters St<br>\nNew Orleans, LA 70130", 
-    "venue": "Howlin Wolf (The Den)", 
-    "eventName": "the Quickening", 
-    "phone": "5045229653", 
-    "location": {
-      "lat": 29.9428785, 
-      "lon": -90.0660439
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://508maisonmusique.com/", 
-        "text": "Home page"
-      }
-    ], 
-    "image": null, 
-    "address": "508 Frenchmen Street<br>\nNew Orleans, LA", 
-    "venue": "Maison", 
-    "eventName": "Penthouse: DJ Pr_ck", 
-    "location": {
-      "lat": 29.9627822, 
-      "lon": -90.0577002
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/themapleleafbar", 
-        "text": "The Maple Leaf Bar on MySpace"
-      }
-    ], 
-    "image": {
-      "src": "http://farm7.staticflickr.com/6117/6329623681_bd6b6a694a_s.jpg", 
-      "href": "http://www.flickr.com/photos/89826592@N00/6329623681"
-    }, 
-    "address": "8316 Oak Street<br>\nNew Orleans, LA 70118", 
-    "venue": "Maple Leaf Bar", 
-    "eventName": "Jon Cleary\u2019s Philthy Phew", 
-    "phone": "5048669359", 
-    "location": {
-      "lat": 29.948762, 
-      "lon": -90.132072
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Take 5 southern california guys, mix in some surf, stone, and psychedelic, throw them in a haunted mansion in west hochiminster and with a little luck, you might get a band like The Growlers. The bands name comes from lead singer Brooks Nielsen and guitarist Moustache Matt. One day Brooks came home and Matt was takin a big growler in the outhouse and the rest is history. Watch some footage of old Wind N Sea Surf Club back in the 70's and you might get a taste of what this band's live shows are like.</p><p>Hailing from the wooded confines of Burlington, Vermont, the Vacant Lots are musicians as well as scientists, having built a time machine that will transport your headspace directly to the Sunset Strip in 1967. \u201cConfusion\u201d and \u201cCadillac\u201d are both prime-cut psychedelic burners, heavy-lidded and strobing with the delights of the era, pristine examples of atmosphere and attitude lent to great pop-rock songwriting. - Mexican Summer</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Growlers", 
-        "text": "The Growlers"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Vacant+Lots", 
-        "text": "The Vacant Lots"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.oneeyedjacks.net", 
-        "text": "http://www.oneeyedjacks.net"
-      }
-    ], 
-    "tags": "surf rock,psychedelic,lo-fi,psychedelic surf,rock,psychedelic,rock,spacemen 3,beyondwithin,psych-rock", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/57322047.jpg", 
-      "href": "http://www.last.fm/music/The+Growlers"
-    }, 
-    "address": "615 Toulouse Street<br>\nNew Orleans, LA 70130", 
-    "venue": "One Eyed Jacks", 
-    "eventName": "the Growlers, the Vacant Lots", 
-    "phone": "5045698361", 
-    "location": {
-      "lat": 29.957032, 
-      "lon": -90.064749
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Russell+Batiste", 
-        "text": "Russell Batiste"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.therivershacktavern.com", 
-        "text": "The Rivershack Tavern"
-      }
-    ], 
-    "image": null, 
-    "address": "3449 River Road<br>\nJefferson, LA 70121", 
-    "venue": "Rivershack Tavern", 
-    "eventName": "Russell Batiste and friends", 
-    "location": {
-      "lat": 29.9582935, 
-      "lon": -90.1609293
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>There are at least TWO bands known as The Bills  The Bills (New Orleans, LA)  Delinquent Horror Surf  When polluted, oil-slicked waves...  ...crash upon the beaches of a mist-shrouded graveyard full of old, 'B' horror movies under a full moon, you can hear the shriek of 'The Bills' pervade the air.  Their music is based not only on old school, drive-in films, but also a life of crime. It is whispered that every time the intro to 'Straight From the Gutter' is played, a bum is brutally stabbed in an alleyway.</p><p>Hawg Jaw was formed in August of 1996. Over 9 years and 6 line ups later, still dishing out hardcore drenched slop/brutality in midcity New Orleans.  Hawg Jaw have released several self released demo's and 7 &quot;, and have played countless shows with both local, and national touring bands.  Mike Dares - Vocals\n Gary Mader - Guitars\n Paul Webb - Bass\n Matt Williams - Drums</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Bills", 
-        "text": "The Bills"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Hawg+Jaw", 
-        "text": "Hawg Jaw"
-      }
-    ], 
-    "tags": "surf,horror surf,gothabilly,canadian,psychobilly,sludge,sludgecore,hardcore,stoner rock,stoner", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/38099649.jpg", 
-      "href": "http://www.last.fm/music/The+Bills"
-    }, 
-    "address": "2227 St. Claude Ave<br>\nNew Orleans, LA", 
-    "venue": "Siberia", 
-    "eventName": "Severin Lagarde Benefit: Hawg Jaw, The Bills, Fat Stupid Ugly People, Dummy Dumpster, Soulfire", 
-    "location": {
-      "lat": 29.9688884, 
-      "lon": -90.0559478
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Chris Thomas King (born October 14, 1962 in Baton Rouge, Louisiana) is an American blues musician and actor. He is the son of blues musician Tabby Thomas.  In the 2000 movie O' Brother, Where Art Thou?, he played legendary bluesman Tommy Johnson. On the \u201cO Brother\u2026\u201d soundtrack he plays Skip James\u2019 \u201cHard Time Killing Floor Blues\u201d. In the 2004 movie Ray, he played bandleader Lowell Fulson. He has also appeared in several documentaries about the blues and about music.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Chris+Thomas+King", 
-        "text": "Chris Thomas King"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.snugjazz.com", 
-        "text": "http://www.snugjazz.com"
-      }
-    ], 
-    "tags": "blues,singer-songwriter,folk,alt-country,delta blues", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/382515.jpg", 
-      "href": "http://www.last.fm/music/Chris+Thomas+King"
-    }, 
-    "address": "626 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Snug Harbor", 
-    "eventName": "Chris Thomas King", 
-    "phone": "5049490696", 
-    "location": {
-      "lat": 29.9641609, 
-      "lon": -90.0578676
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>\t\n The New Orleans Jazz Vipers are a seven-piece swing band playing regularly to enthusiastic audiences in New Orleans and all over the world. The band's repertoire comes from the likes of Billie Holiday, Duke Ellington, Louis Armstrong, Dicky Wells, Benny Carter, and Count Basie, including well-known favorites and more obscure treasures.  Founding members Joe Braun (saxophone), John Rodli (acoustic guitar) and Robert Snow (acoustic bass) first met in 1995 when they were part of the vibrant street music scene in Jackson Square.</p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Jazz+Vipers", 
-        "text": "Jazz Vipers"
-      }
-    ], 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/455340.jpg", 
-      "href": "http://www.last.fm/music/Jazz+Vipers"
-    }, 
-    "address": "623 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Spotted Cat", 
-    "eventName": "Jazz Vipers", 
-    "location": {
-      "lat": 29.9641005, 
-      "lon": -90.0577182
-    }, 
-    "time": 1358049600, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Apple Barrel", 
-    "eventName": "Mike Sklar and the Hip Shakers", 
-    "phone": "5049499399", 
-    "location": {
-      "lat": 29.9639416, 
-      "lon": -90.057763
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
-      }
-    ], 
-    "image": null, 
-    "address": "532 Frenchmen Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Blue Nile", 
-    "eventName": "the Queens Balls feat. Johnny Sketch and the Dirty Notes", 
-    "phone": "5049482583", 
-    "location": {
-      "lat": 29.9632291, 
-      "lon": -90.0577415
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "address": "300 Bourbon Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Irvin Mayfield's Jazz Playhouse", 
-    "eventName": "D", 
-    "phone": "5045532270", 
-    "location": {
-      "lat": 29.955649, 
-      "lon": -90.067995
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://www.myspace.com/mimisinthemarigny", 
-        "text": "Mimi's on MySpace"
-      }
-    ], 
-    "image": null, 
-    "address": "2601 Royal Street<br>\nNew Orleans, LA 70117", 
-    "venue": "Mimi's in the Marigny", 
-    "eventName": "DJ Soul Sister", 
-    "phone": "5048729868", 
-    "location": {
-      "lat": 29.9648837, 
-      "lon": -90.0513558
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
-      }
-    ], 
-    "image": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
-    "eventName": "Fuego Fuego Latin Party", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Eric Lindell is an American singer-songwriter, born in San Mateo, California in 1969. He is best-known for his 2008 album Low on Cash, Rich In Love and the single from it, &quot;Lay Back Down.&quot; He has performed with New Orleans drummer Johnny Vidacovich and War's Harold Brown, who have also contributed to his albums.  A self-described skate punk, Lindell grew up in the San Francisco Bay Area. He began playing in bands at the age of 15. Among his early musical influences were Fishbone and Black Flag.  </p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Eric+Lindell", 
-        "text": "Eric Lindell"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
-      }
-    ], 
-    "tags": "blues,blues rock,rock,guitar,classic rock", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/388275.jpg", 
-      "href": "http://www.last.fm/music/Eric+Lindell"
-    }, 
-    "address": "618 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "d.b.a.", 
-    "eventName": "Eric Lindell", 
-    "phone": "5049423731", 
-    "location": {
-      "lat": 29.9640087, 
-      "lon": -90.0578054
-    }, 
-    "time": 1358053200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
     "price": null, 
     "address": "300 Bourbon Street<br>\nNew Orleans, LA 70130", 
     "venue": "Irvin Mayfield's Jazz Playhouse", 
@@ -1213,7 +12,7 @@
       "lat": 29.955649, 
       "lon": -90.067995
     }, 
-    "time": 1358056800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6038/6238157408_70738d83bd_s.jpg", 
       "href": "http://www.flickr.com/photos/15673884@N00/6238157408"
@@ -1237,7 +36,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358056800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/82702531.jpg", 
       "href": "http://www.last.fm/music/Young+Fellaz+Brass+Band"
@@ -1262,7 +61,7 @@
       "lat": 29.9556943, 
       "lon": -90.0682875
     }, 
-    "time": 1358092800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3613/3440101467_b8009bf934_s.jpg", 
       "href": "http://www.flickr.com/photos/28365056@N04/3440101467"
@@ -1292,7 +91,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358092800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1314,7 +113,7 @@
       "lat": 29.9654232, 
       "lon": -90.0626099
     }, 
-    "time": 1358096400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/8367569.jpg", 
       "href": "http://www.last.fm/music/Some+Like+It+Hot"
@@ -1328,15 +127,26 @@
         "type": "artist", 
         "link": "http://www.last.fm/music/Some+Like+It+Hot", 
         "text": "Some Like It Hot"
+      }, 
+      {
+        "type": "venue", 
+        "link": "Buffa's Bar and Resteraunt", 
+        "text": "http://www.buffasbar.com"
       }
     ], 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/8367569.jpg", 
       "href": "http://www.last.fm/music/Some+Like+It+Hot"
     }, 
+    "address": "1001 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Buffa's Lounge", 
     "eventName": "Some Like It Hot!", 
-    "time": 1358096400, 
+    "phone": "5049490038", 
+    "location": {
+      "lat": 29.9654232, 
+      "lon": -90.0626099
+    }, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1364,7 +174,7 @@
       "lat": 29.927379, 
       "lon": -90.096146
     }, 
-    "time": 1358096400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1379,37 +189,7 @@
       "lat": 30.048482, 
       "lon": -89.9855365
     }, 
-    "time": 1358096400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": "<p>Official site: <a href=\"http://www.strdigital.com/mcDermott.htm\" rel=\"nofollow\">http://www.strdigital.com/mcDermott.htm</a></p>", 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Tom+McDermott", 
-        "text": "Tom McDermott"
-      }, 
-      {
-        "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
-      }
-    ], 
-    "tags": "piano,jazz,new orleans,instrumental,jazz piano", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/3309237.jpg", 
-      "href": "http://www.last.fm/music/Tom+McDermott"
-    }, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
-    "eventName": "Kevin Clark and Tom McDermott", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358096400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1423,8 +203,34 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
+      }
+    ], 
+    "image": null, 
+    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
+    "venue": "Mojitos", 
+    "eventName": "Kevin Clark and Tom McDermott", 
+    "location": {
+      "lat": 29.9618425, 
+      "lon": -90.0576285
+    }, 
+    "time": "Fri January 16, 11 AM", 
+    "price": null
+  }, 
+  {
+    "ranking": 0, 
+    "description": null, 
+    "links": [
+      {
+        "type": "artist", 
+        "link": "http://www.last.fm/music/Kevin+Clark+&+Tom+McDermott", 
+        "text": "Kevin Clark & Tom McDermott"
+      }, 
+      {
+        "type": "venue", 
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -1435,7 +241,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358096400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1449,8 +255,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.ralphsonthepark.com/", 
-        "text": "home page"
+        "link": "home page", 
+        "text": "http://www.ralphsonthepark.com/"
       }
     ], 
     "price": null, 
@@ -1461,7 +267,7 @@
       "lat": 29.983483, 
       "lon": -90.09817
     }, 
-    "time": 1358096400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1471,7 +277,7 @@
     "price": null, 
     "venue": "Special Venue", 
     "eventName": "Lady Jetsetters Parade", 
-    "time": 1358100000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3103/3190218102_59b85be967_s.jpg", 
       "href": "http://www.flickr.com/photos/84949728@N00/3190218102"
@@ -1480,11 +286,23 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "", 
+        "text": "http://www.yelp.com/biz/ritas-tequila-house-new-orleans"
+      }
+    ], 
     "image": null, 
+    "address": "419 Bourbon St<br>\nNew Orleans, LA 70112", 
     "venue": "Rita&#8217;s Tequila House", 
     "eventName": "Aaron Lopez-Barrantes", 
-    "time": 1358103600, 
+    "phone": "5042988227", 
+    "location": {
+      "lat": 29.956763, 
+      "lon": -90.067645
+    }, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1493,8 +311,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
+        "link": "Tipitina's website", 
+        "text": "http://www.tipitinas.com"
       }
     ], 
     "price": null, 
@@ -1506,7 +324,7 @@
       "lat": 29.9174145, 
       "lon": -90.1008856
     }, 
-    "time": 1358103600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1514,14 +332,9 @@
     "description": null, 
     "links": [
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Wendell+Brunious", 
-        "text": "Wendell Brunious"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
+        "link": "Tipitina's website", 
+        "text": "http://www.tipitinas.com"
       }
     ], 
     "image": null, 
@@ -1533,7 +346,7 @@
       "lat": 29.9174145, 
       "lon": -90.1008856
     }, 
-    "time": 1358103600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1555,7 +368,7 @@
       "lat": 29.9591267, 
       "lon": -90.0653068
     }, 
-    "time": 1358103600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5047/5313427141_341768bb25_s.jpg", 
       "href": "http://www.flickr.com/photos/29957220@N02/5313427141"
@@ -1572,8 +385,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "tags": "gothic rock,post-punk,under 2000 listeners,goth,mumbles", 
@@ -1586,7 +399,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/38538895.jpg", 
       "href": "http://www.last.fm/music/The+Mumbles"
@@ -1603,8 +416,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.banksstreetbar.com/", 
-        "text": "Banks Street Bar website"
+        "link": "Banks Street Bar website", 
+        "text": "http://www.banksstreetbar.com/"
       }
     ], 
     "tags": "country,new orleans,sugarland,blake mogabgab,bradley bourgeois", 
@@ -1617,7 +430,7 @@
       "lat": 29.9744629, 
       "lon": -90.1065036
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/66108076.jpg", 
       "href": "http://www.last.fm/music/Nola+County"
@@ -1642,7 +455,7 @@
       "lat": 29.9599009, 
       "lon": -90.0598873
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1656,8 +469,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "image": null, 
@@ -1668,7 +481,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1682,8 +495,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -1694,7 +507,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1709,7 +522,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358110800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3622/3463268850_1220052799_s.jpg", 
       "href": "http://www.flickr.com/photos/76491999@N00/3463268850"
@@ -1717,9 +530,24 @@
   }, 
   {
     "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
+    "description": "<p>Andrew Duhon began his writing in highschool as a result of his fascination with the works of Emerson and Thoreau as well as poets Walt Whitman and Robert Frost.  During the summer of '02 Andrew worked and lived at an old retreat house on the outskirts of the French Quarter.  It was then that he fell in love with the character of New Orleans.  A year later hurricane Katrina left the city and his former French Quarter home crippled.</p>", 
+    "links": [
+      {
+        "type": "artist", 
+        "link": "http://www.last.fm/music/Andrew+Duhon", 
+        "text": "Andrew Duhon"
+      }, 
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
+    "tags": "folk,singer-songwriter", 
+    "image": {
+      "src": "http://userserve-ak.last.fm/serve/126/32206345.jpg", 
+      "href": "http://www.last.fm/music/Andrew+Duhon"
+    }, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
     "eventName": "Andrew", 
@@ -1728,7 +556,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358114400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1755,7 +583,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358114400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1764,8 +592,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.rockandbowl.com", 
-        "text": "Mid-City Lanes Rock 'n' Bowl website"
+        "link": "Mid-City Lanes Rock 'n' Bowl website", 
+        "text": "http://www.rockandbowl.com"
       }
     ], 
     "image": null, 
@@ -1777,7 +605,7 @@
       "lat": 29.960865, 
       "lon": -90.115774
     }, 
-    "time": 1358114400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1804,7 +632,7 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1817,14 +645,9 @@
         "text": "Cristina Perez"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Dave+Easley", 
-        "text": "Dave Easley"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://508maisonmusique.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://508maisonmusique.com/"
       }
     ], 
     "image": {
@@ -1838,7 +661,7 @@
       "lat": 29.9627822, 
       "lon": -90.0577002
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1853,7 +676,7 @@
       "lat": 29.9632712, 
       "lon": -90.0577468
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7078/7285519898_3af28423a1_s.jpg", 
       "href": "http://www.flickr.com/photos/78820617@N08/7285519898"
@@ -1865,8 +688,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
+        "link": "Tipitina's website", 
+        "text": "http://www.tipitinas.com"
       }
     ], 
     "price": null, 
@@ -1878,7 +701,7 @@
       "lat": 29.9174145, 
       "lon": -90.1008856
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1886,21 +709,12 @@
     "description": null, 
     "links": [
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Sunpie", 
-        "text": "Sunpie"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
+        "link": "Tipitina's website", 
+        "text": "http://www.tipitinas.com"
       }
     ], 
-    "tags": "n,e,w, ,o,r,l,e,a,n,s, ,j,a,z,z, ,f,e,s,t", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/37173359.jpg", 
-      "href": "http://www.last.fm/music/Sunpie"
-    }, 
+    "image": null, 
     "address": "501 Napoleon Avenue<br>\nNew Orleans, LA 70115", 
     "venue": "Tipitina's Uptown", 
     "eventName": "Cajun Fais Do Do feat. Bruce Daigrepont and Sunpie Barnes", 
@@ -1909,7 +723,7 @@
       "lat": 29.9174145, 
       "lon": -90.1008856
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1931,7 +745,7 @@
       "lat": 29.9315132, 
       "lon": -90.0783156
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -1946,7 +760,7 @@
       "lat": 29.958062, 
       "lon": -90.066116
     }, 
-    "time": 1358118000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3254/2722387472_a33e60021b_s.jpg", 
       "href": "http://www.flickr.com/photos/27330325@N08/2722387472"
@@ -1955,7 +769,13 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "image": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -1965,7 +785,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -1974,8 +794,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "price": null, 
@@ -1987,7 +807,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2008,7 +828,7 @@
       "lat": 29.950012, 
       "lon": -90.0677496
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2030,7 +850,7 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2052,7 +872,7 @@
       "lat": 29.955824, 
       "lon": -90.06407
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2074,13 +894,19 @@
       "lat": 29.9365895, 
       "lon": -90.0775998
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "artist", 
+        "link": "http://www.last.fm/music/Kermit+Ruffins+&+the+BBQ+Swingers", 
+        "text": "Kermit Ruffins & the BBQ Swingers"
+      }
+    ], 
     "image": null, 
     "address": "1535 Basin St<br>\nNew Orleans, LA", 
     "venue": "Kermit&#8217;s Treme Speakeasy Restaurant", 
@@ -2089,7 +915,7 @@
       "lat": 29.9637235, 
       "lon": -90.0720072
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2111,7 +937,7 @@
       "lat": 29.9599009, 
       "lon": -90.0598873
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2127,7 +953,7 @@
       "lat": 29.9806333, 
       "lon": -90.084822
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2142,20 +968,29 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": null, 
+    "description": "<p>The Palmetto Bug Stompers are some of New Orleans finest purveyors of traditional and New Orleans Jazz.  Band members include Washboard Chaz on washboard and vocals, Will Smith on trumpet, Paul Roberson on trombone, Seva Venet on guitar, Robert Snow on acoustic bass, Bruce Brachman on clarinet and John Rodli on guitar and vocals.</p>", 
     "links": [
       {
+        "type": "artist", 
+        "link": "http://www.last.fm/music/The+Palmetto+Bug+Stompers", 
+        "text": "The Palmetto Bug Stompers"
+      }, 
+      {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
-    "image": null, 
+    "tags": "jazz,jazzy,new orleans,trad jazz", 
+    "image": {
+      "src": "http://userserve-ak.last.fm/serve/126/65293018.jpg", 
+      "href": "http://www.last.fm/music/The+Palmetto+Bug+Stompers"
+    }, 
     "address": "618 Frenchman Street<br>\nNew Orleans, LA 70116", 
     "venue": "d.b.a.", 
     "eventName": "Palmetto Bugs Stompers", 
@@ -2164,7 +999,7 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358121600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2186,7 +1021,7 @@
       "lat": 29.956794, 
       "lon": -90.068589
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2197,6 +1032,11 @@
         "type": "artist", 
         "link": "http://www.last.fm/music/John+Lisi+&+Delta+Funk", 
         "text": "John Lisi & Delta Funk"
+      }, 
+      {
+        "type": "venue", 
+        "link": "Cafe Negril (Yelp)", 
+        "text": "http://www.yelp.com/biz/cafe-negril-new-orleans-2"
       }
     ], 
     "price": null, 
@@ -2208,7 +1048,7 @@
       "lat": 29.9637003, 
       "lon": -90.0577806
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2223,7 +1063,7 @@
       "lat": 29.9758474, 
       "lon": -90.0760593
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2232,8 +1072,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "image": null, 
@@ -2244,7 +1084,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2266,7 +1106,7 @@
       "lat": 29.9443473, 
       "lon": -90.0646889
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2288,7 +1128,7 @@
       "lat": 29.9299856, 
       "lon": -90.1099823
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2310,7 +1150,7 @@
       "lat": 29.955501, 
       "lon": -90.050453
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm3.staticflickr.com/2505/4109473011_f1206365b0_s.jpg", 
       "href": "http://www.flickr.com/photos/44139103@N03/4109473011"
@@ -2327,8 +1167,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.palmcourtjazz.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://www.palmcourtjazz.com/"
       }
     ], 
     "price": null, 
@@ -2339,11 +1179,8 @@
       "lat": 29.9607933, 
       "lon": -90.0590994
     }, 
-    "time": 1358125200, 
-    "image": {
-      "src": "http://farm3.staticflickr.com/2117/5792540151_69992a12d2_s.jpg", 
-      "href": "http://www.flickr.com/photos/52996072@N04/5792540151"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -2357,7 +1194,7 @@
       "lat": 29.989205, 
       "lon": -90.0715623
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2372,13 +1209,19 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358125200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "price": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -2388,7 +1231,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6006/5972879176_da4e775946_s.jpg", 
       "href": "http://www.flickr.com/photos/64597899@N07/5972879176"
@@ -2400,8 +1243,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
+        "link": "The Blue Nile website", 
+        "text": "http://www.bluenilelive.com"
       }
     ], 
     "price": null, 
@@ -2413,7 +1256,7 @@
       "lat": 29.9632291, 
       "lon": -90.0577415
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8288/7722716766_eda179d037_s.jpg", 
       "href": "http://www.flickr.com/photos/31081764@N06/7722716766"
@@ -2422,7 +1265,13 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "Checkpoint Charlie (Yelp)", 
+        "text": "http://www.yelp.com/biz/igors-checkpoint-charlie-new-orleans"
+      }
+    ], 
     "price": null, 
     "address": "501 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Checkpoint Charlie", 
@@ -2432,7 +1281,7 @@
       "lat": 29.9622459, 
       "lon": -90.0579716
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2448,7 +1297,7 @@
       "lat": 29.9592829, 
       "lon": -90.0651456
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6150/6197342108_b940351de2_s.jpg", 
       "href": "http://www.flickr.com/photos/26376681@N00/6197342108"
@@ -2478,7 +1327,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2500,7 +1349,7 @@
       "lat": 29.953874, 
       "lon": -90.0655288
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2516,7 +1365,7 @@
       "lat": 29.955649, 
       "lon": -90.067995
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2525,8 +1374,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "image": null, 
@@ -2537,7 +1386,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2546,8 +1395,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -2558,7 +1407,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2577,7 +1426,7 @@
       "lat": 29.9584974, 
       "lon": -90.0658243
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2591,14 +1440,11 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.palmcourtjazz.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://www.palmcourtjazz.com/"
       }
     ], 
-    "image": {
-      "src": "http://farm3.staticflickr.com/2117/5792540151_69992a12d2_s.jpg", 
-      "href": "http://www.flickr.com/photos/52996072@N04/5792540151"
-    }, 
+    "image": null, 
     "address": "1204 Decatur<br>\nNew Orleans, LA", 
     "venue": "Palm Court Jazz Cafe", 
     "eventName": "Lucien Barbarin and Sunday Night Swingsters", 
@@ -2606,7 +1452,7 @@
       "lat": 29.9607933, 
       "lon": -90.0590994
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -2628,7 +1474,7 @@
       "lat": 29.9583033, 
       "lon": -90.0652395
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2650,7 +1496,7 @@
       "lat": 29.9641609, 
       "lon": -90.0578676
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2672,7 +1518,7 @@
       "lat": 29.9632712, 
       "lon": -90.0577468
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/12074085.jpg", 
       "href": "http://www.last.fm/music/Debbie+Davis"
@@ -2689,8 +1535,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
     "tags": "jazz,jazzy,new orleans,trad jazz", 
@@ -2703,7 +1549,7 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358128800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/65293018.jpg", 
       "href": "http://www.last.fm/music/The+Palmetto+Bug+Stompers"
@@ -2720,8 +1566,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "tags": "blues,rock", 
@@ -2734,7 +1580,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/301838.gif", 
       "href": "http://www.last.fm/music/Andy+J.+Forest"
@@ -2746,8 +1592,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.banksstreetbar.com/", 
-        "text": "Banks Street Bar website"
+        "link": "Banks Street Bar website", 
+        "text": "http://www.banksstreetbar.com/"
       }
     ], 
     "price": null, 
@@ -2759,7 +1605,7 @@
       "lat": 29.9744629, 
       "lon": -90.1065036
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2787,7 +1633,7 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -2796,8 +1642,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.rockandbowl.com", 
-        "text": "Mid-City Lanes Rock 'n' Bowl website"
+        "link": "Mid-City Lanes Rock 'n' Bowl website", 
+        "text": "http://www.rockandbowl.com"
       }
     ], 
     "price": null, 
@@ -2809,12 +1655,12 @@
       "lat": 29.960865, 
       "lon": -90.115774
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>1) Los Otros are an Early Music crossover ensemble from Germany. The group is comprised of:    Lee Santana (cister mejicana, xaranas, chitarrone) \n   Hille Perl (viola da gamba, treble viol, xaranas) \n   Steve Player (dance percussion, xaranas, Baroque guitar) \n   Pedro Estevan (percussion)    2) Los Otros are an alternative rock band from Medell\u00edn/Colombia. their first album is called &quot;un karioka en la ciudad&quot;</p>", 
+    "description": null, 
     "links": [
       {
         "type": "artist", 
@@ -2823,8 +1669,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/mimisinthemarigny", 
-        "text": "Mimi's on MySpace"
+        "link": "Mimi's on MySpace", 
+        "text": "http://www.myspace.com/mimisinthemarigny"
       }
     ], 
     "tags": "baroque,early music,period instruments,guitar,gamba", 
@@ -2837,7 +1683,7 @@
       "lat": 29.9648837, 
       "lon": -90.0513558
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/33509599.jpg", 
       "href": "http://www.last.fm/music/Los+Otros"
@@ -2862,7 +1708,7 @@
       "lat": 29.9688884, 
       "lon": -90.0559478
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/74081798.jpg", 
       "href": "http://www.last.fm/music/Bipolaroid"
@@ -2880,7 +1726,7 @@
       "lat": 29.958062, 
       "lon": -90.066116
     }, 
-    "time": 1358132400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5155/7404898444_73bae24dfa_s.jpg", 
       "href": "http://www.flickr.com/photos/26984546@N07/7404898444"
@@ -2889,7 +1735,13 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "price": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -2899,12 +1751,12 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>There are at least three bands called Mainline:  1) One of the greatest post-hardcore metal band from Italy; from 1999 the 5 guys of turin hit all europe clubs sharing stage with all the best hardcore bands such as Alexis on fire, Soil, Caliban, Evergreen Terrace; in 2012 Mainline produced the masterpiece of their career: &quot;Azalea&quot;.\n Check the band here:\n <a href=\"http://www.facebook.com/MAINLINEOFFICIAL\" rel=\"nofollow\">http://www.facebook.com/MAINLINEOFFICIAL</a>\n <a href=\"http://www.myspace.com/mainlinemusic\" rel=\"nofollow\">http://www.myspace.com/mainlinemusic</a>  \n </p>", 
+    "description": null, 
     "links": [
       {
         "type": "artist", 
@@ -2913,8 +1765,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
+        "link": "The Blue Nile website", 
+        "text": "http://www.bluenilelive.com"
       }
     ], 
     "tags": "metalcore,progressive metalcore,hardcore,melodic hardcore,post-hardcore", 
@@ -2927,7 +1779,7 @@
       "lat": 29.9632291, 
       "lon": -90.0577415
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/61120075.jpg", 
       "href": "http://www.last.fm/music/Mainline"
@@ -2935,20 +1787,14 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>There are currently 4 artists/bands called Castle:  1. Castle is an American <a href=\"http://www.last.fm/tag/doom%20metal\" class=\"bbcode_tag\" rel=\"tag\">doom metal</a> band from San Francisco, CA with a <a href=\"http://www.last.fm/tag/female%20vocalist\" class=\"bbcode_tag\" rel=\"tag\">female vocalist</a>. They released their debut album <a title=\"Castle - In Witch Order\" href=\"http://www.last.fm/music/Castle/In+Witch+Order\" class=\"bbcode_album\">In Witch Order</a> in 2011.  The follow-up album <a title=\"Castle - Blacklands\" href=\"http://www.last.fm/music/Castle/Blacklands\" class=\"bbcode_album\">Blacklands</a> was released June 15th 2012 on <a href=\"http://www.last.fm/label/V%C3%A1n\" class=\"bbcode_label\">V&aacute;n</a> Records.  Current line-up consists of:  Al McCartney - Drums\n Mat Davis - Guitars\n Elizabeth Blackwell - Vocals, Bass  2. Castle is another American <a href=\"http://www.last.fm/tag/doom\" class=\"bbcode_tag\" rel=\"tag\">doom</a>/<a href=\"http://www.last.fm/tag/stoner%20rock\" class=\"bbcode_tag\" rel=\"tag\">stoner rock</a> band from Minneapolis, MN. Their first line-up included Tim Jewell, a former member of <a href=\"http://www.last.fm/music/SAQQARA\" class=\"bbcode_artist\">SAQQARA</a> &amp; <a href=\"http://www.last.fm/music/The+Spirit+of+Versailles\" class=\"bbcode_artist\">The Spirit of Versailles</a>.</p>", 
+    "description": null, 
     "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Castle", 
-        "text": "Castle"
-      }, 
       {
         "type": "venue", 
         "link": "http://www.myspace.com/thecirclebar", 
         "text": "http://www.myspace.com/thecirclebar"
       }
     ], 
-    "tags": "doom metal,death doom metal,death metal,traditional doom metal,death/doom metal", 
     "price": null, 
     "address": "1032 Saint Charles Avenue<br>\nNew Orleans, LA 70130", 
     "venue": "Circle Bar", 
@@ -2958,10 +1804,10 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/60486873.jpg", 
-      "href": "http://www.last.fm/music/Castle"
+      "src": "http://farm5.staticflickr.com/4080/4788903197_bff96f731a_s.jpg", 
+      "href": "http://www.flickr.com/photos/35019912@N08/4788903197"
     }
   }, 
   {
@@ -2970,8 +1816,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/dragonsdennola", 
-        "text": "Dragon's Den on MySpace"
+        "link": "Dragon's Den on MySpace", 
+        "text": "http://www.myspace.com/dragonsdennola"
       }
     ], 
     "image": {
@@ -2986,11 +1832,11 @@
       "lat": 29.962371, 
       "lon": -90.057442
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p>The Hot 8 Brass Band is a New Orleans based brass band that blends hip-hop, jazz and funk styles with a traditional New Orleans brass sounds. It was formed in 1995 by tubist Bennie &quot;Big Peter&quot; Pete, merging two earlier bands, the Looney Tunes Brass Band and the High Steppers Brass Band.  In the wake of Hurricane Katrina, the Hot 8 Brass Band was propelled to wider prominence by an appearance in Spike Lee's 2006 documentary When the Levees Broke: A Requiem in Four Acts.</p>", 
     "links": [
       {
@@ -3000,8 +1846,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://thehowlinwolf.com", 
-        "text": "Howlin' Wolf website"
+        "link": "Howlin' Wolf website", 
+        "text": "http://thehowlinwolf.com"
       }
     ], 
     "tags": "jazz,brass,funk,brass band,hip-hop", 
@@ -3014,7 +1860,7 @@
       "lat": 29.9428785, 
       "lon": -90.0660439
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/15570933.jpg", 
       "href": "http://www.last.fm/music/Hot+8+Brass+Band"
@@ -3044,7 +1890,7 @@
       "lat": 29.9205149, 
       "lon": -90.1062738
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3057,27 +1903,11 @@
         "text": "Joe Krown Trio"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Walter+%E2%80%9CWolfman%E2%80%9D+Washington", 
-        "text": "Walter \u201cWolfman\u201d Washington"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Russell+Batiste", 
-        "text": "Russell Batiste"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Joe+Krown", 
-        "text": "Joe Krown"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.myspace.com/themapleleafbar", 
-        "text": "The Maple Leaf Bar on MySpace"
+        "link": "The Maple Leaf Bar on MySpace", 
+        "text": "http://www.myspace.com/themapleleafbar"
       }
     ], 
-    "tags": "new orleans,jazz,blues,piano,piano blues", 
     "price": null, 
     "address": "8316 Oak Street<br>\nNew Orleans, LA 70118", 
     "venue": "Maple Leaf", 
@@ -3087,7 +1917,7 @@
       "lat": 29.948762, 
       "lon": -90.132072
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/48332701.jpg", 
       "href": "http://www.last.fm/music/Joe+Krown+Trio"
@@ -3115,7 +1945,7 @@
       "lat": 29.9688884, 
       "lon": -90.0559478
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3137,7 +1967,7 @@
       "lat": 29.9641609, 
       "lon": -90.0578676
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3152,7 +1982,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5018/5442944869_66180dc372_s.jpg", 
       "href": "http://www.flickr.com/photos/31221600@N02/5442944869"
@@ -3176,7 +2006,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3185,8 +2015,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
     "price": null, 
@@ -3198,13 +2028,19 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358136000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "image": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -3214,7 +2050,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358139600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3242,7 +2078,7 @@
       "lat": 29.927379, 
       "lon": -90.096146
     }, 
-    "time": 1358139600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3251,8 +2087,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "image": null, 
@@ -3263,7 +2099,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358139600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3278,7 +2114,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358146800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3300,7 +2136,7 @@
       "lat": 29.9556943, 
       "lon": -90.0682875
     }, 
-    "time": 1358179200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3613/3440101467_b8009bf934_s.jpg", 
       "href": "http://www.flickr.com/photos/28365056@N04/3440101467"
@@ -3325,7 +2161,7 @@
       "lat": 29.9578319, 
       "lon": -90.0663256
     }, 
-    "time": 1358190000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8013/7698703532_e2bc2ce251_s.jpg", 
       "href": "http://www.flickr.com/photos/79647444@N07/7698703532"
@@ -3350,13 +2186,19 @@
       "lat": 29.9599009, 
       "lon": -90.0598873
     }, 
-    "time": 1358197200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "price": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -3366,7 +2208,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358200800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7272/7476018240_29ecebefe6_s.jpg", 
       "href": "http://www.flickr.com/photos/35935647@N06/7476018240"
@@ -3390,7 +2232,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358200800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3417,7 +2259,7 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358204400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3431,8 +2273,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://508maisonmusique.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://508maisonmusique.com/"
       }
     ], 
     "image": null, 
@@ -3443,7 +2285,7 @@
       "lat": 29.9627822, 
       "lon": -90.0577002
     }, 
-    "time": 1358204400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3465,7 +2307,7 @@
       "lat": 29.9578319, 
       "lon": -90.0663256
     }, 
-    "time": 1358204400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7018/6451138639_43d7dd2f75_s.jpg", 
       "href": "http://www.flickr.com/photos/33069289@N06/6451138639"
@@ -3477,8 +2319,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "price": null, 
@@ -3490,7 +2332,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5012/5575244070_5be25b8d44_s.jpg", 
       "href": "http://www.flickr.com/photos/31081764@N06/5575244070"
@@ -3520,7 +2362,7 @@
       "lat": 29.956794, 
       "lon": -90.068589
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3542,7 +2384,7 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm5.staticflickr.com/4025/4636118320_6ac932bf8c_s.jpg", 
       "href": "http://www.flickr.com/photos/33236326@N08/4636118320"
@@ -3567,7 +2409,7 @@
       "lat": 29.955824, 
       "lon": -90.06407
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3589,13 +2431,19 @@
       "lat": 29.9365895, 
       "lon": -90.0775998
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "artist", 
+        "link": "http://www.last.fm/music/Kermit+Ruffins+&+the+BBQ+Swingers", 
+        "text": "Kermit Ruffins & the BBQ Swingers"
+      }
+    ], 
     "image": null, 
     "address": "1535 Basin St<br>\nNew Orleans, LA", 
     "venue": "Kermit&#8217;s Treme Speakeasy Restaurant", 
@@ -3604,7 +2452,7 @@
       "lat": 29.9637235, 
       "lon": -90.0720072
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3626,7 +2474,7 @@
       "lat": 29.9599009, 
       "lon": -90.0598873
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3635,8 +2483,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "image": null, 
@@ -3647,7 +2495,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3656,8 +2504,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -3668,7 +2516,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3683,7 +2531,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3698,12 +2546,12 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358208000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>This is an incorrect name for a soundtrack by composer <a href=\"http://www.last.fm/music/Stephen+Trask\" class=\"bbcode_artist\">Stephen Trask</a>.  If this non-artist appears in your charts, please <a href=\"http://www.musicbrainz.org\" rel=\"nofollow\">fix your tags</a>.</p><p>Three piece out of New Orleans, Louisiana playing great music (post-punk / electronic / experimental influences among others).  Bradley Black- Vocals, Guitar, Electronics\n Isidro Robinson- Vocals, Guitar, MPC, Pedals\n Jonathan Hight- Drums, Sampler, Synth   website: <a href=\"http://whomdoyouworkfor.com/\" rel=\"nofollow\">http://whomdoyouworkfor.com/</a></p>", 
+    "description": "<p>This is an incorrect name for a soundtrack by composer <a href=\"http://www.last.fm/music/Stephen+Trask\" class=\"bbcode_artist\">Stephen Trask</a>.  If this non-artist appears in your charts, please <a href=\"http://www.musicbrainz.org\" rel=\"nofollow\">fix your tags</a>.</p>", 
     "links": [
       {
         "type": "artist", 
@@ -3711,14 +2559,9 @@
         "text": "Hedwig & the Angry Inch"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/whom+do+you+work+for%3F", 
-        "text": "whom do you work for?"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.marignytheatre.org", 
-        "text": "Marigny Theatre & AllWays Lounge website"
+        "link": "Marigny Theatre & AllWays Lounge website", 
+        "text": "http://www.marignytheatre.org"
       }
     ], 
     "tags": "soundtrack,glam rock,rock,musicals,glam", 
@@ -3730,7 +2573,7 @@
       "lat": 29.9685463, 
       "lon": -90.0556742
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/93732.jpg", 
       "href": "http://www.last.fm/music/+noredirect/Hedwig+&+the+Angry+Inch"
@@ -3738,7 +2581,7 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Three young possums were squirted out of mother music possum in the early\n 90's. These possums soon became bored as they had the luck to be squirted\n out in a town called Knoxville. If there were no beer or movies or\n football here, most people would just sleep all day. Perhaps they do\n anyway. So these possums took up instruments and verily unto thee, they\n created rock music. And it was good. Or at least the possums thought,\n anyway.  </p><p>There are at least three artists using the name Bellows:  1. Bellows is the duo of experimental musicians <a href=\"http://www.last.fm/music/Giuseppe+Ielasi\" class=\"bbcode_artist\">Giuseppe Ielasi</a> and <a href=\"http://www.last.fm/music/Nicola+Ratti\" class=\"bbcode_artist\">Nicola Ratti</a>.  <a href=\"http://www.entracte.co.uk/project/bellows-e128/\" rel=\"nofollow\">http://www.entracte.co.uk/project/bellows-e128/</a>  2. Bellows is the project of Oliver Kalb, based around New York State. It is a maximalist lo-fi pop band with a light touch. Bellows' first album &quot;As If To Say I Hate Daylight&quot; was released in August 2011.    <a href=\"http://bellows.bandcamp.com\" rel=\"nofollow\">http://bellows.bandcamp.com</a>  </p>", 
+    "description": "<p>Three young possums were squirted out of mother music possum in the early\n 90's. These possums soon became bored as they had the luck to be squirted\n out in a town called Knoxville. If there were no beer or movies or\n football here, most people would just sleep all day. Perhaps they do\n anyway. So these possums took up instruments and verily unto thee, they\n created rock music. And it was good. Or at least the possums thought,\n anyway.  </p>", 
     "links": [
       {
         "type": "artist", 
@@ -3746,17 +2589,12 @@
         "text": "Opposable Thumbs"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Bellows", 
-        "text": "Bellows"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.3rcp.com", 
         "text": "http://www.3rcp.com"
       }
     ], 
-    "tags": "rock,indie,power pop,post-punk,tennessee,giuseppe ielasi,experimental,abstract,drone,nicola ratti", 
+    "tags": "rock,indie,power pop,post-punk,tennessee", 
     "price": null, 
     "address": "1638 Clio Street<br>\nNew Orleans, LA 70130", 
     "venue": "Big Top, 3 Ring Circus", 
@@ -3766,11 +2604,8 @@
       "lat": 29.9418185, 
       "lon": -90.0748598
     }, 
-    "time": 1358211600, 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/82008593.jpg", 
-      "href": "http://www.last.fm/music/Bellows"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -3780,6 +2615,11 @@
         "type": "artist", 
         "link": "http://www.last.fm/music/Stephanie+Nilles", 
         "text": "Stephanie Nilles"
+      }, 
+      {
+        "type": "venue", 
+        "link": "Checkpoint Charlie (Yelp)", 
+        "text": "http://www.yelp.com/biz/igors-checkpoint-charlie-new-orleans"
       }
     ], 
     "tags": "female vocalists,singer-songwriter,indie,female jazz vocalists,jazz", 
@@ -3792,7 +2632,7 @@
       "lat": 29.9622459, 
       "lon": -90.0579716
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/39362753.jpg", 
       "href": "http://www.last.fm/music/Stephanie+Nilles"
@@ -3801,11 +2641,23 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "", 
+        "text": "http://www.yelp.com/biz/fat-catz-new-orleans"
+      }
+    ], 
     "image": null, 
+    "address": "440 Bourbon St<br>\nNew Orleans, LA 70130", 
     "venue": "Fat Catz Music Club", 
     "eventName": "Ka-Nection Band", 
-    "time": 1358211600, 
+    "phone": "5045250303", 
+    "location": {
+      "lat": 29.9569158, 
+      "lon": -90.0671548
+    }, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3827,7 +2679,7 @@
       "lat": 29.9443473, 
       "lon": -90.0646889
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3849,7 +2701,7 @@
       "lat": 29.9299856, 
       "lon": -90.1099823
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7182/7003247480_839ede43d9_s.jpg", 
       "href": "http://www.flickr.com/photos/43555660@N00/7003247480"
@@ -3874,7 +2726,7 @@
       "lat": 29.955501, 
       "lon": -90.050453
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -3889,7 +2741,7 @@
       "lat": 29.989205, 
       "lon": -90.0715623
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3903,8 +2755,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.therivershacktavern.com", 
-        "text": "The Rivershack Tavern"
+        "link": "The Rivershack Tavern", 
+        "text": "http://www.therivershacktavern.com"
       }
     ], 
     "tags": "new orleans,jazz,blues,piano,piano blues", 
@@ -3919,7 +2771,7 @@
       "lat": 29.9582935, 
       "lon": -90.1609293
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3928,8 +2780,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.rockandbowl.com", 
-        "text": "Mid-City Lanes Rock 'n' Bowl website"
+        "link": "Mid-City Lanes Rock 'n' Bowl website", 
+        "text": "http://www.rockandbowl.com"
       }
     ], 
     "image": null, 
@@ -3941,7 +2793,7 @@
       "lat": 29.960865, 
       "lon": -90.115774
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -3956,7 +2808,7 @@
       "lat": 29.9391585, 
       "lon": -90.0752232
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6081/6106983635_18e25daf95_s.jpg", 
       "href": "http://www.flickr.com/photos/67096624@N04/6106983635"
@@ -3974,13 +2826,19 @@
       "lat": 29.9632712, 
       "lon": -90.0577468
     }, 
-    "time": 1358211600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "image": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -3990,11 +2848,11 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p>A respected session and sideman, British blues pianist and composer Jon Cleary has worked with <a href=\"http://www.last.fm/tag/rock\" class=\"bbcode_tag\" rel=\"tag\">rock</a>, <a href=\"http://www.last.fm/tag/blues\" class=\"bbcode_tag\" rel=\"tag\">blues</a>, and <a href=\"http://www.last.fm/tag/soul\" class=\"bbcode_tag\" rel=\"tag\">soul</a> artists like <a href=\"http://www.last.fm/music/Bonnie+Raitt\" class=\"bbcode_artist\">Bonnie Raitt</a>, <a href=\"http://www.last.fm/music/D%27Angelo\" class=\"bbcode_artist\">D'Angelo</a>, <a href=\"http://www.last.fm/music/Maria+Muldaur\" class=\"bbcode_artist\">Maria Muldaur</a>, <a href=\"http://www.last.fm/music/Taj+Mahal\" class=\"bbcode_artist\">Taj Mahal</a>, and <a href=\"http://www.last.fm/music/Eric+Clapton\" class=\"bbcode_artist\">Eric Clapton</a>.  Originally a guitarist, Cleary began playing at age five, and started his first band at 15. Raised on <a href=\"http://www.last.fm/tag/blues\" class=\"bbcode_tag\" rel=\"tag\">blues</a>, <a href=\"http://www.last.fm/tag/jazz\" class=\"bbcode_tag\" rel=\"tag\">jazz</a>, and <a href=\"http://www.last.fm/tag/soul\" class=\"bbcode_tag\" rel=\"tag\">soul</a> records, his love of <a href=\"http://www.last.fm/tag/new%20orleans\" class=\"bbcode_tag\" rel=\"tag\">new orleans</a> blues and jazz in particular took him across the ocean after he graduated from art school.  </p>", 
     "links": [
       {
@@ -4004,8 +2862,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.chickiewahwah.com", 
-        "text": "Chickie Wah Wah website"
+        "link": "Chickie Wah Wah website", 
+        "text": "http://www.chickiewahwah.com"
       }
     ], 
     "tags": "blues,funk,jazz,soul,new orleans", 
@@ -4018,7 +2876,7 @@
       "lat": 29.9668143, 
       "lon": -90.0895672
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/440273.jpg", 
       "href": "http://www.last.fm/music/Jon+Cleary"
@@ -4049,7 +2907,7 @@
       "lat": 29.927379, 
       "lon": -90.096146
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/3052642.jpg", 
       "href": "http://www.last.fm/music/David+Doucet"
@@ -4068,7 +2926,7 @@
       "lat": 29.9592829, 
       "lon": -90.0651456
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4095,7 +2953,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4104,8 +2962,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/hiholounge", 
-        "text": "The HiHo Lounge"
+        "link": "The HiHo Lounge", 
+        "text": "http://www.myspace.com/hiholounge"
       }
     ], 
     "image": null, 
@@ -4117,7 +2975,7 @@
       "lat": 29.969026, 
       "lon": -90.055431
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4133,7 +2991,7 @@
       "lat": 29.955649, 
       "lon": -90.067995
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4155,7 +3013,7 @@
       "lat": 29.9583033, 
       "lon": -90.0652395
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4182,7 +3040,7 @@
       "lat": 29.9641609, 
       "lon": -90.0578676
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/197890.jpg", 
       "href": "http://www.last.fm/music/Charmaine+Neville+Band"
@@ -4206,7 +3064,7 @@
       "lat": 29.9658767, 
       "lon": -90.0974114
     }, 
-    "time": 1358215200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4215,8 +3073,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "price": null, 
@@ -4228,7 +3086,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4242,8 +3100,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dosjefescigarbar.com", 
-        "text": "Dos Jefes website"
+        "link": "Dos Jefes website", 
+        "text": "http://www.dosjefescigarbar.com"
       }
     ], 
     "tags": "blues,acoustic blues,dr. john,seen live", 
@@ -4256,7 +3114,7 @@
       "lat": 29.916536, 
       "lon": -90.11806
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/57315563.jpg", 
       "href": "http://www.last.fm/music/John+Fohl"
@@ -4287,7 +3145,7 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4295,17 +3153,15 @@
     "description": null, 
     "links": [
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Blue+Trees", 
-        "text": "Blue Trees"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
-    "image": null, 
+    "image": {
+      "src": "http://farm8.staticflickr.com/7079/7397944422_dd5628ba65_s.jpg", 
+      "href": "http://www.flickr.com/photos/27518735@N00/7397944422"
+    }, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Mojitos", 
     "eventName": "Megan Blue and the Blue Trees", 
@@ -4313,7 +3169,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4322,8 +3178,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -4334,7 +3190,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7079/7397944422_dd5628ba65_s.jpg", 
       "href": "http://www.flickr.com/photos/27518735@N00/7397944422"
@@ -4352,7 +3208,7 @@
       "lat": 29.9688884, 
       "lon": -90.0559478
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4367,7 +3223,7 @@
       "lat": 29.958062, 
       "lon": -90.066116
     }, 
-    "time": 1358218800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8493/8369306110_a703d23df8_s.jpg", 
       "href": "http://www.flickr.com/photos/40954726@N00/8369306110"
@@ -4386,7 +3242,7 @@
       "lat": 29.962812, 
       "lon": -90.0330434
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4395,8 +3251,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.banksstreetbar.com/", 
-        "text": "Banks Street Bar website"
+        "link": "Banks Street Bar website", 
+        "text": "http://www.banksstreetbar.com/"
       }
     ], 
     "price": null, 
@@ -4408,7 +3264,7 @@
       "lat": 29.9744629, 
       "lon": -90.1065036
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm1.staticflickr.com/73/206317993_a368e98999_s.jpg", 
       "href": "http://www.flickr.com/photos/68676478@N00/206317993"
@@ -4433,11 +3289,11 @@
       "lat": 29.9380574, 
       "lon": -90.0765539
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p> Just imagine the chops it takes to be voted the funkiest act in the world's funkiest town. Out of the sweat-drenched, hard-partying, all-night mayhem of New Orleans comes Papa Grows Funk, winners of OffBeat magazine's Funkiest Band award for three years running. All the requisite ingredients for an ear-tickling musical gumbo are here: steaming Hammond, chinky guitar, wailing sax, and, of course, a rhythm section heavy enough to keep you anchored to the dance floor.</p>", 
     "links": [
       {
@@ -4447,8 +3303,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/themapleleafbar", 
-        "text": "The Maple Leaf Bar on MySpace"
+        "link": "The Maple Leaf Bar on MySpace", 
+        "text": "http://www.myspace.com/themapleleafbar"
       }
     ], 
     "tags": "funk,jazz,new orleans,jazz funk,jazz-funk", 
@@ -4461,7 +3317,7 @@
       "lat": 29.948762, 
       "lon": -90.132072
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/311011.jpg", 
       "href": "http://www.last.fm/music/Papa+Grows+Funk"
@@ -4494,7 +3350,7 @@
       "lat": 29.9641609, 
       "lon": -90.0578676
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4515,7 +3371,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/455340.jpg", 
       "href": "http://www.last.fm/music/Jazz+Vipers"
@@ -4539,7 +3395,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/82702531.jpg", 
       "href": "http://www.last.fm/music/Young+Fellaz+Brass+Band"
@@ -4556,8 +3412,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
     "tags": "jazz,gospel,new orleans,treme,under 2000 listeners", 
@@ -4570,7 +3426,7 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358222400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/67403288.jpg", 
       "href": "http://www.last.fm/music/Glen+David+Andrews"
@@ -4579,7 +3435,13 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "image": {
       "src": "http://farm3.staticflickr.com/2438/4016731074_f4f2a9c781_s.jpg", 
       "href": "http://www.flickr.com/photos/40469887@N08/4016731074"
@@ -4592,12 +3454,12 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358226000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Emerging from the rooftops of Chicago in 2007, Netherfriends are that bastard-psych-pop-catchy as hell band that you've been searching for. They signed with indie label Emergency Umbrella in 2009 and released their debut 6 song EP &quot;<a title=\"Netherfriends - Calling You Out\" href=\"http://www.last.fm/music/Netherfriends/Calling+You+Out\" class=\"bbcode_album\">Calling You Out</a>,&quot; fused heavily layered arrangements with group sing-a-longs, spare pianos, synths, glockenspiels and other hard to place, but familiar sounds. The three-piece psychedelic pop band grabbed some early spark and attention from places like Blender and RCRD LBL and have played at both SXSW in Austin and CMJ in New York City. </p>", 
+    "description": null, 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=YjQyMnV1ajZvcmIzN2lzdnEwMGZjOTY5YW8gbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -4609,21 +3471,12 @@
         "text": "Sharks Teeth"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Netherfriends", 
-        "text": "Netherfriends"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.myspace.com/thecirclebar", 
         "text": "http://www.myspace.com/thecirclebar"
       }
     ], 
-    "tags": "lo-fi,indie pop,indie,american,psychedelic", 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/85713661.jpg", 
-      "href": "http://www.last.fm/music/Netherfriends"
-    }, 
+    "image": null, 
     "address": "1032 Saint Charles Avenue<br>\nNew Orleans, LA 70130", 
     "venue": "Circle Bar", 
     "eventName": "Netherfriends + Sharks' Teeth + Arch Animals", 
@@ -4632,7 +3485,7 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358301600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4645,8 +3498,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/hiholounge", 
-        "text": "The HiHo Lounge"
+        "link": "The HiHo Lounge", 
+        "text": "http://www.myspace.com/hiholounge"
       }
     ], 
     "image": null, 
@@ -4658,12 +3511,12 @@
       "lat": 29.969026, 
       "lon": -90.055431
     }, 
-    "time": 1358301600, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Bantam Foxes rises from the ashes of New Orleans bands Smiley with a Knife and Cute Machines. Bantam Foxes is a three-piece pursuit of the elegantly simple - a slap in the face of raw power, melody, and rhythm. Twins Sam and Collin McCabe intertwine vocals over Sam's explosive hybrid of rhythm and lead guitar. This catchy core thrusts into overdrive atop the inseparable efforts of Collin's fuzzed-out bass lines and Jared Marcell's solid backbeats.</p><p>The Whigs' 3rd album, <a title=\"The Whigs - In The Dark\" href=\"http://www.last.fm/music/The+Whigs/In+The+Dark\" class=\"bbcode_album\">In The Dark</a>, was released on March 16th 2010.  The Whigs are a trio based out of Athens, GA. In 2005, The Whigs released the independently recorded <a title=\"The Whigs - Give 'em All a Big Fat Lip\" href=\"http://www.last.fm/music/The+Whigs/Give+%27em+All+a+Big+Fat+Lip\" class=\"bbcode_album\">Give 'em All a Big Fat Lip</a>. The band signed to indie label ATO Records, home to Radiohead, My Morning Jacket and Ben Kweller, in 2006.   The band's second album, <a title=\"The Whigs - Mission Control\" href=\"http://www.last.fm/music/The+Whigs/Mission+Control\" class=\"bbcode_album\">Mission Control</a>, was released on January 22, 2008. It was produced by Rob Schnapf (Beck, Elliott Smith, Guided By Voices) at Sunset Sound and Sound Factory in Los Angeles, CA. </p>", 
+    "description": "<p>Bantam Foxes rises from the ashes of New Orleans bands Smiley with a Knife and Cute Machines. Bantam Foxes is a three-piece pursuit of the elegantly simple - a slap in the face of raw power, melody, and rhythm. Twins Sam and Collin McCabe intertwine vocals over Sam's explosive hybrid of rhythm and lead guitar. This catchy core thrusts into overdrive atop the inseparable efforts of Collin's fuzzed-out bass lines and Jared Marcell's solid backbeats.</p>", 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=MGs3bDU5Z2NpNGFicmZxYTNvY2g2YTdjZmsgbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -4675,17 +3528,12 @@
         "text": "Bantam Foxes"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Whigs", 
-        "text": "The Whigs"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.myspace.com/thecirclebar", 
         "text": "http://www.myspace.com/thecirclebar"
       }
     ], 
-    "tags": "indie rock,garage,new orleans,fuzzy,indie rock,indie,rock,athens,alternative rock", 
+    "tags": "indie rock,garage,new orleans,fuzzy", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/73135392.jpg", 
       "href": "http://www.last.fm/music/Bantam+Foxes"
@@ -4698,12 +3546,12 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358474400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Community Records All Stars</p><p>Native America is the name of more than one artist  1) a bedroom pop project started in New Orleans by <a href=\"http://www.last.fm/music/Ross+Farbe\" class=\"bbcode_artist\">Ross Farbe</a>.\n 2) A hardcore rap group from Millbrae, CA.  <a href=\"http://www.last.fm/music/DJ+ARP\" class=\"bbcode_artist\">DJ ARP</a>, <span title=\"Unknown artist\" class=\"bbcode_unknown\">MC birkle</span>, and <span title=\"Unknown artist\" class=\"bbcode_unknown\">MC Selina</span></p>", 
+    "description": "<p>a bedroom pop project started in New Orleans by <a href=\"http://www.last.fm/music/Ross+Farbe\" class=\"bbcode_artist\">Ross Farbe</a>.\n</p>", 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=czlwcTVuMXVpZGRmcDQzNmlkZmVlbjBpM2MgbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -4711,23 +3559,29 @@
       }, 
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/+noredirect/All+People", 
-        "text": "All People"
-      }, 
-      {
-        "type": "artist", 
         "link": "http://www.last.fm/music/Native+America", 
         "text": "Native America"
+      }, 
+      {
+        "type": "venue", 
+        "link": "http://www.3rcp.com", 
+        "text": "http://www.3rcp.com"
       }
     ], 
-    "tags": "dub,punk,reggae,new orleans,community records,bedroom pop,tropical,indie,chinquapin records", 
+    "tags": "bedroom pop,tropical,indie,chinquapin records", 
     "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/77935754.jpg", 
-      "href": "http://www.last.fm/music/+noredirect/All+People"
+      "src": "http://userserve-ak.last.fm/serve/126/24556521.jpg", 
+      "href": "http://www.last.fm/music/Native+America"
     }, 
+    "address": "1638 Clio Street<br>\nNew Orleans, LA 70130", 
     "venue": "The Big Top", 
     "eventName": "All People + Native America + Stuck Lucky + Astronomical + Ava Luna + The Forthrights + Zorch + Celestial Shore", 
-    "time": 1358560800, 
+    "phone": "5045692700", 
+    "location": {
+      "lat": 29.9418185, 
+      "lon": -90.0748598
+    }, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -4736,8 +3590,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.covingtonfarmersmarket.org", 
-        "text": "Covington Farmer's Market website"
+        "link": "Covington Farmer's Market website", 
+        "text": "http://www.covingtonfarmersmarket.org"
       }
     ], 
     "price": null, 
@@ -4749,7 +3603,7 @@
       "lat": 30.479344, 
       "lon": -90.095542
     }, 
-    "time": 1358607600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4771,7 +3625,7 @@
       "lat": 29.9556943, 
       "lon": -90.0682875
     }, 
-    "time": 1358611200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3613/3440101467_b8009bf934_s.jpg", 
       "href": "http://www.flickr.com/photos/28365056@N04/3440101467"
@@ -4791,7 +3645,7 @@
     "price": null, 
     "venue": "Special Venue", 
     "eventName": "Soul Project", 
-    "time": 1358614800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4818,7 +3672,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358618400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4832,8 +3686,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "tags": "gothic rock,post-punk,under 2000 listeners,goth,mumbles", 
@@ -4845,7 +3699,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358618400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/38538895.jpg", 
       "href": "http://www.last.fm/music/The+Mumbles"
@@ -4863,7 +3717,7 @@
       "lat": 29.958062, 
       "lon": -90.066116
     }, 
-    "time": 1358622000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3254/2722387472_a33e60021b_s.jpg", 
       "href": "http://www.flickr.com/photos/27330325@N08/2722387472"
@@ -4887,13 +3741,19 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358629200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "price": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -4903,7 +3763,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358632800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7272/7476018240_29ecebefe6_s.jpg", 
       "href": "http://www.flickr.com/photos/35935647@N06/7476018240"
@@ -4933,7 +3793,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358632800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4942,8 +3802,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://mojitosnola.com", 
-        "text": "Mojitos website"
+        "link": "Mojitos website", 
+        "text": "http://mojitosnola.com"
       }
     ], 
     "price": null, 
@@ -4954,7 +3814,7 @@
       "lat": 29.9618425, 
       "lon": -90.0576285
     }, 
-    "time": 1358632800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -4963,18 +3823,13 @@
     "links": [
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/Gal+Holiday", 
-        "text": "Gal Holiday"
-      }, 
-      {
-        "type": "artist", 
         "link": "http://www.last.fm/music/+noredirect/Gal+Holiday+&+The+Honky+Tonk+Revue", 
         "text": "Gal Holiday & The Honky Tonk Revue"
       }, 
       {
         "type": "venue", 
-        "link": "http://508maisonmusique.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://508maisonmusique.com/"
       }
     ], 
     "tags": "alt-country,americana,western swing revival,under 2000 listeners", 
@@ -4986,11 +3841,8 @@
       "lat": 29.9627822, 
       "lon": -90.0577002
     }, 
-    "time": 1358632800, 
-    "image": {
-      "src": "http://farm8.staticflickr.com/7181/6974981621_19a0c217e5_s.jpg", 
-      "href": "http://www.flickr.com/photos/31081764@N06/6974981621"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -5011,7 +3863,7 @@
       "lat": 29.9531604, 
       "lon": -90.0661661
     }, 
-    "time": 1358636400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7140/7408892904_ae1792ef32_s.jpg", 
       "href": "http://www.flickr.com/photos/31081764@N06/7408892904"
@@ -5036,7 +3888,7 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358636400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm5.staticflickr.com/4116/4931864169_fa1ce8b011_s.jpg", 
       "href": "http://www.flickr.com/photos/40687512@N06/4931864169"
@@ -5054,7 +3906,7 @@
       "lat": 29.958062, 
       "lon": -90.066116
     }, 
-    "time": 1358636400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5155/7404898444_73bae24dfa_s.jpg", 
       "href": "http://www.flickr.com/photos/26984546@N07/7404898444"
@@ -5084,7 +3936,7 @@
       "lat": 29.956794, 
       "lon": -90.068589
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5099,7 +3951,7 @@
       "lat": 29.9577192, 
       "lon": -90.066517
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5121,7 +3973,7 @@
       "lat": 29.9365895, 
       "lon": -90.0775998
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5143,7 +3995,7 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/3742388.jpg", 
       "href": "http://www.last.fm/music/Panorama+Jazz+Band"
@@ -5167,7 +4019,7 @@
       "lat": 29.9632712, 
       "lon": -90.0577468
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5182,7 +4034,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358640000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8195/8104222965_7be90eaf86_s.jpg", 
       "href": "http://www.flickr.com/photos/58088124@N00/8104222965"
@@ -5190,7 +4042,7 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>This is an incorrect name for a soundtrack by composer <a href=\"http://www.last.fm/music/Stephen+Trask\" class=\"bbcode_artist\">Stephen Trask</a>.  If this non-artist appears in your charts, please <a href=\"http://www.musicbrainz.org\" rel=\"nofollow\">fix your tags</a>.</p><p>Three piece out of New Orleans, Louisiana playing great music (post-punk / electronic / experimental influences among others).  Bradley Black- Vocals, Guitar, Electronics\n Isidro Robinson- Vocals, Guitar, MPC, Pedals\n Jonathan Hight- Drums, Sampler, Synth   website: <a href=\"http://whomdoyouworkfor.com/\" rel=\"nofollow\">http://whomdoyouworkfor.com/</a></p>", 
+    "description": "<p>This is an incorrect name for a soundtrack by composer <a href=\"http://www.last.fm/music/Stephen+Trask\" class=\"bbcode_artist\">Stephen Trask</a>.  If this non-artist appears in your charts, please <a href=\"http://www.musicbrainz.org\" rel=\"nofollow\">fix your tags</a>.</p>", 
     "links": [
       {
         "type": "artist", 
@@ -5198,14 +4050,9 @@
         "text": "Hedwig & the Angry Inch"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/whom+do+you+work+for%3F", 
-        "text": "whom do you work for?"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.marignytheatre.org", 
-        "text": "Marigny Theatre & AllWays Lounge website"
+        "link": "Marigny Theatre & AllWays Lounge website", 
+        "text": "http://www.marignytheatre.org"
       }
     ], 
     "tags": "soundtrack,glam rock,rock,musicals,glam", 
@@ -5217,7 +4064,7 @@
       "lat": 29.9685463, 
       "lon": -90.0556742
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/93732.jpg", 
       "href": "http://www.last.fm/music/+noredirect/Hedwig+&+the+Angry+Inch"
@@ -5242,7 +4089,7 @@
       "lat": 29.959824, 
       "lon": -90.033259
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5264,7 +4111,7 @@
       "lat": 29.9418185, 
       "lon": -90.0748598
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3549/3319291205_1ddb61d14e_s.jpg", 
       "href": "http://www.flickr.com/photos/28630948@N02/3319291205"
@@ -5281,8 +4128,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
+        "link": "The Blue Nile website", 
+        "text": "http://www.bluenilelive.com"
       }
     ], 
     "tags": "blues,new orleans,louisiana,new orleans jazz fest,seen live", 
@@ -5295,7 +4142,7 @@
       "lat": 29.9632291, 
       "lon": -90.0577415
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/73477.jpg", 
       "href": "http://www.last.fm/music/Washboard+Chaz+Blues+Trio"
@@ -5319,13 +4166,19 @@
       "lat": 29.9687471, 
       "lon": -90.0524549
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "Cafe Negril (Yelp)", 
+        "text": "http://www.yelp.com/biz/cafe-negril-new-orleans-2"
+      }
+    ], 
     "price": null, 
     "address": "606 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Caf\u00e9 Negril", 
@@ -5335,7 +4188,7 @@
       "lat": 29.9637003, 
       "lon": -90.0577806
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5356,7 +4209,7 @@
       "lat": 29.9152368, 
       "lon": -90.0637456
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8182/8052317217_f081585e4e_s.jpg", 
       "href": "http://www.flickr.com/photos/30646100@N03/8052317217"
@@ -5381,7 +4234,7 @@
       "lat": 29.9299856, 
       "lon": -90.1099823
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm3.staticflickr.com/2064/2482749768_ff0cb230ea_s.jpg", 
       "href": "http://www.flickr.com/photos/84767053@N00/2482749768"
@@ -5398,8 +4251,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.palmcourtjazz.com/", 
-        "text": "Home page"
+        "link": "Home page", 
+        "text": "http://www.palmcourtjazz.com/"
       }
     ], 
     "tags": "new orleans,louisiana", 
@@ -5411,11 +4264,8 @@
       "lat": 29.9607933, 
       "lon": -90.0590994
     }, 
-    "time": 1358643600, 
-    "image": {
-      "src": "http://farm9.staticflickr.com/8013/7141190619_758179419a_s.jpg", 
-      "href": "http://www.flickr.com/photos/31081764@N06/7141190619"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -5429,7 +4279,7 @@
       "lat": 29.9688884, 
       "lon": -90.0559478
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3617/3664779867_6f68498018_s.jpg", 
       "href": "http://www.flickr.com/photos/27611163@N08/3664779867"
@@ -5438,13 +4288,7 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Through+The+Eyes+Of+A+Martyr", 
-        "text": "Through The Eyes Of A Martyr"
-      }
-    ], 
+    "links": [], 
     "price": null, 
     "address": "3612 Hessmer Ave.<br>\nMetairie, LA 70002", 
     "venue": "The Cypress", 
@@ -5454,14 +4298,14 @@
       "lat": 30.0074445, 
       "lon": -90.1634685
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm6.staticflickr.com/5256/5481142235_878b925a3f_s.jpg", 
       "href": "http://www.flickr.com/photos/44840445@N07/5481142235"
     }
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p>Beth was born in  Lafayette, Louisiana.  Now resides in New Orleans.  She is a cajun-celtic wonder...she creates beautiful music and writes brilliant songs.  Her new cd, On Better Paths, is a masterpiece.  </p>", 
     "links": [
       {
@@ -5479,25 +4323,25 @@
       "lat": 29.9391585, 
       "lon": -90.0752232
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/509466.jpg", 
       "href": "http://www.last.fm/music/Beth+Patterson"
     }
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
+    "ranking": 1, 
+    "description": "<p>Lake is stoking the embers of another extinguished tradition: the social dance and floor show. Every Monday at Mimi's in the Marigny, the Little Big Horns turn back the clock, reanimating Jelly Roll Morton, Bessie Smith and Duke Ellington as some of the city's best swing dancers instruct left-footed locals on the twists and twirls of the Charleston and Lindy Hop.</p>", 
     "links": [
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/+noredirect/Meschiya+Lake+&+The+Little+Big+Horns", 
-        "text": "Meschiya Lake & The Little Big Horns"
+        "link": "http://www.bestofneworleans.com/gambit/meschiya-lake-and-the-little-big-horns/Content?oid=1279206", 
+        "text": "Meschiya Lake & The Little Big Horns\n"
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
     "price": null, 
@@ -5509,13 +4353,19 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358643600, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "The Apple Barrel", 
+        "text": "http://www.neworleansonline.com/directory/location.php?locationID=1170"
+      }
+    ], 
     "price": null, 
     "address": "609 Frenchmen Street<br>\nNew Orleans, LA 70116", 
     "venue": "Apple Barrel", 
@@ -5525,7 +4375,7 @@
       "lat": 29.9639416, 
       "lon": -90.057763
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6006/5972879176_da4e775946_s.jpg", 
       "href": "http://www.flickr.com/photos/64597899@N07/5972879176"
@@ -5550,7 +4400,7 @@
       "lat": 29.9654232, 
       "lon": -90.0626099
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/33759699.jpg", 
       "href": "http://www.last.fm/music/The+Royal+Rounders"
@@ -5575,7 +4425,7 @@
       "lat": 29.959226, 
       "lon": -90.06519
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3185/2498589912_39946f2038_s.jpg", 
       "href": "http://www.flickr.com/photos/70323761@N00/2498589912"
@@ -5601,7 +4451,7 @@
       "lat": 29.955649, 
       "lon": -90.067995
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/9745207.jpg", 
       "href": "http://www.last.fm/music/Carl+LeBlanc"
@@ -5626,7 +4476,7 @@
       "lat": 29.9599009, 
       "lon": -90.0598873
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5661,7 +4511,7 @@
       "lat": 29.957032, 
       "lon": -90.064749
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
@@ -5683,7 +4533,7 @@
       "lat": 29.9583033, 
       "lon": -90.0652395
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5711,7 +4561,7 @@
       "lat": 29.9641609, 
       "lon": -90.0578676
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/382515.jpg", 
       "href": "http://www.last.fm/music/Chris+Thomas+King"
@@ -5719,7 +4569,7 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>After 16 years with the popular rock band Cowboy Mouth, Paul Sanchez has stepped out on his own. He is a cat with eight lives used up and he's damn glad to be here. Paul is a troubadour from New Orleans. He is a storyteller, his own as well as ours. He is a student and a teacher. A traveler that finds home in a thousand different faces every night.   For more than 16 years, Paul and the other members of Cowboy Mouth embraced, embodied, preached and shouted at the top of their lungs the joys of their hometown, New Orleans.</p><p>Bluesmen like LITTLE FREDDIE KING are unfortunately, a disappearing breed, making his music so important, both as a good-time blast of backstreet grit and as a document of an artist who is among the last of his kind.   Son of a Mississippi share chopper, Freddie jumped a train for New Orleans at the age of 14-years old, never looking back. \n Born in McComb, Mississippi (1940) Freddie is the last of the great delta style country guitar players. In the 50s he was busy playing and learning from Babe Stovall, Polka Dot Slim and his friend Slim Harpo.  </p>", 
+    "description": "<p>After 16 years with the popular rock band Cowboy Mouth, Paul Sanchez has stepped out on his own. He is a cat with eight lives used up and he's damn glad to be here. Paul is a troubadour from New Orleans. He is a storyteller, his own as well as ours. He is a student and a teacher. A traveler that finds home in a thousand different faces every night.   For more than 16 years, Paul and the other members of Cowboy Mouth embraced, embodied, preached and shouted at the top of their lungs the joys of their hometown, New Orleans.</p>", 
     "links": [
       {
         "type": "artist", 
@@ -5727,17 +4577,12 @@
         "text": "Paul Sanchez"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Little+Freddie+King", 
-        "text": "Little Freddie King"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.tipitinas.com", 
-        "text": "Tipitina's website"
+        "link": "Tipitina's website", 
+        "text": "http://www.tipitinas.com"
       }
     ], 
-    "tags": "under 2000 listeners,new orleans,singer-songwriter,blues,electric blues,fat possum,folk,winnipeg folk fest 2008", 
+    "tags": "under 2000 listeners,new orleans,singer-songwriter", 
     "price": null, 
     "address": "501 Napoleon Avenue<br>\nNew Orleans, LA 70115", 
     "venue": "Tipitina's", 
@@ -5747,7 +4592,7 @@
       "lat": 29.9174145, 
       "lon": -90.1008856
     }, 
-    "time": 1358647200, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/3233375.jpg", 
       "href": "http://www.last.fm/music/Paul+Sanchez"
@@ -5764,8 +4609,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/balconymusicclub", 
-        "text": "Balcony Music Club on MySpace"
+        "link": "Balcony Music Club on MySpace", 
+        "text": "http://www.myspace.com/balconymusicclub"
       }
     ], 
     "tags": "funk,english,soulful,new orleans,under 2000 listeners", 
@@ -5778,7 +4623,7 @@
       "lat": 29.9617354, 
       "lon": -90.0583406
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -5800,7 +4645,7 @@
       "lat": 29.956794, 
       "lon": -90.068589
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm3.staticflickr.com/2800/4515677937_fde57830f9_s.jpg", 
       "href": "http://www.flickr.com/photos/15885731@N00/4515677937"
@@ -5812,8 +4657,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm", 
-        "text": "Hotel Monteleone website"
+        "link": "Hotel Monteleone website", 
+        "text": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm"
       }
     ], 
     "price": null, 
@@ -5825,7 +4670,7 @@
       "lat": 29.9543519, 
       "lon": -90.067991
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm4.staticflickr.com/3354/3334397331_b333dc3ded_s.jpg", 
       "href": "http://www.flickr.com/photos/33934821@N03/3334397331"
@@ -5834,7 +4679,13 @@
   {
     "ranking": 0, 
     "description": null, 
-    "links": [], 
+    "links": [
+      {
+        "type": "venue", 
+        "link": "Checkpoint Charlie (Yelp)", 
+        "text": "http://www.yelp.com/biz/igors-checkpoint-charlie-new-orleans"
+      }
+    ], 
     "price": null, 
     "address": "501 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Checkpoint Charlie", 
@@ -5844,7 +4695,7 @@
       "lat": 29.9622459, 
       "lon": -90.0579716
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7102/7266872936_1577eeace3_s.jpg", 
       "href": "http://www.flickr.com/photos/89826592@N00/7266872936"
@@ -5863,7 +4714,7 @@
       "lat": 29.9592829, 
       "lon": -90.0651456
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm3.staticflickr.com/2701/4078233150_ffe1e3bfde_s.jpg", 
       "href": "http://www.flickr.com/photos/41912957@N00/4078233150"
@@ -5880,8 +4731,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/green_room", 
-        "text": "The Green Room"
+        "link": "The Green Room", 
+        "text": "http://www.myspace.com/green_room"
       }
     ], 
     "tags": "t,r,a,n,c,e", 
@@ -5894,25 +4745,20 @@
       "lat": 30.4756223, 
       "lon": -90.0949654
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Hardcore / Metal / Progressive.  From, Rockland County, \n NEW YORK, \n USA.  Atlas Shrugged  had a pretty distinct sound, although one can definitely hear influences of bands such as <a href=\"http://www.last.fm/music/Burn\" class=\"bbcode_artist\">Burn</a>, <a href=\"http://www.last.fm/music/Quicksand\" class=\"bbcode_artist\">Quicksand</a>, <a href=\"http://www.last.fm/music/Bad+Brains\" class=\"bbcode_artist\">Bad Brains</a> and <a href=\"http://www.last.fm/music/Voivod\" class=\"bbcode_artist\">Voivod</a>. Rocking &amp; grooving hardcore with the passionate spoken/screamed vocals of Chris Weinblad, who also did, and still does, <span title=\"Unknown label\" class=\"bbcode_unknown\">Trip Machine Laboratories</span>. Band released their split 7&quot; with <a href=\"http://www.last.fm/music/New+Day+Rising\" class=\"bbcode_artist\">New Day Rising</a>. Their final release/7&quot; before their demise in 1998 was 'Old Familiar Face'. They did record a few more songs in 1998 tho, however they never got released at the time.</p><p>Thre are at least four bands with this name.  a) a solo acoustic indie act currently based and playing in London (no known success)\n b) a british Rock band, successful in the 70's with the song &quot;Hiroshima&quot;\n c) a Jazz band\n d) a punk/rock band from Melbourne, Australia (disbanded in 2007). Released two full length albums: &quot;Standing Still&quot; and &quot;Kicking Goals, Banging Goals And High Fives All Round&quot;.   ----------------  More information relating to (c) above:  </p>", 
+    "description": "<p>Hardcore / Metal / Progressive.  From, Rockland County, \n NEW YORK, \n USA.  Atlas Shrugged  had a pretty distinct sound, although one can definitely hear influences of bands such as <a href=\"http://www.last.fm/music/Burn\" class=\"bbcode_artist\">Burn</a>, <a href=\"http://www.last.fm/music/Quicksand\" class=\"bbcode_artist\">Quicksand</a>, <a href=\"http://www.last.fm/music/Bad+Brains\" class=\"bbcode_artist\">Bad Brains</a> and <a href=\"http://www.last.fm/music/Voivod\" class=\"bbcode_artist\">Voivod</a>. Rocking &amp; grooving hardcore with the passionate spoken/screamed vocals of Chris Weinblad, who also did, and still does, <span title=\"Unknown label\" class=\"bbcode_unknown\">Trip Machine Laboratories</span>. Band released their split 7&quot; with <a href=\"http://www.last.fm/music/New+Day+Rising\" class=\"bbcode_artist\">New Day Rising</a>. Their final release/7&quot; before their demise in 1998 was 'Old Familiar Face'. They did record a few more songs in 1998 tho, however they never got released at the time.</p>", 
     "links": [
       {
         "type": "artist", 
         "link": "http://www.last.fm/music/Atlas+Shrugged", 
         "text": "Atlas Shrugged"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Wishful+Thinking", 
-        "text": "Wishful Thinking"
       }
     ], 
-    "tags": "hardcore,progressive metalcore,math metal,all,90s emo,classic rock,70s,rock,pop punk,australian", 
+    "tags": "hardcore,progressive metalcore,math metal,all,90s emo", 
     "price": null, 
     "address": "1511 South Rendon<br>\nNew Orleans, LA", 
     "venue": "Hangar 13", 
@@ -5921,14 +4767,14 @@
       "lat": 29.9549303, 
       "lon": -90.1047306
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/3408782.jpg", 
       "href": "http://www.last.fm/music/Atlas+Shrugged"
     }
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p>Yonder Mountain String Band Biography, June 2009\n  \n Yonder Mountain String Band has always played music by its own set of rules.  Bending bluegrass, rock and countless other influences that the band cites, Yonder has pioneered a sound of their own.  With their traditional lineup of  instruments, the band may look like a traditional bluegrass band at first glance but they\u2019ve created their own music that transcends any genre.</p>", 
     "links": [
       {
@@ -5938,8 +4784,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.hob.com/venues/clubvenues/neworleans", 
-        "text": "New Orleans House of Blues website"
+        "link": "New Orleans House of Blues website", 
+        "text": "http://www.hob.com/venues/clubvenues/neworleans"
       }
     ], 
     "tags": "bluegrass,jam,jam band,acoustic,newgrass", 
@@ -5952,7 +4798,7 @@
       "lat": 29.9531604, 
       "lon": -90.0661661
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/23142279.jpg", 
       "href": "http://www.last.fm/music/Yonder+Mountain+String+Band"
@@ -5977,23 +4823,13 @@
       "lat": 29.9569036, 
       "lon": -90.0672551
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Honey Island Swamp Band came together after <a href=\"http://www.last.fm/music/Aaron+Wilkinson\" class=\"bbcode_artist\">Aaron Wilkinson</a> (acoustic guitar, mandolin, vocals) and <a href=\"http://www.last.fm/music/Chris+Mule\" class=\"bbcode_artist\">Chris Mule</a> (electric guitar, vocals) were marooned in San Francisco after the levee breaches following Hurricane Katrina devastated New Orleans in 2005.  Wilkinson and Mule had a chance encounter with fellow New Orleans evacuees <a href=\"http://www.last.fm/music/Sam+Price\" class=\"bbcode_artist\">Sam Price</a> (bass, vocals) and <span title=\"Unknown artist\" class=\"bbcode_unknown\">Garland Paul</span> (drums, vocals) at the John Lee Hooker\u2019s Boom Boom Room on Fillmore Street.</p>", 
+    "description": null, 
     "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Honey+Island+Swamp+Band", 
-        "text": "Honey Island Swamp Band"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Tommy+Malone", 
-        "text": "Tommy Malone"
-      }, 
       {
         "type": "artist", 
         "link": "http://www.last.fm/music/Tommy+Malone+Band", 
@@ -6001,11 +4837,10 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.rockandbowl.com", 
-        "text": "Mid-City Lanes Rock 'n' Bowl website"
+        "link": "Mid-City Lanes Rock 'n' Bowl website", 
+        "text": "http://www.rockandbowl.com"
       }
     ], 
-    "tags": "new orleans,seen live", 
     "price": null, 
     "address": "3016 S. Carrollton Avenue<br>\nNew Orleans, LA 70118", 
     "venue": "Mid-City Lanes Rock & Bowl", 
@@ -6015,11 +4850,8 @@
       "lat": 29.960865, 
       "lon": -90.115774
     }, 
-    "time": 1358650800, 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/59713563.jpg", 
-      "href": "http://www.last.fm/music/Honey+Island+Swamp+Band"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -6034,7 +4866,7 @@
       "lat": 29.9584974, 
       "lon": -90.0658243
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm5.staticflickr.com/4132/5138603988_9de27ba8f9_s.jpg", 
       "href": "http://www.flickr.com/photos/12786044@N00/5138603988"
@@ -6052,7 +4884,7 @@
       "lat": 29.9475488, 
       "lon": -90.1301395
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -6079,7 +4911,7 @@
       "lat": 29.955501, 
       "lon": -90.050453
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -6107,7 +4939,7 @@
       "lat": 29.954851, 
       "lon": -90.071132
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/8387681.jpg", 
       "href": "http://www.last.fm/music/Jeremy+Davenport"
@@ -6115,20 +4947,15 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>There are at least TWO bands known as The Bills  The Bills (New Orleans, LA)  Delinquent Horror Surf  When polluted, oil-slicked waves...  ...crash upon the beaches of a mist-shrouded graveyard full of old, 'B' horror movies under a full moon, you can hear the shriek of 'The Bills' pervade the air.  Their music is based not only on old school, drive-in films, but also a life of crime. It is whispered that every time the intro to 'Straight From the Gutter' is played, a bum is brutally stabbed in an alleyway.</p><p>Hawg Jaw was formed in August of 1996. Over 9 years and 6 line ups later, still dishing out hardcore drenched slop/brutality in midcity New Orleans.  Hawg Jaw have released several self released demo's and 7 &quot;, and have played countless shows with both local, and national touring bands.  Mike Dares - Vocals\n Gary Mader - Guitars\n Paul Webb - Bass\n Matt Williams - Drums</p>", 
+    "description": "<p>Hawg Jaw was formed in August of 1996. Over 9 years and 6 line ups later, still dishing out hardcore drenched slop/brutality in midcity New Orleans.  Hawg Jaw have released several self released demo's and 7 &quot;, and have played countless shows with both local, and national touring bands.  Mike Dares - Vocals\n Gary Mader - Guitars\n Paul Webb - Bass\n Matt Williams - Drums</p>", 
     "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Bills", 
-        "text": "The Bills"
-      }, 
       {
         "type": "artist", 
         "link": "http://www.last.fm/music/Hawg+Jaw", 
         "text": "Hawg Jaw"
       }
     ], 
-    "tags": "surf,horror surf,gothabilly,canadian,psychobilly,sludge,sludgecore,hardcore,stoner rock,stoner", 
+    "tags": "sludge,sludgecore,hardcore,stoner rock,stoner", 
     "price": null, 
     "address": "2227 St. Claude Ave<br>\nNew Orleans, LA", 
     "venue": "Siberia", 
@@ -6137,23 +4964,23 @@
       "lat": 29.9688884, 
       "lon": -90.0559478
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/38099649.jpg", 
-      "href": "http://www.last.fm/music/The+Bills"
+      "src": "http://userserve-ak.last.fm/serve/126/527419.gif", 
+      "href": "http://www.last.fm/music/Hawg+Jaw"
     }
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Mumbles is either of the following:  1. An american <a href=\"http://www.last.fm/tag/hip-hop\" class=\"bbcode_tag\" rel=\"tag\">hip-hop</a> producer from Los Angeles, USA. He is best known for his work with <a href=\"http://www.last.fm/music/Aceyalone\" class=\"bbcode_artist\">Aceyalone</a> but also has two solo releases.  2. An <a href=\"http://www.last.fm/tag/indiepop\" class=\"bbcode_tag\" rel=\"tag\">indiepop</a> band based in Bristol and Swansea, England. The band is Stu and Simon both formally of <a href=\"http://www.last.fm/tag/the%20sweetest%20ache\" class=\"bbcode_tag\" rel=\"tag\">the sweetest ache</a>. They released an EP entitled &quot;Breaking Up&quot; on Sunday Records in 2003. </p>", 
+    "description": "<p>The Mumbles is a keyboard-driven rock n' roll band formed in November 2005 by Robert Cowlin and James Ward.  They had been listening to lots of Gothic rock at the time and wanted to craft their own style of music using elements of the bands they were inspired by.  The Mumbles didn't have access to a lot of equipment so they had to make do with what little they had (a keyboard). They originally decided that James would sing and Robert would play the keyboard because he had taken lessons a few years earlier.</p>", 
     "links": [
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/Mumbles", 
-        "text": "Mumbles"
+        "link": "http://www.last.fm/music/The+Mumbles", 
+        "text": "The Mumbles"
       }
     ], 
-    "tags": "instrumental hip hop,hip hop,jazz,instrumental hip-hop,electronic dub", 
+    "tags": "gothic rock,post-punk,under 2000 listeners,goth,mumbles", 
     "price": null, 
     "address": "536 Frenchmen St.<br>\nNew Orleans, LA", 
     "venue": "Three Muses", 
@@ -6162,10 +4989,10 @@
       "lat": 29.9632712, 
       "lon": -90.0577468
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/77601314.jpg", 
-      "href": "http://www.last.fm/music/Mumbles"
+      "src": "http://userserve-ak.last.fm/serve/126/38538895.jpg", 
+      "href": "http://www.last.fm/music/The+Mumbles"
     }
   }, 
   {
@@ -6187,7 +5014,7 @@
       "lat": 29.9591267, 
       "lon": -90.0653068
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm8.staticflickr.com/7018/6451138639_43d7dd2f75_s.jpg", 
       "href": "http://www.flickr.com/photos/33069289@N06/6451138639"
@@ -6211,7 +5038,7 @@
       "lat": 29.9625485, 
       "lon": -90.0577453
     }, 
-    "time": 1358650800, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -6224,14 +5051,9 @@
         "text": "Saint Bell"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Quintessential+Octopus", 
-        "text": "The Quintessential Octopus"
-      }, 
-      {
         "type": "venue", 
-        "link": "http://www.banksstreetbar.com/", 
-        "text": "Banks Street Bar website"
+        "link": "Banks Street Bar website", 
+        "text": "http://www.banksstreetbar.com/"
       }
     ], 
     "price": null, 
@@ -6243,25 +5065,25 @@
       "lat": 29.9744629, 
       "lon": -90.1065036
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/81421941.jpg", 
       "href": "http://www.last.fm/music/Saint+Bell"
     }
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
+    "ranking": 2, 
+    "description": "<p>An aggregation of Loyola University classical music students formed Johnny Sketch & the Dirty Notes for a 2001 campus talent contest. An unexpected victory led to a headlining gig at the Howlin' Wolf and a scramble to pad a limited repertoire with enough antics and distractions to constitute a full show. Costumes, visual gags and alternate, \"sketchy\" identities all came into play.\nSix years later, they've toured all corners of the country and manage to get by as full-time musicians. They are the latest in a long line of New Orleans bands that defy easy categorization beyond a synthesis of styles -- rock, funk, a Latin tinge courtesy of a horn section recruited from Loyola's jazz studies department -- and sufficient chops to chew up a stage.</p>", 
     "links": [
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/+noredirect/Johnny+Sketch+&+The+Dirty+Notes", 
+        "link": "http://blog.nola.com/keithspera/2008/01/johnny_sketch_the_dirty_notes.html", 
         "text": "Johnny Sketch & The Dirty Notes"
       }, 
       {
         "type": "venue", 
-        "link": "http://www.bluenilelive.com", 
-        "text": "The Blue Nile website"
+        "link": "The Blue Nile website", 
+        "text": "http://www.bluenilelive.com"
       }
     ], 
     "tags": "new orleans,rock,jazz,funk,fusion", 
@@ -6274,7 +5096,7 @@
       "lat": 29.9632291, 
       "lon": -90.0577415
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/526022.jpg", 
       "href": "http://www.last.fm/music/+noredirect/Johnny+Sketch+&+The+Dirty+Notes"
@@ -6286,8 +5108,8 @@
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm", 
-        "text": "Hotel Monteleone website"
+        "link": "Hotel Monteleone website", 
+        "text": "http://www.hotelmonteleone.com/dining-entertainment/index.cfm"
       }
     ], 
     "price": null, 
@@ -6299,7 +5121,7 @@
       "lat": 29.9543519, 
       "lon": -90.067991
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm9.staticflickr.com/8077/8269908977_3ecfdaa306_s.jpg", 
       "href": "http://www.flickr.com/photos/58147157@N05/8269908977"
@@ -6307,7 +5129,7 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p> Seth Kaufman, the unsuspecting man behind the band Floating Action, lives in Asheville, North Carolina, and maybe more than it usually would, that piece of biographical information about him says a lot. He lives there, in one of the prettiest cities in this great and great big old country, cuddled up against the Blue Ridge Mountains, and he takes advantage of all of its splendors, it seems. He greedily and voraciously fills his available time with hiking and wiffle ball games, picnics and other outdoorsy activities that no matter how much any jerk will want to argue with you...</p>", 
+    "description": null, 
     "links": [
       {
         "type": "artist", 
@@ -6315,22 +5137,11 @@
         "text": "Lackadaisies"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Carbon+Poppies", 
-        "text": "Carbon Poppies"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Floating+Action", 
-        "text": "Floating Action"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.myspace.com/thecirclebar", 
         "text": "http://www.myspace.com/thecirclebar"
       }
     ], 
-    "tags": "folk,indie pop,lo-fi,indie,sxsw 2009", 
     "price": null, 
     "address": "1032 Saint Charles Avenue<br>\nNew Orleans, LA 70130", 
     "venue": "Circle Bar", 
@@ -6340,11 +5151,8 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358654400, 
-    "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/62792051.jpg", 
-      "href": "http://www.last.fm/music/Floating+Action"
-    }
+    "time": "Fri January 16, 11 AM", 
+    "image": null
   }, 
   {
     "ranking": 0, 
@@ -6357,8 +5165,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dosjefescigarbar.com", 
-        "text": "Dos Jefes website"
+        "link": "Dos Jefes website", 
+        "text": "http://www.dosjefescigarbar.com"
       }
     ], 
     "tags": "rock,soft rock,alternative,under 2000 listeners", 
@@ -6371,7 +5179,7 @@
       "lat": 29.916536, 
       "lon": -90.11806
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/28498485.jpg", 
       "href": "http://www.last.fm/music/Vivaz"
@@ -6388,8 +5196,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://thehowlinwolf.com", 
-        "text": "Howlin' Wolf website"
+        "link": "Howlin' Wolf website", 
+        "text": "http://thehowlinwolf.com"
       }
     ], 
     "tags": "punk rock,hardcore punk,punk,progressive rock,post-hardcore", 
@@ -6402,20 +5210,20 @@
       "lat": 29.9428785, 
       "lon": -90.0660439
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/27735.jpg", 
       "href": "http://www.last.fm/music/The+Quickening"
     }
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
     "links": [
       {
         "type": "venue", 
-        "link": "http://www.myspace.com/themapleleafbar", 
-        "text": "The Maple Leaf Bar on MySpace"
+        "link": "The Maple Leaf Bar on MySpace", 
+        "text": "http://www.myspace.com/themapleleafbar"
       }
     ], 
     "price": null, 
@@ -6427,7 +5235,7 @@
       "lat": 29.948762, 
       "lon": -90.132072
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://farm7.staticflickr.com/6117/6329623681_bd6b6a694a_s.jpg", 
       "href": "http://www.flickr.com/photos/89826592@N00/6329623681"
@@ -6435,13 +5243,8 @@
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Take 5 southern california guys, mix in some surf, stone, and psychedelic, throw them in a haunted mansion in west hochiminster and with a little luck, you might get a band like The Growlers. The bands name comes from lead singer Brooks Nielsen and guitarist Moustache Matt. One day Brooks came home and Matt was takin a big growler in the outhouse and the rest is history. Watch some footage of old Wind N Sea Surf Club back in the 70's and you might get a taste of what this band's live shows are like.</p><p>Hailing from the wooded confines of Burlington, Vermont, the Vacant Lots are musicians as well as scientists, having built a time machine that will transport your headspace directly to the Sunset Strip in 1967. \u201cConfusion\u201d and \u201cCadillac\u201d are both prime-cut psychedelic burners, heavy-lidded and strobing with the delights of the era, pristine examples of atmosphere and attitude lent to great pop-rock songwriting. - Mexican Summer</p>", 
+    "description": "<p>Hailing from the wooded confines of Burlington, Vermont, the Vacant Lots are musicians as well as scientists, having built a time machine that will transport your headspace directly to the Sunset Strip in 1967. \u201cConfusion\u201d and \u201cCadillac\u201d are both prime-cut psychedelic burners, heavy-lidded and strobing with the delights of the era, pristine examples of atmosphere and attitude lent to great pop-rock songwriting. - Mexican Summer</p>", 
     "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/The+Growlers", 
-        "text": "The Growlers"
-      }, 
       {
         "type": "artist", 
         "link": "http://www.last.fm/music/The+Vacant+Lots", 
@@ -6453,7 +5256,7 @@
         "text": "http://www.oneeyedjacks.net"
       }
     ], 
-    "tags": "surf rock,psychedelic,lo-fi,psychedelic surf,rock,psychedelic,rock,spacemen 3,beyondwithin,psych-rock", 
+    "tags": "psychedelic,rock,spacemen 3,beyondwithin,psych-rock", 
     "price": null, 
     "address": "615 Toulouse Street<br>\nNew Orleans, LA 70130", 
     "venue": "One Eyed Jack's", 
@@ -6463,10 +5266,10 @@
       "lat": 29.957032, 
       "lon": -90.064749
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
-      "src": "http://userserve-ak.last.fm/serve/126/57322047.jpg", 
-      "href": "http://www.last.fm/music/The+Growlers"
+      "src": "http://userserve-ak.last.fm/serve/126/71153262.jpg", 
+      "href": "http://www.last.fm/music/The+Vacant+Lots"
     }
   }, 
   {
@@ -6480,8 +5283,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://freretpubhouse.com", 
-        "text": "freretpubhouse.com"
+        "link": "freretpubhouse.com", 
+        "text": "http://freretpubhouse.com"
       }
     ], 
     "price": null, 
@@ -6492,7 +5295,7 @@
       "lat": 29.9168885, 
       "lon": -90.1271248
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -6506,8 +5309,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.therivershacktavern.com", 
-        "text": "The Rivershack Tavern"
+        "link": "The Rivershack Tavern", 
+        "text": "http://www.therivershacktavern.com"
       }
     ], 
     "price": null, 
@@ -6518,7 +5321,7 @@
       "lat": 29.9582935, 
       "lon": -90.1609293
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": null
   }, 
   {
@@ -6539,20 +5342,25 @@
       "lat": 29.9641005, 
       "lon": -90.0577182
     }, 
-    "time": 1358654400, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/455340.jpg", 
       "href": "http://www.last.fm/music/Jazz+Vipers"
     }
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
+    "ranking": 1, 
+    "description": "<p>A frantic accordion flutters through slams of percussion. Drums and tambourines line the soundscape, their syncopated rhythms the cobblestone foundation, slightly cracked, certainly unique. An accordion reel settles and soars, coasting like a thoughtful tanker gliding across the Mississippi. It is within these scant minutes of music that one man's personal meaning of missing New Orleans emerges among blighted properties and a heartbreak as great as the miles he's logged.</p>", 
     "links": [
       {
+        "type": "artist", 
+        "link": "http://lonesomeleash.com", 
+        "text": "Lonesome Leash"
+      }, 
+      {
         "type": "venue", 
-        "link": "http://www.marignytheatre.org", 
-        "text": "Marigny Theatre & AllWays Lounge website"
+        "link": "Marigny Theatre & AllWays Lounge website", 
+        "text": "http://www.marignytheatre.org"
       }
     ], 
     "price": null, 
@@ -6563,10 +5371,10 @@
       "lat": 29.9685463, 
       "lon": -90.0556742
     }, 
-    "time": 1358658000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
-      "src": "http://farm6.staticflickr.com/5172/5550425506_71db920e0c_s.jpg", 
-      "href": "http://www.flickr.com/photos/18219254@N04/5550425506"
+      "src": "http://www.noladefender.com/sites/default/files/imagecache/article_image/LonesomeLeashPress2%20web.jpg", 
+      "href": "http://www.noladefender.com/content/lonesome-le45ash-helms-relea78se-party-i-am-no-captain-allways-lounge"
     }
   }, 
   {
@@ -6580,8 +5388,8 @@
       }, 
       {
         "type": "venue", 
-        "link": "http://www.dbabars.com/dbano/", 
-        "text": "d.b.a. New Orleans website"
+        "link": "d.b.a. New Orleans website", 
+        "text": "http://www.dbabars.com/dbano/"
       }
     ], 
     "tags": "blues,blues rock,rock,guitar,classic rock", 
@@ -6594,7 +5402,7 @@
       "lat": 29.9640087, 
       "lon": -90.0578054
     }, 
-    "time": 1358658000, 
+    "time": "Fri January 16, 11 AM", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/388275.jpg", 
       "href": "http://www.last.fm/music/Eric+Lindell"
@@ -6612,11 +5420,6 @@
         "type": "artist", 
         "link": "http://www.last.fm/music/Netherfriends", 
         "text": "Netherfriends"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Sweet+Crude", 
-        "text": "Sweet Crude"
       }, 
       {
         "type": "venue", 
@@ -6637,12 +5440,12 @@
       "lat": 29.9428686, 
       "lon": -90.072702
     }, 
-    "time": 1358906400, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Tall Firs were formed in 1990 when teenagers Dave Mies and Aaron Mullan taught one another to play guitar over the telephone in Annapolis, Maryland. Eleven years later they played their first gig, having crawled to Brooklyn, NY in the interim. Halfway through the second decade of searching for a drummer, Ryan Sawyer finally assumed the throne.  A near-telepathic nonchalance pervades the music of the Tall Firs.</p><p>Jeff Mangum is the founder and driving force behind what was the band <a href=\"http://www.last.fm/music/Neutral+Milk+Hotel\" class=\"bbcode_artist\">Neutral Milk Hotel</a> and one of the cofounders of the <a href=\"http://www.elephant6.com\" rel=\"nofollow\">Elephant 6</a> Collective. Rob Schneider (of <a href=\"http://www.last.fm/music/The+Apples+In+Stereo\" class=\"bbcode_artist\">The Apples In Stereo</a>), <a href=\"http://www.last.fm/music/Will+Cullen+Hart\" class=\"bbcode_artist\">Will Cullen Hart</a>, <a href=\"http://www.last.fm/music/Bill+Doss\" class=\"bbcode_artist\">Bill Doss</a> (formerly of <a href=\"http://www.last.fm/music/+noredirect/Olivia+Tremor+Control\" class=\"bbcode_artist\">Olivia Tremor Control</a> and now comprising <a href=\"http://www.last.fm/music/Circulatory+System\" class=\"bbcode_artist\">Circulatory System</a> and <a href=\"http://www.last.fm/music/The+Sunshine+Fix\" class=\"bbcode_artist\">The Sunshine Fix</a>, respectively) and Mangum all attended the same high school in Ruston, Louisiana in the late 1980's. The friends shared a passion for bands of the 60's such as <a href=\"http://www.last.fm/music/The+Beach+Boys\" class=\"bbcode_artist\">The Beach Boys</a>, <a href=\"http://www.last.fm/music/The+Beatles\" class=\"bbcode_artist\">The Beatles</a>, and <a href=\"http://www.last.fm/music/The+Zombies\" class=\"bbcode_artist\">The Zombies</a>, as well as an affinity for newer, noisier bands such as <a href=\"http://www.last.fm/music/Sonic+Youth\" class=\"bbcode_artist\">Sonic Youth</a> and <a href=\"http://www.last.fm/music/Minutemen\" class=\"bbcode_artist\">Minutemen</a>.</p>", 
+    "description": "<p>Tall Firs were formed in 1990 when teenagers Dave Mies and Aaron Mullan taught one another to play guitar over the telephone in Annapolis, Maryland. Eleven years later they played their first gig, having crawled to Brooklyn, NY in the interim. Halfway through the second decade of searching for a drummer, Ryan Sawyer finally assumed the throne.  A near-telepathic nonchalance pervades the music of the Tall Firs.</p>", 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=cGpsZ3E3dXJkZGNxbGtpbDczZzdzbThmdGMgbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -6654,17 +5457,12 @@
         "text": "Tall Firs"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Jeff+Mangum", 
-        "text": "Jeff Mangum"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.oneeyedjacks.net", 
         "text": "http://www.oneeyedjacks.net"
       }
     ], 
-    "tags": "indie rock,electric folk,rock,folk,mellow,indie,elephant 6,singer-songwriter,lo-fi,folk", 
+    "tags": "indie rock,electric folk,rock,folk,mellow", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/1978586.jpg", 
       "href": "http://www.last.fm/music/Tall+Firs"
@@ -6677,12 +5475,12 @@
       "lat": 29.957032, 
       "lon": -90.064749
     }, 
-    "time": 1358992800, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>Toro y Moi is a solo project of 24-year-old Columbia, South Carolina native and resident, Chazwick Bundick. in 2009, Bundick earned a BFA in Graphic Design from The University of South Carolina.    Chaz Bundick's methods are constantly evolving. While heavily influenced by his parent's vinyl and tape collection, his contemporary influences are <a href=\"http://www.last.fm/music/Animal+Collective\" class=\"bbcode_artist\">Animal Collective</a>, <a href=\"http://www.last.fm/music/Sonic+Youth\" class=\"bbcode_artist\">Sonic Youth</a>, <a href=\"http://www.last.fm/music/J+Dilla\" class=\"bbcode_artist\">J Dilla</a>, and <a href=\"http://www.last.fm/music/Daft+Punk\" class=\"bbcode_artist\">Daft Punk</a>.    </p><p>Wild Belle:\n <a href=\"http://www.facebook.com/wildbelle\" rel=\"nofollow\">http://www.facebook.com/wildbelle</a>\n <a href=\"http://wildbelle.bandcamp.com/track/keep-you\" rel=\"nofollow\">http://wildbelle.bandcamp.com/track/keep-you</a></p>", 
+    "description": "<p>Toro y Moi is a solo project of 24-year-old Columbia, South Carolina native and resident, Chazwick Bundick. in 2009, Bundick earned a BFA in Graphic Design from The University of South Carolina.    Chaz Bundick's methods are constantly evolving. While heavily influenced by his parent's vinyl and tape collection, his contemporary influences are <a href=\"http://www.last.fm/music/Animal+Collective\" class=\"bbcode_artist\">Animal Collective</a>, <a href=\"http://www.last.fm/music/Sonic+Youth\" class=\"bbcode_artist\">Sonic Youth</a>, <a href=\"http://www.last.fm/music/J+Dilla\" class=\"bbcode_artist\">J Dilla</a>, and <a href=\"http://www.last.fm/music/Daft+Punk\" class=\"bbcode_artist\">Daft Punk</a>.    </p>", 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=azlpMGZ0Y204OHE0bGNhZzRiZ2U2ZDhpYm8gbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -6694,17 +5492,12 @@
         "text": "Toro y Moi"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Wild+Belle", 
-        "text": "Wild Belle"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.oneeyedjacks.net", 
         "text": "http://www.oneeyedjacks.net"
       }
     ], 
-    "tags": "chillwave,electronic,lo-fi,psychedelic,electronica,indie,female vocalists,reggae,dance,ska", 
+    "tags": "chillwave,electronic,lo-fi,psychedelic,electronica", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/85303731.png", 
       "href": "http://www.last.fm/music/Toro+y+Moi"
@@ -6717,12 +5510,12 @@
       "lat": 29.957032, 
       "lon": -90.064749
     }, 
-    "time": 1360116000, 
+    "time": "Fri January 16, 11 AM", 
     "price": null
   }, 
   {
     "ranking": 0, 
-    "description": "<p>SEXXXXXXXXXXXXXXXXX</p><p>Unknown Mortal Orchestra first dropped into the world in late 2010 as a bandcamp account carrying a single called \u2018Ffunny Ffrends\u2019.  \u2018Ffunny Ffrends\u2019 was everything you imagined it might be \u2013 alien beatnik pop music that echoed 60s psychedelia and krautrock minimalism with just a hint of gentle weirdness that suggested its roots might equally lie in the verdant indie of the equally distant New Zealand scene.</p><p>Foxygen is an American indie rock duo originally formed in Westlake Village, California in 2005 by Jonathan Rado and Sam France, &quot;high school kids obsessed with the Brian Jonestown Massacre  After their formation in 2005, the band played wildly experimental music, which featured many influences from 60s psychedelia and avant-garde. They self-released many EPs betwen 2007 and 2011, only a few of which are still available.</p>", 
+    "description": "<p>SEXXXXXXXXXXXXXXXXX</p>", 
     "links": [
       {
         "link": "http://www.google.com/calendar/event?eid=a3ZrMWFvc2Vzc2QzbTczcDEzb2hmcDBoa2sgbWF0dGhldy5yLnJvc2VudGhhbEBt", 
@@ -6734,22 +5527,12 @@
         "text": "Wampire"
       }, 
       {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Unknown+Mortal+Orchestra", 
-        "text": "Unknown Mortal Orchestra"
-      }, 
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Foxygen", 
-        "text": "Foxygen"
-      }, 
-      {
         "type": "venue", 
         "link": "http://www.oneeyedjacks.net", 
         "text": "http://www.oneeyedjacks.net"
       }
     ], 
-    "tags": "portland,indie,pdx,talented,oregon,lo-fi,indie rock,indie,alternative,psychedelic,psychedelic,psychedelic rock,tolisten,psychedelic pop,indie pop", 
+    "tags": "portland,indie,pdx,talented,oregon", 
     "image": {
       "src": "http://userserve-ak.last.fm/serve/126/42041405.jpg", 
       "href": "http://www.last.fm/music/Wampire"
@@ -6762,7 +5545,7 @@
       "lat": 29.957032, 
       "lon": -90.064749
     }, 
-    "time": 1361584800, 
+    "time": "Fri January 16, 12 PM", 
     "price": null
   }
 ]
