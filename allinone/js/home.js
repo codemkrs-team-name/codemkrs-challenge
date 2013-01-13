@@ -183,13 +183,12 @@ function initToggles() {
 function gettingEvents() {
 	var eventsUrl = 'events.json?'+$.param({_:new Date().getTime()});
 
-	if( !~(location.search||'').indexOf('nocache') ) //if no nocache flag in the querystring
+	if(featureEnabled('nocache') )
 		var gettingFromLocal = gettingFromLocalStorage()
 
 	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
-			ev.time = new Date().add({hours: _.random(72)});
-			// ev.time = ev.time*1000;			//unix seconds to milliseconds
+			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
@@ -343,9 +342,10 @@ function extendHandlebars() {
 			+'fjs.parentNode.insertBefore(js,fjs);}}'
 		+'(document,"script","twitter-wjs");</script>');
 	}, 10);
+	var twitterEnabled = featureEnabled('twitter');
 	Handlebars.registerHelper('twitterButton', function() {
-		return ''; //TODO - GM - this should render only for currently viewable items. causing immense slowdown otherwise
-
+		if(!twitterEnabled) //TODO - GM - this should render only for currently viewable items. causing immense slowdown otherwise
+			return ''; 
 		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
  			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
 			;
@@ -371,5 +371,8 @@ function getLocalStorage(key) {
 }
 function setLocalStorage(key, obj) {
 	localStorage[key] = JSON.stringify(obj);
+}
+function featureEnabled(feature) {
+	return !!~(location.search||'').indexOf(feature);
 }
 })();
