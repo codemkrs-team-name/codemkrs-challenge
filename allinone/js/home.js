@@ -103,9 +103,9 @@ function filterRanking(ranking) {
 	}
 }
 function filterDay(daytime) { 
-	var day = new Date(parseInt(daytime, 10)).getDay();
+	var date = new Date(parseInt(daytime, 10)).toFormat('YYYY-MM-DD');
 	return function(ev) { 
-		return day == new Date(ev.time).getDay()
+		return date == ev._date;
 	}
 }
 function filterDistance(distance) { return function(ev) {
@@ -150,6 +150,7 @@ function gettingEvents() {
 		return _.map(allEvents, function(ev) {
 			ev.ranking = _.random(1);
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
+			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = ev.time +'-'+ev.eventName;
 			return ev;
 		})
@@ -193,7 +194,11 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString(html);
 	}));
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
-	  	return !timestamp ? '' : new Date(timestamp).toFormat('H:MM PP');
+		if (!timestamp) return '';
+		var date = new Date(timestamp);
+		var dateFormat = 'H:MI PP';
+		if (date.getDay() != ((new Date()).getDay())) dateFormat = 'DDD ' + dateFormat;
+	  	return date.toFormat(dateFormat);
 	}));
 	Handlebars.registerHelper('eventImage', function() {
 		if(!this.image) return '';
