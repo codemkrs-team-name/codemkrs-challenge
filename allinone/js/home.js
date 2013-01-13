@@ -32,9 +32,6 @@ function filterSearch(keywords) {
 		var matches = _.filter(keywords, function(keyword) {
 			return _.string.include(eventKeywords, keyword);
 		});
-		if (matches.length == keywords.length) {
-			console.log(keywords + " matches " + eventKeywords);
-		}
 		return matches.length == keywords.length;
 	}
 }
@@ -87,8 +84,11 @@ $.widget('codemkrs.favoriteMarker', {
 			,key = 'favorites:'+this._eventId
 			;
 		if(_.isUndefined(isFavorite))
-			return (x = localStorage[key]) ? JSON.parse(x) : false;
-		localStorage[key] = JSON.stringify(isFavorite == true);
+			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
+		if(isFavorite == true)
+ 			localStorage[key] = '1';
+ 		else
+ 			localStorage.removeItem(key);
 		this._tagElement(isFavorite);
 	},
 	_tagElement: function(isFavorite) {
