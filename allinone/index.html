@@ -80,8 +80,18 @@
 				{{/each}}
 			</ul>
 		</div>
+		<div class="actions">
+			{{favoriteEvent}}
+			{{#if phone}}
+				<a class="phone" href="tel:{{phone}}"></a>
+			{{/if}}
+		</div>
 	</div>	
 </script>
-
+<style>
+	#events-list .actions >div{
+    	display: inline-block;
+	}
+</style>
 </body>
 </html>

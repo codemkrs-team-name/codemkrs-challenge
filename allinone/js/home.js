@@ -124,7 +124,7 @@ function gettingEvents() {
 }
 function stubAmmendEvents(allEvents){
 	return _.map(allEvents, function(ev) {
-		ev.time = new Date().add({hours: _.random(72)}).getTime();
+		ev.ranking = _.random(1);
 		return ev;
 	})
 }
@@ -175,6 +175,9 @@ function extendHandlebars() {
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
 	  return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
 	}));
+	Handlebars.registerHelper('favoriteEvent', function() {
+	  return new Handlebars.SafeString('<a>F</a>');
+	});
 
 }
 
