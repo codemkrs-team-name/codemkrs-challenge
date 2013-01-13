@@ -20,12 +20,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	};
 		
 	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
-	$events.find('a.favorite').favoriteMarker({
-		events: allEvents
-	});
 	$events.find('.event-body')
 		.filter(hasTextContents)
 		.seeMoreCollapsible();
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
 	updateFilters();
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
@@ -48,7 +48,7 @@ function runCurrentFilter(allEvents) {
 	}
 	
 	$noResults.hide();
-	_(events).each(function(ev) {
+	_.each(events, function(ev) {
 		$('#' + ev._id).show();
 	});
 	return events;
@@ -280,7 +280,7 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
-		this._showHideElement(true);
+		this._showHideElement(false);
 		if(this.element.height() <= this.contentsHeight())
 			return;
 		this.element.addClass('collapsed');
@@ -332,6 +332,11 @@ function extendHandlebars() {
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
+	});
+	Handlebars.registerHelper('mapLink', function() {
+		if(!this.location || !this.location.lat || !this.location.lon) return '';
+		var link = 'https://maps.google.com/?'+$.param({ z:16, ll:(''+this.location.lat+','+this.location.lon) });
+	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank" class="ico ico-map-pin-fill"></a>');
 	});
 
 	var appendTwitterButtonScript = _.debounce(function(){
