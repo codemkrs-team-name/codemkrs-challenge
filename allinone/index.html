@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Gigs Guru: Live &amp; Tight!</title>
+	<title>gigs guru - live &amp; tight!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">  
 	<link type="text/css" href="//code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet">
@@ -26,8 +26,9 @@
 
   		<div data-role="header" data-theme="a" data-position="fixed"  style="border: 0px;">
   			<div id="header">
-	  			<img id='logo' src='img/logo.png' />
-	
+				<div id='title'>
+					<img id='logo' src='img/logo.png' /><span>gigs guru</span>
+				</div>
 	  			<nav>
 	  				<ul id="actions">
 	  					<li data-toggletarget="#map-area" mode="map"><span id="map-button" class="ico ico-map">&nbsp;</span></li>
@@ -63,7 +64,7 @@
 	  					</select>
 	  				</fieldset>
 	  			</div>
-	  			<ul id="events-list" > </ul>
+	  			<ul id="events-list" style="display:none"> </ul>
 				<div style="display:none;" id="no-results">
 					No results to display.
 				</div>
@@ -79,7 +80,7 @@
        <div class="image">{{eventImage}}</div>
        <div class="details">
          <span class="event-name">{{eventName}}</span>
-         <span class="venue">{{venue}}</span>
+         <span class="venue"><span class="ico ico-office"></span> {{venue}}</span>
          <span class="time">{{time time}}</span>
          <span class="source">{{html source}}</span>
        </div>
@@ -94,46 +95,16 @@
          {{/each}}
        </ul>
      </div>
+	 <div style="clear:left"/>
      <div class="actions">
        {{favoriteEvent}}
        {{#if phone}}
        <a class="phone ico ico-phone" href="tel:{{phone}}"></a>
        {{/if}}
+       {{mapLink}}
        {{twitterButton}}
      </div>
    </li>	
-  	</script>
-  	<script id="event-template-josh" type="text/x-handlebars-template">
-
-	<div class="event myEvent">
-	  <span class="image left">{{eventImage}}</span>
-	  <h3>{{eventName}}</h3>  
-	  <ul class='eventDetails'>
-	    <li class="venue">{{venue}}</li>
-	    <li class="time">{{time time}}</li>
-	    <li class="source">{{html source}}</li>     
-	  </ul>
-
-	  <div class="description">
-	    {{html description}}
-	    <ul class="event-links">
-	      {{#each links}}
-	      <li>{{eventLink this}}</li>
-	      {{/each}}
-	    </ul>
-	  </div>
-
-	  <ul class="actions">
-	    <li><span class='ico ico-star'>&nbsp;</span></li>
-	    <li><span class='ico ico-twitter-old'>&nbsp;</span></li>
-	    <li><span class='ico ico-facebook'>&nbsp;</span></li>
-	    <li><span class='ico ico-phone'>&nbsp;</span></li>
-	    <li><span class='ico ico-map'>&nbsp;</span></li>
-
-	  </ul>
-
-	</div>  
-
   	</script>
   </body>
   </html>

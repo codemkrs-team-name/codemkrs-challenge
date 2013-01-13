@@ -20,12 +20,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	};
 		
 	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
-	$events.find('a.favorite').favoriteMarker({
-		events: allEvents
-	});
 	$events.find('.event-body')
 		.filter(hasTextContents)
 		.seeMoreCollapsible();
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
 	updateFilters();
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
@@ -48,7 +48,7 @@ function runCurrentFilter(allEvents) {
 	}
 	
 	$noResults.hide();
-	_(events).each(function(ev) {
+	_.each(events, function(ev) {
 		$('#' + ev._id).show();
 	});
 	return events;
@@ -280,10 +280,10 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
-		this._showHideElement(true);
-		if(this.element.height() <= this.contentsHeight())
-			return;
+		this._showHideElement(false);
 		this.element.addClass('collapsed');
+		if(this.element.height() >= this.contentsHeight())
+			return this.element.removeClass('collapsed');
 		this.$collapser = $('<div class="ico collapser ico-double-angle-up">')
 			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
@@ -328,10 +328,30 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
+		var linkTypes = {
+			venue: 'More info about this venue',
+			artist: link.text || 'More info about this artist',
+			gcal: 'View this event on Google Calendar',
+			artist_tip: 'Leave this artist a tip',
+		};
+	  	return new Handlebars.SafeString([
+	  		 '<a href="'+link.link+'">'
+	  		,'<span class="icon '+link.type+'"></span>'
+	  		,'<span class="link-name">'
+	  			,linkTypes[link.type]
+	  		,'</span></a>'
+	  	].join(''));
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
+	});
+	Handlebars.registerHelper('mapLink', function() {
+		if(!this.location || !this.location.lat || !this.location.lon) return '';
+		https://maps.google.com/?z=16&q=This+is+text+in+my+bubble@29.956763%2C-90.067645
+		var  locStr = ''+this.location.lat+','+this.location.lon
+			,link = 'https://maps.google.com/?'+$.param({ z:16, q:((this.venue||'').replace("@", "at")+'@'+locStr) })
+			; 
+	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank"  class="ico ico-map-pin-fill"></a>');
 	});
 
 	var appendTwitterButtonScript = _.debounce(function(){
@@ -352,7 +372,6 @@ function extendHandlebars() {
 		appendTwitterButtonScript();
 	  	return new Handlebars.SafeString('<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>');
 	});
-
 }
 //////////////////////////////////////////////////
 function hasTextContents() {

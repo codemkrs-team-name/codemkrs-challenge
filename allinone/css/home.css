@@ -26,7 +26,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"]:before {
 */
-.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before {
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .artist_tip:before, .ico-dollar:before, .ico-info:before {
     font-family: 'gigsguru';
     speak: none;
     font-style: normal;
@@ -70,7 +70,7 @@ you can use the generic selector below, but it's slower:
 .ico-search:before {
     content: "\e003";
 }
-.ico-calendar:before {
+.ico-calendar:before, .gcal:before {
     content: "\e006";
 }
 .ico-cd:before {
@@ -78,10 +78,18 @@ you can use the generic selector below, but it's slower:
 }
 .ico-office:before {
     content: "\e00c";
+	margin-right: 5px;
 }
-.ico-user:before {
+.ico-user:before, .artist:before {
     content: "\e00d";
 }
+.ico-dollar:before, .artist_tip:before {
+	content: "\e00e";
+}
+.ico-info:before {
+	content: "\e00f";
+}
+
 body {
     
     font-size:14px; 
@@ -102,24 +110,21 @@ body {
 
 #header {
     background-color:#450f3e !important;
-    /*min-height: 55px;*/
-}
-
-#header {
 	width: 100%;
 	height: 44px;
 }
 
-#logo {float:left; display:none;}
+#title { float:left; font-family: monospace; font-size: 18pt;}
+#title span { vertical-align: top; color: #bb993b; position: relative; top: 7px; left: 3px; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; }
+#logo {padding: 5px 8px; width: 34px; height: 34px;}
 
 nav #actions li {
     display: inline-block;
-    padding: 5px 8px 0 8px;
+    padding: 5px 6px 0 6px;
     width:32px;
     float:right;
+	height:44px;
 }
-
-
 
 #actions { margin: 0; }
 
@@ -165,25 +170,25 @@ nav #actions li.toggled {
 }   
 
 .event-header {
-    display: table;
+	margin: 6px 5px 2px;	
 }
-.event-header>* {
-    display: table-cell;
+.event-header > .image {
+	float: left;
+	display: inline;
+	margin-right: 5px;
+	margin-bottom: 1px;
 }
 .details {
-    padding-left: .2em;
+    padding-left: 5px;
+    padding-bottom: 5px;
     vertical-align: top;
 }
 .event-name {
     width: 100%;
     display: block;
-    line-height: 1em;
     font-weight: bold;
     font-size: 1.3em;
-    height: 40px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:normal;
+	margin-bottom: 3px;
 }
 
 .source {
@@ -195,7 +200,7 @@ nav #actions li.toggled {
     content: ", ";
 }
 #events-list {
-	padding-left: 5px;
+	padding: 0;
 	margin: 12px 0 6px;
 }
 
@@ -217,23 +222,36 @@ nav #actions li.toggled {
 
 #filters-area {
     text-align: center;
+	
 }
 
-.myEvent {clear:both; border: 2px solid #450f3e; margin-bottom: 10px; }
-.myEvent .image img {max-width: 100px; max-height: 100px;}
-.eventDetials {list-style:none;}
-.eventDetails li {display:inline;}
 .actions {
+	background-color: #e8e8e8;
+	padding: 3px 2px 0;
 }
+
 #events-list .actions >div{
     display: inline-block;
 }
 .favorite.selected {
     color: green;
 }
+p {
+	margin-top: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
 li.event {
     display: block;
-    margin-bottom: 1em;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	margin: 0 5px 6px 5px;
+	padding: 0;
+	background-color: #f7f7f7;
+}
+.event-body {
+	clear: left;
 }
 .event-body.collapsed {
     overflow: hidden;
@@ -241,6 +259,9 @@ li.event {
 }
 .event-body+.collapser {
     text-align: center;
+}
+.event-links {
+	margin-bottom: 5px;
 }
 
 #search-area, #favorite-area {
@@ -266,9 +287,16 @@ li.event {
 	background-image: none;
 }
 .event .actions a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5em;
+	text-decoration: none;
+	color: #777;
+	padding: 6px 0 2px 4px;
+	vertical-align: bottom;
+	font-size: 28px;
+	min-width: 28px;
+	line-height: 28px;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0 1px 1px white,0 2px 1px white;
 }
 
 .event .actions iframe {
