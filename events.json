@@ -9,8 +9,8 @@
     "eventName": "Bedlamville Triflers + The Jerks of Reality + Rocket to Russia", 
     "phone": "5049497012", 
     "location": {
-      "lat": "29.9622459", 
-      "lon": "-90.0579716"
+      "lat": 29.9622459, 
+      "lon": -90.0579716
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -33,8 +33,8 @@
     "venue": "The Irish House", 
     "eventName": "Beth Patterson", 
     "location": {
-      "lat": "29.9391585", 
-      "lon": "-90.0752232"
+      "lat": 29.9391585, 
+      "lon": -90.0752232
     }, 
     "time": "2013-01-19 19:30", 
     "image": {
@@ -61,8 +61,8 @@
     "venue": "PubliQ House", 
     "eventName": "Billy Iuso & Restless Natives", 
     "location": {
-      "lat": "29.9168885", 
-      "lon": "-90.1271248"
+      "lat": 29.9168885, 
+      "lon": -90.1271248
     }, 
     "time": "2013-01-19 22:00", 
     "image": null
@@ -82,8 +82,8 @@
     "venue": "Cafe Istanbul", 
     "eventName": "Blue Orleans", 
     "location": {
-      "lat": "29.9687471", 
-      "lon": "-90.0524549"
+      "lat": 29.9687471, 
+      "lon": -90.0524549
     }, 
     "time": "2013-01-19 19:00", 
     "image": null
@@ -97,8 +97,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "Brandon Moreau & Cajungrass", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-19 17:00", 
     "image": {
@@ -114,8 +114,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "Cajun Country Rockers", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-19 13:00", 
     "image": {
@@ -138,8 +138,8 @@
     "eventName": "Captain Leo", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-19 13:00", 
     "image": {
@@ -163,8 +163,8 @@
     "eventName": "Carl LeBlanc", 
     "phone": "5045532270", 
     "location": {
-      "lat": "29.955649", 
-      "lon": "-90.067995"
+      "lat": 29.955649, 
+      "lon": -90.067995
     }, 
     "time": "2013-01-19 20:00", 
     "image": {
@@ -193,8 +193,8 @@
     "eventName": "Chris Thomas King", 
     "phone": "5049490696", 
     "location": {
-      "lat": "29.9641609", 
-      "lon": "-90.0578676"
+      "lat": 29.9641609, 
+      "lon": -90.0578676
     }, 
     "time": "2013-01-19 20:00", 
     "image": {
@@ -222,8 +222,8 @@
     "eventName": "Dana Abbott", 
     "phone": "5043640950", 
     "location": {
-      "lat": "29.955501", 
-      "lon": "-90.050453"
+      "lat": 29.955501, 
+      "lon": -90.050453
     }, 
     "time": "2013-01-19 21:30", 
     "image": null
@@ -244,8 +244,8 @@
     "eventName": "David Hansen's Garden District Trio", 
     "phone": "5045241578", 
     "location": {
-      "lat": "29.9365895", 
-      "lon": "-90.0775998"
+      "lat": 29.9365895, 
+      "lon": -90.0775998
     }, 
     "time": "2013-01-19 18:30", 
     "image": null
@@ -266,8 +266,8 @@
     "eventName": "David Spicuzza & Friends", 
     "phone": "5048921873", 
     "location": {
-      "lat": "30.479344", 
-      "lon": "-90.095542"
+      "lat": 30.479344, 
+      "lon": -90.095542
     }, 
     "time": "2013-01-19 09:30", 
     "image": null
@@ -288,8 +288,8 @@
     "eventName": "Debi & The Deacons", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -306,8 +306,8 @@
     "eventName": "D\u00e9j\u00e0 vu Brass Band", 
     "phone": "5045532270", 
     "location": {
-      "lat": "29.955649", 
-      "lon": "-90.067995"
+      "lat": 29.955649, 
+      "lon": -90.067995
     }, 
     "time": "2013-01-13 00:00", 
     "image": {
@@ -323,8 +323,8 @@
     "venue": "Vaso", 
     "eventName": "Emily Estrella & The Faux Barrio Billionaires", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-19 18:00", 
     "image": {
@@ -353,8 +353,8 @@
     "eventName": "Eric Lindell", 
     "phone": "5049423731", 
     "location": {
-      "lat": "29.9640087", 
-      "lon": "-90.0578054"
+      "lat": 29.9640087, 
+      "lon": -90.0578054
     }, 
     "time": "2013-01-19 23:00", 
     "image": {
@@ -393,8 +393,8 @@
     "eventName": "Floating Action + Lackadaisies + Carbon Poppies", 
     "phone": "5045882616", 
     "location": {
-      "lat": "29.9428686", 
-      "lon": "-90.072702"
+      "lat": 29.9428686, 
+      "lon": -90.072702
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -417,8 +417,8 @@
     "eventName": "Frank Fairbanks & Wayne Lohr", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-19 21:00", 
     "image": null
@@ -432,8 +432,8 @@
     "venue": "Siberia", 
     "eventName": "Good Children CD Release Party", 
     "location": {
-      "lat": "29.9688884", 
-      "lon": "-90.0559478"
+      "lat": 29.9688884, 
+      "lon": -90.0559478
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -461,8 +461,8 @@
     "venue": "Siberia", 
     "eventName": "Hawg Jaw + The Bills + more to benefit Severin Lagarde", 
     "location": {
-      "lat": "29.9688884", 
-      "lon": "-90.0559478"
+      "lat": 29.9688884, 
+      "lon": -90.0559478
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -479,8 +479,8 @@
     "eventName": "Honky Tonkin' Donkey", 
     "phone": "5049499399", 
     "location": {
-      "lat": "29.9639416", 
-      "lon": "-90.057763"
+      "lat": 29.9639416, 
+      "lon": -90.057763
     }, 
     "time": "2013-01-19 16:00", 
     "image": {
@@ -497,8 +497,8 @@
     "eventName": "Jamey St. Pierre & The Honeycreepers", 
     "phone": "5049444744", 
     "location": {
-      "lat": "29.9637003", 
-      "lon": "-90.0577806"
+      "lat": 29.9637003, 
+      "lon": -90.0577806
     }, 
     "time": "2013-01-19 19:00", 
     "image": null
@@ -519,8 +519,8 @@
     "eventName": "Jasen Weaver Band", 
     "phone": "5049489111", 
     "location": {
-      "lat": "29.959824", 
-      "lon": "-90.033259"
+      "lat": 29.959824, 
+      "lon": -90.033259
     }, 
     "time": "2013-01-19 19:30", 
     "image": null
@@ -541,8 +541,8 @@
     "eventName": "Jay B Elston", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-19 17:00", 
     "image": {
@@ -564,8 +564,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Jazz Vipers", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -594,8 +594,8 @@
     "eventName": "Jeremy Davenport", 
     "phone": "5045241331", 
     "location": {
-      "lat": "29.954851", 
-      "lon": "-90.071132"
+      "lat": 29.954851, 
+      "lon": -90.071132
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -624,8 +624,8 @@
     "eventName": "Johnny Sketch & The Dirty Notes", 
     "phone": "5049482583", 
     "location": {
-      "lat": "29.9632291", 
-      "lon": "-90.0577415"
+      "lat": 29.9632291, 
+      "lon": -90.0577415
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -648,8 +648,8 @@
     "eventName": "Jon Cleary\u2019s Philthy Phew", 
     "phone": "5048669359", 
     "location": {
-      "lat": "29.948762", 
-      "lon": "-90.132072"
+      "lat": 29.948762, 
+      "lon": -90.132072
     }, 
     "time": "2013-01-19 22:30", 
     "image": {
@@ -672,8 +672,8 @@
     "eventName": "Ken Swartz & The Palace of Sin", 
     "phone": "5045292583", 
     "location": {
-      "lat": "29.9531604", 
-      "lon": "-90.0661661"
+      "lat": 29.9531604, 
+      "lon": -90.0661661
     }, 
     "time": "2013-01-19 17:00", 
     "image": {
@@ -690,8 +690,8 @@
     "eventName": "Kenny Claiborne", 
     "phone": "5049499399", 
     "location": {
-      "lat": "29.9639416", 
-      "lon": "-90.057763"
+      "lat": 29.9639416, 
+      "lon": -90.057763
     }, 
     "time": "2013-01-19 20:00", 
     "image": {
@@ -713,8 +713,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Kenny Triche Band", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-19 16:00", 
     "image": null
@@ -729,8 +729,8 @@
     "eventName": "LC Smoove", 
     "phone": "5046790010", 
     "location": {
-      "lat": "29.9584974", 
-      "lon": "-90.0658243"
+      "lat": 29.9584974, 
+      "lon": -90.0658243
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -753,8 +753,8 @@
     "eventName": "Late as Usual", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -777,8 +777,8 @@
     "eventName": "Lena Prima & Band", 
     "phone": "8005359595", 
     "location": {
-      "lat": "29.9543519", 
-      "lon": "-90.067991"
+      "lat": 29.9543519, 
+      "lon": -90.067991
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -801,8 +801,8 @@
     "eventName": "Lilli & Liz & The Shiz + Clyde Albert + Then Fens + more", 
     "phone": "5048913381", 
     "location": {
-      "lat": "29.9299856", 
-      "lon": "-90.1099823"
+      "lat": 29.9299856, 
+      "lon": -90.1099823
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -825,8 +825,8 @@
     "eventName": "Linzi Zaorski", 
     "phone": "5045860972", 
     "location": {
-      "lat": "29.956794", 
-      "lon": "-90.068589"
+      "lat": 29.956794, 
+      "lon": -90.068589
     }, 
     "time": "2013-01-19 21:30", 
     "image": {
@@ -854,8 +854,8 @@
     "venue": "Palm Court Jazz Caf\u00e9", 
     "eventName": "Lionel Ferbos + Palm Court Jazz Band", 
     "location": {
-      "lat": "29.9607933", 
-      "lon": "-90.0590994"
+      "lat": 29.9607933, 
+      "lon": -90.0590994
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -877,8 +877,8 @@
     "venue": "AllWays Lounge", 
     "eventName": "Lonesome Leashes CD Release Party + Walter McClements", 
     "location": {
-      "lat": "29.9685463", 
-      "lon": "-90.0556742"
+      "lat": 29.9685463, 
+      "lon": -90.0556742
     }, 
     "time": "2013-01-19 23:00", 
     "image": {
@@ -906,8 +906,8 @@
     "eventName": "Marc Stone", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-19 12:00", 
     "image": null
@@ -933,8 +933,8 @@
     "eventName": "Mark & The Pentones", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-19 16:00", 
     "image": null
@@ -955,8 +955,8 @@
     "eventName": "Mark Barrett Duo", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-19 13:00", 
     "image": {
@@ -978,8 +978,8 @@
     "venue": "Gattuso's Bar and Grill", 
     "eventName": "Melody Cool & Red Diva", 
     "location": {
-      "lat": "29.9152368", 
-      "lon": "-90.0637456"
+      "lat": 29.9152368, 
+      "lon": -90.0637456
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -1007,8 +1007,8 @@
     "eventName": "Meschiya Lake & The Little Big Horns", 
     "phone": "5049423731", 
     "location": {
-      "lat": "29.9640087", 
-      "lon": "-90.0578054"
+      "lat": 29.9640087, 
+      "lon": -90.0578054
     }, 
     "time": "2013-01-19 19:00", 
     "image": null
@@ -1023,8 +1023,8 @@
     "eventName": "Mike Fulton & Richard Scott", 
     "phone": "5045610432", 
     "location": {
-      "lat": "29.9592829", 
-      "lon": "-90.0651456"
+      "lat": 29.9592829, 
+      "lon": -90.0651456
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1052,8 +1052,8 @@
     "eventName": "Monty Banks", 
     "phone": "5045860972", 
     "location": {
-      "lat": "29.956794", 
-      "lon": "-90.068589"
+      "lat": 29.956794, 
+      "lon": -90.068589
     }, 
     "time": "2013-01-19 18:00", 
     "image": null
@@ -1074,8 +1074,8 @@
     "venue": "Three Muses", 
     "eventName": "Mumbles", 
     "location": {
-      "lat": "29.9632712", 
-      "lon": "-90.0577468"
+      "lat": 29.9632712, 
+      "lon": -90.0577468
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1098,8 +1098,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Panorama Jazz Band", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-19 18:00", 
     "image": {
@@ -1133,8 +1133,8 @@
     "eventName": "Paul Sanchez + Little Freddie King + more with special appearances by Fats Domino & Dave Bartholomew", 
     "phone": "5048958477", 
     "location": {
-      "lat": "29.9174145", 
-      "lon": "-90.1008856"
+      "lat": 29.9174145, 
+      "lon": -90.1008856
     }, 
     "time": "2013-01-19 20:00", 
     "image": {
@@ -1156,8 +1156,8 @@
     "venue": "Three Muses", 
     "eventName": "Pfister Sisters", 
     "location": {
-      "lat": "29.9632712", 
-      "lon": "-90.0577468"
+      "lat": 29.9632712, 
+      "lon": -90.0577468
     }, 
     "time": "2013-01-19 18:00", 
     "image": null
@@ -1177,8 +1177,8 @@
     "venue": "Vaso", 
     "eventName": "Pinstripe Brass Band", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-19 21:00", 
     "image": null
@@ -1199,8 +1199,8 @@
     "eventName": "Prima Jazz Band", 
     "phone": "8005359595", 
     "location": {
-      "lat": "29.9543519", 
-      "lon": "-90.067991"
+      "lat": 29.9543519, 
+      "lon": -90.067991
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1216,8 +1216,8 @@
     "venue": "Oak Wine Bar", 
     "eventName": "Reed Alleman Family Band", 
     "location": {
-      "lat": "29.9475488", 
-      "lon": "-90.1301395"
+      "lat": 29.9475488, 
+      "lon": -90.1301395
     }, 
     "time": "2013-01-19 21:00", 
     "image": null
@@ -1238,8 +1238,8 @@
     "eventName": "Regrets Of 27 + Through The Eyes Of A Martyr + more", 
     "phone": "5048964442", 
     "location": {
-      "lat": "30.0074445", 
-      "lon": "-90.1634685"
+      "lat": 30.0074445, 
+      "lon": -90.1634685
     }, 
     "time": "2013-01-19 19:30", 
     "image": {
@@ -1267,8 +1267,8 @@
     "eventName": "Rhythm & Rain", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-19 17:00", 
     "image": null
@@ -1293,8 +1293,8 @@
     "venue": "Rivershack Tavern", 
     "eventName": "Russell Batiste & Friends", 
     "location": {
-      "lat": "29.9582935", 
-      "lon": "-90.1609293"
+      "lat": 29.9582935, 
+      "lon": -90.1609293
     }, 
     "time": "2013-01-19 22:00", 
     "image": null
@@ -1315,8 +1315,8 @@
     "eventName": "Seva Venet & The Storyville String Band CD Release Party", 
     "phone": "5045222841", 
     "location": {
-      "lat": "29.9583033", 
-      "lon": "-90.0652395"
+      "lat": 29.9583033, 
+      "lon": -90.0652395
     }, 
     "time": "2013-01-19 20:00", 
     "image": null
@@ -1336,8 +1336,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Shotgun Jazz Band", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-19 15:00", 
     "image": null
@@ -1364,8 +1364,8 @@
     "eventName": "Soul Project", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-19 21:00", 
     "image": null
@@ -1384,10 +1384,6 @@
     "price": null, 
     "venue": "Special Venue", 
     "eventName": "Soul Project", 
-    "location": {
-      "lat": "", 
-      "lon": ""
-    }, 
     "time": "2013-01-19 11:00", 
     "image": null
   }, 
@@ -1407,8 +1403,8 @@
     "eventName": "Steamboat Willie & Friends", 
     "phone": "5045252611", 
     "location": {
-      "lat": "29.9556943", 
-      "lon": "-90.0682875"
+      "lat": 29.9556943, 
+      "lon": -90.0682875
     }, 
     "time": "2013-01-19 10:00", 
     "image": {
@@ -1437,8 +1433,8 @@
     "eventName": "Street Parade", 
     "phone": "9858922225", 
     "location": {
-      "lat": "30.4756223", 
-      "lon": "-90.0949654"
+      "lat": 30.4756223, 
+      "lon": -90.0949654
     }, 
     "time": "2013-01-19 21:00", 
     "image": null
@@ -1452,8 +1448,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "T'Canaille", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1486,8 +1482,8 @@
     "venue": "The Maison", 
     "eventName": "T'Canaille + Gal Holiday & The Honky Tonk Revue", 
     "location": {
-      "lat": "29.9627822", 
-      "lon": "-90.0577002"
+      "lat": 29.9627822, 
+      "lon": -90.0577002
     }, 
     "time": "2013-01-19 16:00", 
     "image": {
@@ -1510,8 +1506,8 @@
     "eventName": "Ted Graham's Allstars", 
     "phone": "5045922565", 
     "location": {
-      "lat": "29.9599009", 
-      "lon": "-90.0598873"
+      "lat": 29.9599009, 
+      "lon": -90.0598873
     }, 
     "time": "2013-01-19 20:00", 
     "image": null
@@ -1532,8 +1528,8 @@
     "eventName": "The Blues Masters featuring Big Al Carson", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-19 20:30", 
     "image": {
@@ -1549,8 +1545,8 @@
     "venue": "Four Points by Sheraton - Puccini Bar", 
     "eventName": "The DeSantis Duo", 
     "location": {
-      "lat": "29.9577192", 
-      "lon": "-90.066517"
+      "lat": 29.9577192, 
+      "lon": -90.066517
     }, 
     "time": "2013-01-19 18:00", 
     "image": null
@@ -1582,8 +1578,8 @@
     "eventName": "The Growlers + The Vacant Lots", 
     "phone": "5045698361", 
     "location": {
-      "lat": "29.957032", 
-      "lon": "-90.064749"
+      "lat": 29.957032, 
+      "lon": -90.064749
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -1612,8 +1608,8 @@
     "eventName": "The Hangovers", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-19 17:00", 
     "image": {
@@ -1641,8 +1637,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "The Mumbles", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-19 12:30", 
     "image": {
@@ -1671,8 +1667,8 @@
     "eventName": "The Quickening", 
     "phone": "5045229653", 
     "location": {
-      "lat": "29.9428785", 
-      "lon": "-90.0660439"
+      "lat": 29.9428785, 
+      "lon": -90.0660439
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -1705,8 +1701,8 @@
     "eventName": "The Quintessential Octopus + Saint Bell", 
     "phone": "5044860258", 
     "location": {
-      "lat": "29.9744629", 
-      "lon": "-90.1065036"
+      "lat": 29.9744629, 
+      "lon": -90.1065036
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -1729,8 +1725,8 @@
     "eventName": "The Royal Rounders", 
     "phone": "5049490038", 
     "location": {
-      "lat": "29.9654232", 
-      "lon": "-90.0626099"
+      "lat": 29.9654232, 
+      "lon": -90.0626099
     }, 
     "time": "2013-01-19 20:00", 
     "image": {
@@ -1753,8 +1749,8 @@
     "eventName": "The Secret Walls", 
     "phone": "5045692700", 
     "location": {
-      "lat": "29.9418185", 
-      "lon": "-90.0748598"
+      "lat": 29.9418185, 
+      "lon": -90.0748598
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -1782,8 +1778,8 @@
     "venue": "Hangar 13", 
     "eventName": "The Seven7h Seal + Atlas Shrugged + Wishful Thinking", 
     "location": {
-      "lat": "29.9549303", 
-      "lon": "-90.1047306"
+      "lat": 29.9549303, 
+      "lon": -90.1047306
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1822,8 +1818,8 @@
     "eventName": "Tommy Malone Band + Honey Island Swamp Band", 
     "phone": "5048611700", 
     "location": {
-      "lat": "29.960865", 
-      "lon": "-90.115774"
+      "lat": 29.960865, 
+      "lon": -90.115774
     }, 
     "time": "2013-01-19 21:30", 
     "image": {
@@ -1852,8 +1848,8 @@
     "eventName": "Vivaz", 
     "phone": "5048918500", 
     "location": {
-      "lat": "29.916536", 
-      "lon": "-90.11806"
+      "lat": 29.916536, 
+      "lon": -90.11806
     }, 
     "time": "2013-01-19 22:00", 
     "image": {
@@ -1882,8 +1878,8 @@
     "eventName": "Washboard Chaz Blues Trio", 
     "phone": "5049482583", 
     "location": {
-      "lat": "29.9632291", 
-      "lon": "-90.0577415"
+      "lat": 29.9632291, 
+      "lon": -90.0577415
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -1916,8 +1912,8 @@
     "venue": "AllWays Lounge", 
     "eventName": "Whom Do You Work For? + Hedwig & The Angry Inch", 
     "location": {
-      "lat": "29.9685463", 
-      "lon": "-90.0556742"
+      "lat": 29.9685463, 
+      "lon": -90.0556742
     }, 
     "time": "2013-01-19 19:00", 
     "image": {
@@ -1946,8 +1942,8 @@
     "eventName": "Yonder Mountain String Band", 
     "phone": "5045292583", 
     "location": {
-      "lat": "29.9531604", 
-      "lon": "-90.0661661"
+      "lat": 29.9531604, 
+      "lon": -90.0661661
     }, 
     "time": "2013-01-19 21:00", 
     "image": {
@@ -1969,8 +1965,8 @@
     "venue": "Vaso", 
     "eventName": "Young Fellaz Brass Band", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-13 00:00", 
     "image": {
@@ -1987,8 +1983,8 @@
     "eventName": "Acoustic Open Mic hosted by Jim Smith", 
     "phone": "5049497012", 
     "location": {
-      "lat": "29.9622459", 
-      "lon": "-90.0579716"
+      "lat": 29.9622459, 
+      "lon": -90.0579716
     }, 
     "time": "2013-01-13 20:00", 
     "image": null
@@ -2015,8 +2011,8 @@
     "eventName": "Andy J. Forest", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2032,8 +2028,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Ben Polcer & The Grinders", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-13 18:00", 
     "image": null
@@ -2060,8 +2056,8 @@
     "eventName": "Billy Chapman", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-13 21:00", 
     "image": null
@@ -2075,8 +2071,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "Brandon Moreau & Cajungrass", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2092,8 +2088,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "Cajun Country Rockers", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-13 17:00", 
     "image": {
@@ -2122,8 +2118,8 @@
     "eventName": "Castle + Sunrise: Sunset:", 
     "phone": "5045882616", 
     "location": {
-      "lat": "29.9428686", 
-      "lon": "-90.072702"
+      "lat": 29.9428686, 
+      "lon": -90.072702
     }, 
     "time": "2013-01-13 22:00", 
     "image": {
@@ -2152,8 +2148,8 @@
     "eventName": "Chip Wilson", 
     "phone": "8004459308", 
     "location": {
-      "lat": "29.927379", 
-      "lon": "-90.096146"
+      "lat": 29.927379, 
+      "lon": -90.096146
     }, 
     "time": "2013-01-13 23:00", 
     "image": null
@@ -2174,8 +2170,8 @@
     "eventName": "Chuck Cavet & The Flipside", 
     "phone": "5048611700", 
     "location": {
-      "lat": "29.960865", 
-      "lon": "-90.115774"
+      "lat": 29.960865, 
+      "lon": -90.115774
     }, 
     "time": "2013-01-13 21:30", 
     "image": null
@@ -2189,8 +2185,8 @@
     "venue": "Vaso", 
     "eventName": "Clint Johnson & The Kitchen Sink", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-13 19:00", 
     "image": null
@@ -2211,8 +2207,8 @@
     "eventName": "Coot CD Release Party", 
     "phone": "5049423731", 
     "location": {
-      "lat": "29.9640087", 
-      "lon": "-90.0578054"
+      "lat": 29.9640087, 
+      "lon": -90.0578054
     }, 
     "time": "2013-01-13 22:00", 
     "image": null
@@ -2233,8 +2229,8 @@
     "eventName": "David Hansen's Garden District Trio", 
     "phone": "5045241578", 
     "location": {
-      "lat": "29.9365895", 
-      "lon": "-90.0775998"
+      "lat": 29.9365895, 
+      "lon": -90.0775998
     }, 
     "time": "2013-01-13 18:00", 
     "image": null
@@ -2255,8 +2251,8 @@
     "venue": "Three Muses", 
     "eventName": "Debbie Davis", 
     "location": {
-      "lat": "29.9632712", 
-      "lon": "-90.0577468"
+      "lat": 29.9632712, 
+      "lon": -90.0577468
     }, 
     "time": "2013-01-13 20:00", 
     "image": {
@@ -2279,8 +2275,8 @@
     "eventName": "Debi & The Deacons", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2302,8 +2298,8 @@
     "venue": "Vaso", 
     "eventName": "Erika Flowers", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-13 22:00", 
     "image": null
@@ -2324,8 +2320,8 @@
     "eventName": "Eudora Evans & Deep Soul", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-13 18:00", 
     "image": null
@@ -2346,8 +2342,8 @@
     "eventName": "Fais Do Do featuring Bruce Daigrepont & Bruce Sunpie Barnes", 
     "phone": "5048958477", 
     "location": {
-      "lat": "29.9174145", 
-      "lon": "-90.1008856"
+      "lat": 29.9174145, 
+      "lon": -90.1008856
     }, 
     "time": "2013-01-13 17:30", 
     "image": null
@@ -2368,8 +2364,8 @@
     "eventName": "Frank Fairbanks", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-13 13:00", 
     "image": {
@@ -2398,8 +2394,8 @@
     "eventName": "Hot 8 Brass Band", 
     "phone": "5045229653", 
     "location": {
-      "lat": "29.9428785", 
-      "lon": "-90.0660439"
+      "lat": 29.9428785, 
+      "lon": -90.0660439
     }, 
     "time": "2013-01-13 22:00", 
     "image": {
@@ -2443,8 +2439,8 @@
     "eventName": "Joe Krown Trio + Russell Batiste + Walter \u201cWolfman\u201d Washington", 
     "phone": "5048669359", 
     "location": {
-      "lat": "29.948762", 
-      "lon": "-90.132072"
+      "lat": 29.948762, 
+      "lon": -90.132072
     }, 
     "time": "2013-01-13 22:30", 
     "image": {
@@ -2467,8 +2463,8 @@
     "eventName": "John Lisi & Delta Funk", 
     "phone": "5049444744", 
     "location": {
-      "lat": "29.9637003", 
-      "lon": "-90.0577806"
+      "lat": 29.9637003, 
+      "lon": -90.0577806
     }, 
     "time": "2013-01-13 19:00", 
     "image": null
@@ -2493,8 +2489,8 @@
     "venue": "Ralph's On the Park", 
     "eventName": "Josh Paxton", 
     "location": {
-      "lat": "29.983483", 
-      "lon": "-90.09817"
+      "lat": 29.983483, 
+      "lon": -90.09817
     }, 
     "time": "2013-01-13 11:00", 
     "image": null
@@ -2509,8 +2505,8 @@
     "eventName": "Kenny Claiborne", 
     "phone": "5049499399", 
     "location": {
-      "lat": "29.9639416", 
-      "lon": "-90.057763"
+      "lat": 29.9639416, 
+      "lon": -90.057763
     }, 
     "time": "2013-01-13 20:00", 
     "image": {
@@ -2537,8 +2533,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Kevin Clark & Tom McDermott", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-13 11:30", 
     "image": null
@@ -2564,8 +2560,8 @@
     "eventName": "Krewe de Guza", 
     "phone": "5048973448", 
     "location": {
-      "lat": "29.9205149", 
-      "lon": "-90.1062738"
+      "lat": 29.9205149, 
+      "lon": -90.1062738
     }, 
     "time": "2013-01-13 22:00", 
     "image": null
@@ -2585,8 +2581,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "La Tran-K Band", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-13 20:00", 
     "image": null
@@ -2598,10 +2594,6 @@
     "price": null, 
     "venue": "Special Venue", 
     "eventName": "Lady Jetsetters Parade", 
-    "location": {
-      "lat": "", 
-      "lon": ""
-    }, 
     "time": "2013-01-13 12:00", 
     "image": {
       "src": "http://farm4.staticflickr.com/3103/3190218102_59b85be967_s.jpg"
@@ -2623,8 +2615,8 @@
     "eventName": "Late as Usual", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2653,8 +2645,8 @@
     "eventName": "Los Otros", 
     "phone": "5048729868", 
     "location": {
-      "lat": "29.9648837", 
-      "lon": "-90.0513558"
+      "lat": 29.9648837, 
+      "lon": -90.0513558
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2677,8 +2669,8 @@
     "eventName": "Loyola University Alumni Recital", 
     "phone": "5045220276", 
     "location": {
-      "lat": "29.9315132", 
-      "lon": "-90.0783156"
+      "lat": 29.9315132, 
+      "lon": -90.0783156
     }, 
     "time": "2013-01-13 17:00", 
     "image": null
@@ -2703,8 +2695,8 @@
     "venue": "Palm Court Jazz Caf\u00e9", 
     "eventName": "Lucien Barbarin + Sunday Night Swingsters", 
     "location": {
-      "lat": "29.9607933", 
-      "lon": "-90.0590994"
+      "lat": 29.9607933, 
+      "lon": -90.0590994
     }, 
     "time": "2013-01-13 19:00", 
     "image": {
@@ -2733,8 +2725,8 @@
     "eventName": "Mainline", 
     "phone": "5049482583", 
     "location": {
-      "lat": "29.9632291", 
-      "lon": "-90.0577415"
+      "lat": 29.9632291, 
+      "lon": -90.0577415
     }, 
     "time": "2013-01-13 22:00", 
     "image": {
@@ -2762,8 +2754,8 @@
     "eventName": "Marc Stone", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-13 17:00", 
     "image": null
@@ -2777,8 +2769,8 @@
     "venue": "Vaso", 
     "eventName": "Mario Abney's Super Jazz Cyper", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-14 01:00", 
     "image": null
@@ -2804,8 +2796,8 @@
     "eventName": "Mark & The Pentones", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-13 16:00", 
     "image": null
@@ -2826,8 +2818,8 @@
     "eventName": "Mark Barrett Duo", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-13 13:00", 
     "image": {
@@ -2850,8 +2842,8 @@
     "eventName": "Micah McKee & Little Maker", 
     "phone": "5045882616", 
     "location": {
-      "lat": "29.9428686", 
-      "lon": "-90.072702"
+      "lat": 29.9428686, 
+      "lon": -90.072702
     }, 
     "time": "2013-01-13 18:00", 
     "image": null
@@ -2877,8 +2869,8 @@
     "eventName": "Mother Blues", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-13 20:30", 
     "image": null
@@ -2899,8 +2891,8 @@
     "venue": "Siberia", 
     "eventName": "Mountain of Wizard + Bipolaroid", 
     "location": {
-      "lat": "29.9688884", 
-      "lon": "-90.0559478"
+      "lat": 29.9688884, 
+      "lon": -90.0559478
     }, 
     "time": "2013-01-13 21:00", 
     "image": {
@@ -2923,8 +2915,8 @@
     "eventName": "Mykia Jovan", 
     "phone": "5049482583", 
     "location": {
-      "lat": "29.9632291", 
-      "lon": "-90.0577415"
+      "lat": 29.9632291, 
+      "lon": -90.0577415
     }, 
     "time": "2013-01-13 20:00", 
     "image": {
@@ -2953,8 +2945,8 @@
     "eventName": "Nola County + South Jones", 
     "phone": "5044860258", 
     "location": {
-      "lat": "29.9744629", 
-      "lon": "-90.1065036"
+      "lat": 29.9744629, 
+      "lon": -90.1065036
     }, 
     "time": "2013-01-13 15:00", 
     "image": {
@@ -2977,8 +2969,8 @@
     "eventName": "Oliver & Jean-Baptiste Franc Quartet", 
     "phone": "5049490696", 
     "location": {
-      "lat": "29.9641609", 
-      "lon": "-90.0578676"
+      "lat": 29.9641609, 
+      "lon": -90.0578676
     }, 
     "time": "2013-01-13 20:00", 
     "image": null
@@ -2999,8 +2991,8 @@
     "eventName": "Open Mic Night with Iain Micah Weigert", 
     "phone": "5048913381", 
     "location": {
-      "lat": "29.9299856", 
-      "lon": "-90.1099823"
+      "lat": 29.9299856, 
+      "lon": -90.1099823
     }, 
     "time": "2013-01-13 19:00", 
     "image": null
@@ -3014,8 +3006,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Pat Casey & The New Sounds", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-13 22:00", 
     "image": {
@@ -3043,8 +3035,8 @@
     "eventName": "Pfister Sisters", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-13 10:00", 
     "image": null
@@ -3058,8 +3050,8 @@
     "venue": "Three Muses", 
     "eventName": "Raphael & Norbert", 
     "location": {
-      "lat": "29.9632712", 
-      "lon": "-90.0577468"
+      "lat": 29.9632712, 
+      "lon": -90.0577468
     }, 
     "time": "2013-01-13 17:30", 
     "image": {
@@ -3087,8 +3079,8 @@
     "eventName": "Rhythm & Rain", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-13 17:00", 
     "image": null
@@ -3113,8 +3105,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Riccardo Crespo", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-13 15:30", 
     "image": null
@@ -3128,8 +3120,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Rights of Swing", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-13 15:00", 
     "image": {
@@ -3152,8 +3144,8 @@
     "eventName": "Ron Hotstream & Tony Italiano", 
     "phone": "5044860258", 
     "location": {
-      "lat": "29.9744629", 
-      "lon": "-90.1065036"
+      "lat": 29.9744629, 
+      "lon": -90.1065036
     }, 
     "time": "2013-01-13 21:00", 
     "image": null
@@ -3168,8 +3160,8 @@
     "eventName": "Ruby Moon & Her Vicarious Pleasure Band", 
     "phone": "5049499399", 
     "location": {
-      "lat": "29.9639416", 
-      "lon": "-90.057763"
+      "lat": 29.9639416, 
+      "lon": -90.057763
     }, 
     "time": "2013-01-13 22:30", 
     "image": null
@@ -3190,8 +3182,8 @@
     "eventName": "Some Like It Hot", 
     "phone": "5049490038", 
     "location": {
-      "lat": "29.9654232", 
-      "lon": "-90.0626099"
+      "lat": 29.9654232, 
+      "lon": -90.0626099
     }, 
     "time": "2013-01-13 11:00", 
     "image": {
@@ -3214,8 +3206,8 @@
     "eventName": "Steamboat Willie & Friends", 
     "phone": "5045252611", 
     "location": {
-      "lat": "29.9556943", 
-      "lon": "-90.0682875"
+      "lat": 29.9556943, 
+      "lon": -90.0682875
     }, 
     "time": "2013-01-13 10:00", 
     "image": {
@@ -3238,8 +3230,8 @@
     "eventName": "Sunday Youth Music Workshop Featuring Wendell Brunius, Chris Severin & Johnny Vidacovich", 
     "phone": "5048958477", 
     "location": {
-      "lat": "29.9174145", 
-      "lon": "-90.1008856"
+      "lat": 29.9174145, 
+      "lon": -90.1008856
     }, 
     "time": "2013-01-13 13:00", 
     "image": null
@@ -3266,8 +3258,8 @@
     "eventName": "The Hangovers", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-13 17:00", 
     "image": {
@@ -3284,8 +3276,8 @@
     "eventName": "The Jumbo Shrimp Jazz Band", 
     "phone": "5045610432", 
     "location": {
-      "lat": "29.9592829", 
-      "lon": "-90.0651456"
+      "lat": 29.9592829, 
+      "lon": -90.0651456
     }, 
     "time": "2013-01-13 20:00", 
     "image": {
@@ -3314,8 +3306,8 @@
     "eventName": "The Mumbles", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-13 15:00", 
     "image": {
@@ -3338,8 +3330,8 @@
     "eventName": "The New Orleans Legacy Band featuring Tommy Sancton", 
     "phone": "5045222841", 
     "location": {
-      "lat": "29.9583033", 
-      "lon": "-90.0652395"
+      "lat": 29.9583033, 
+      "lon": -90.0652395
     }, 
     "time": "2013-01-13 20:00", 
     "image": null
@@ -3366,8 +3358,8 @@
     "eventName": "The Palmetto Bug Stompers", 
     "phone": "5049423731", 
     "location": {
-      "lat": "29.9640087", 
-      "lon": "-90.0578054"
+      "lat": 29.9640087, 
+      "lon": -90.0578054
     }, 
     "time": "2013-01-13 20:00", 
     "image": {
@@ -3390,8 +3382,8 @@
     "eventName": "Tom Witek", 
     "phone": "5043640950", 
     "location": {
-      "lat": "29.955501", 
-      "lon": "-90.050453"
+      "lat": 29.955501, 
+      "lon": -90.050453
     }, 
     "time": "2013-01-13 19:00", 
     "image": {
@@ -3414,8 +3406,8 @@
     "eventName": "Tony Seville Trio", 
     "phone": "5045860972", 
     "location": {
-      "lat": "29.956794", 
-      "lon": "-90.068589"
+      "lat": 29.956794, 
+      "lon": -90.068589
     }, 
     "time": "2013-01-13 19:00", 
     "image": null
@@ -3430,8 +3422,8 @@
     "eventName": "Tyler's Revisited featuring Germaine Bazzle & Paul Longstreth", 
     "phone": "5045532270", 
     "location": {
-      "lat": "29.955649", 
-      "lon": "-90.067995"
+      "lat": 29.955649, 
+      "lon": -90.067995
     }, 
     "time": "2013-01-13 20:00", 
     "image": null
@@ -3463,8 +3455,8 @@
     "eventName": "Bellows + Opposable Thumbs + more", 
     "phone": "5045692700", 
     "location": {
-      "lat": "29.9418185", 
-      "lon": "-90.0748598"
+      "lat": 29.9418185, 
+      "lon": -90.0748598
     }, 
     "time": "2013-01-14 19:00", 
     "image": {
@@ -3493,8 +3485,8 @@
     "eventName": "Billy Chapman", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-14 21:00", 
     "image": null
@@ -3508,8 +3500,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "Cajun Drifters", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-14 21:00", 
     "image": {
@@ -3525,8 +3517,8 @@
     "venue": "Three Muses", 
     "eventName": "Carl LeBlanc Trio", 
     "location": {
-      "lat": "29.9632712", 
-      "lon": "-90.0577468"
+      "lat": 29.9632712, 
+      "lon": -90.0577468
     }, 
     "time": "2013-01-14 19:00", 
     "image": null
@@ -3541,8 +3533,8 @@
     "eventName": "Charlie Fardella & Tom Hook", 
     "phone": "5045610432", 
     "location": {
-      "lat": "29.9592829", 
-      "lon": "-90.0651456"
+      "lat": 29.9592829, 
+      "lon": -90.0651456
     }, 
     "time": "2013-01-14 20:00", 
     "image": null
@@ -3568,8 +3560,8 @@
     "eventName": "Charmaine Neville Band", 
     "phone": "5049490696", 
     "location": {
-      "lat": "29.9641609", 
-      "lon": "-90.0578676"
+      "lat": 29.9641609, 
+      "lon": -90.0578676
     }, 
     "time": "2013-01-14 20:00", 
     "image": {
@@ -3592,8 +3584,8 @@
     "eventName": "Chip Wilson Duo", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-14 21:00", 
     "image": {
@@ -3622,8 +3614,8 @@
     "eventName": "David Doucet", 
     "phone": "8004459308", 
     "location": {
-      "lat": "29.927379", 
-      "lon": "-90.096146"
+      "lat": 29.927379, 
+      "lon": -90.096146
     }, 
     "time": "2013-01-14 20:00", 
     "image": {
@@ -3646,8 +3638,8 @@
     "eventName": "David Hansen's Garden District Trio", 
     "phone": "5045241578", 
     "location": {
-      "lat": "29.9365895", 
-      "lon": "-90.0775998"
+      "lat": 29.9365895, 
+      "lon": -90.0775998
     }, 
     "time": "2013-01-14 18:30", 
     "image": null
@@ -3668,8 +3660,8 @@
     "eventName": "Debi & The Deacons", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-14 17:00", 
     "image": {
@@ -3685,8 +3677,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Dominick Grillo & The Frenchmen St. All-Stars", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-14 18:00", 
     "image": null
@@ -3701,8 +3693,8 @@
     "eventName": "Gerald French & The Original Tuxedo Jazz Band", 
     "phone": "5045532270", 
     "location": {
-      "lat": "29.955649", 
-      "lon": "-90.067995"
+      "lat": 29.955649, 
+      "lon": -90.067995
     }, 
     "time": "2013-01-14 20:00", 
     "image": null
@@ -3729,8 +3721,8 @@
     "eventName": "Glen David Andrews", 
     "phone": "5049423731", 
     "location": {
-      "lat": "29.9640087", 
-      "lon": "-90.0578054"
+      "lat": 29.9640087, 
+      "lon": -90.0578054
     }, 
     "time": "2013-01-14 22:00", 
     "image": {
@@ -3747,8 +3739,8 @@
     "eventName": "Honky Tonkin' Donkey", 
     "phone": "5049499399", 
     "location": {
-      "lat": "29.9639416", 
-      "lon": "-90.057763"
+      "lat": 29.9639416, 
+      "lon": -90.057763
     }, 
     "time": "2013-01-14 16:00", 
     "image": {
@@ -3764,8 +3756,8 @@
     "venue": "Vaso", 
     "eventName": "James Williams & The Swamp Donkies", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-14 18:00", 
     "image": null
@@ -3785,8 +3777,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Jazz Vipers", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-14 22:00", 
     "image": {
@@ -3815,8 +3807,8 @@
     "eventName": "John Fohl", 
     "phone": "5048918500", 
     "location": {
-      "lat": "29.916536", 
-      "lon": "-90.11806"
+      "lat": 29.916536, 
+      "lon": -90.11806
     }, 
     "time": "2013-01-14 21:30", 
     "image": {
@@ -3845,8 +3837,8 @@
     "eventName": "Jon Cleary", 
     "phone": "5043044714", 
     "location": {
-      "lat": "29.9668143", 
-      "lon": "-90.0895672"
+      "lat": 29.9668143, 
+      "lon": -90.0895672
     }, 
     "time": "2013-01-14 20:00", 
     "image": {
@@ -3868,8 +3860,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Larry Foyen Big Band", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-14 18:00", 
     "image": null
@@ -3890,8 +3882,8 @@
     "eventName": "Lil' Red & Big Bad", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-14 18:00", 
     "image": {
@@ -3919,8 +3911,8 @@
     "eventName": "Marc Stone", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9569036", 
-      "lon": "-90.0672551"
+      "lat": 29.9569036, 
+      "lon": -90.0672551
     }, 
     "time": "2013-01-14 17:00", 
     "image": null
@@ -3941,8 +3933,8 @@
     "eventName": "Mark Barrett Duo", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-14 13:00", 
     "image": {
@@ -3964,8 +3956,8 @@
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Megan Blue & The Blue Trees", 
     "location": {
-      "lat": "29.9618425", 
-      "lon": "-90.0576285"
+      "lat": 29.9618425, 
+      "lon": -90.0576285
     }, 
     "time": "2013-01-14 21:30", 
     "image": {
@@ -3993,8 +3985,8 @@
     "eventName": "Meghan Stewart", 
     "phone": "5045231960", 
     "location": {
-      "lat": "29.959226", 
-      "lon": "-90.06519"
+      "lat": 29.959226, 
+      "lon": -90.06519
     }, 
     "time": "2013-01-14 20:00", 
     "image": null
@@ -4015,8 +4007,8 @@
     "eventName": "Michael Liuzza", 
     "phone": "5045236538", 
     "location": {
-      "lat": "29.9380574", 
-      "lon": "-90.0765539"
+      "lat": 29.9380574, 
+      "lon": -90.0765539
     }, 
     "time": "2013-01-14 22:00", 
     "image": null
@@ -4037,8 +4029,8 @@
     "eventName": "Missy Meatlocker", 
     "phone": "5045882616", 
     "location": {
-      "lat": "29.9428686", 
-      "lon": "-90.072702"
+      "lat": 29.9428686, 
+      "lon": -90.072702
     }, 
     "time": "2013-01-14 18:00", 
     "image": {
@@ -4066,8 +4058,8 @@
     "eventName": "Monty Banks", 
     "phone": "5045860972", 
     "location": {
-      "lat": "29.956794", 
-      "lon": "-90.068589"
+      "lat": 29.956794, 
+      "lon": -90.068589
     }, 
     "time": "2013-01-14 18:00", 
     "image": null
@@ -4094,8 +4086,8 @@
     "eventName": "Papa Grows Funk", 
     "phone": "5048669359", 
     "location": {
-      "lat": "29.948762", 
-      "lon": "-90.132072"
+      "lat": 29.948762, 
+      "lon": -90.132072
     }, 
     "time": "2013-01-14 22:30", 
     "image": {
@@ -4123,8 +4115,8 @@
     "eventName": "Rhythm & Rain", 
     "phone": "5045294109", 
     "location": {
-      "lat": "29.9591267", 
-      "lon": "-90.0653068"
+      "lat": 29.9591267, 
+      "lon": -90.0653068
     }, 
     "time": "2013-01-14 17:00", 
     "image": null
@@ -4144,8 +4136,8 @@
     "venue": "Spotted Cat Music Club", 
     "eventName": "Sarah McCoy", 
     "location": {
-      "lat": "29.9641005", 
-      "lon": "-90.0577182"
+      "lat": 29.9641005, 
+      "lon": -90.0577182
     }, 
     "time": "2013-01-14 16:00", 
     "image": null
@@ -4166,8 +4158,8 @@
     "eventName": "Smoky Greenwell's Blues Jam", 
     "phone": "5045997770", 
     "location": {
-      "lat": "29.9617354", 
-      "lon": "-90.0583406"
+      "lat": 29.9617354, 
+      "lon": -90.0583406
     }, 
     "time": "2013-01-14 21:30", 
     "image": null
@@ -4188,8 +4180,8 @@
     "eventName": "Steamboat Willie & Friends", 
     "phone": "5045252611", 
     "location": {
-      "lat": "29.9556943", 
-      "lon": "-90.0682875"
+      "lat": 29.9556943, 
+      "lon": -90.0682875
     }, 
     "time": "2013-01-14 10:00", 
     "image": {
@@ -4213,8 +4205,8 @@
     "eventName": "Stephanie Nilles", 
     "phone": "5049497012", 
     "location": {
-      "lat": "29.9622459", 
-      "lon": "-90.0579716"
+      "lat": 29.9622459, 
+      "lon": -90.0579716
     }, 
     "time": "2013-01-14 19:00", 
     "image": {
@@ -4237,8 +4229,8 @@
     "eventName": "The Art of Funk", 
     "phone": "5044860258", 
     "location": {
-      "lat": "29.9744629", 
-      "lon": "-90.1065036"
+      "lat": 29.9744629, 
+      "lon": -90.1065036
     }, 
     "time": "2013-01-14 22:00", 
     "image": {
@@ -4261,8 +4253,8 @@
     "eventName": "The Brent Walsh Jazz Trio & Romy Kaye", 
     "phone": "5043640950", 
     "location": {
-      "lat": "29.955501", 
-      "lon": "-90.050453"
+      "lat": 29.955501, 
+      "lon": -90.050453
     }, 
     "time": "2013-01-14 19:00", 
     "image": null
@@ -4276,8 +4268,8 @@
     "venue": "Tropical Isle Bayou Club", 
     "eventName": "The Fieldpeas", 
     "location": {
-      "lat": "29.958062", 
-      "lon": "-90.066116"
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": "2013-01-14 17:00", 
     "image": {
@@ -4305,8 +4297,8 @@
     "eventName": "The Gumbo Kings", 
     "phone": "5045291728", 
     "location": {
-      "lat": "29.9578319", 
-      "lon": "-90.0663256"
+      "lat": 29.9578319, 
+      "lon": -90.0663256
     }, 
     "time": "2013-01-14 21:00", 
     "image": null
@@ -4327,8 +4319,8 @@
     "eventName": "The Preservation Hall Living Legends featuring Maynard Chatters", 
     "phone": "5045222841", 
     "location": {
-      "lat": "29.9583033", 
-      "lon": "-90.0652395"
+      "lat": 29.9583033, 
+      "lon": -90.0652395
     }, 
     "time": "2013-01-14 20:00", 
     "image": null
@@ -4342,8 +4334,8 @@
     "venue": "The Irish House", 
     "eventName": "Traditional Irish Music Session", 
     "location": {
-      "lat": "29.9391585", 
-      "lon": "-90.0752232"
+      "lat": 29.9391585, 
+      "lon": -90.0752232
     }, 
     "time": "2013-01-14 19:00", 
     "image": {
@@ -4366,8 +4358,8 @@
     "eventName": "Uke Joint + Bob Worth", 
     "phone": "5048913381", 
     "location": {
-      "lat": "29.9299856", 
-      "lon": "-90.1099823"
+      "lat": 29.9299856, 
+      "lon": -90.1099823
     }, 
     "time": "2013-01-14 19:00", 
     "image": {
@@ -4400,8 +4392,8 @@
     "venue": "AllWays Lounge", 
     "eventName": "Whom Do You Work For? + Hedwig & The Angry Inch", 
     "location": {
-      "lat": "29.9685463", 
-      "lon": "-90.0556742"
+      "lat": 29.9685463, 
+      "lon": -90.0556742
     }, 
     "time": "2013-01-14 19:00", 
     "image": {
@@ -4423,8 +4415,8 @@
     "venue": "Vaso", 
     "eventName": "Young Fellaz Brass Band", 
     "location": {
-      "lat": "29.9625485", 
-      "lon": "-90.0577453"
+      "lat": 29.9625485, 
+      "lon": -90.0577453
     }, 
     "time": "2013-01-14 22:00", 
     "image": {
