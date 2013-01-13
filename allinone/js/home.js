@@ -20,13 +20,19 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	};
 		
 	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
-	$events.find('.event-body')
-		.filter(hasTextContents)
-		.seeMoreCollapsible();
 	$events.find('a.favorite').favoriteMarker({
 		events: allEvents
 	});
-	updateFilters();
+	_.defer(function(){		
+		//GM - OK, so in order for this widget to initialize correctly
+		//it HAS to be visible at the time of initialization to calculate content vs container height
+		//SOOOO wait for the current event loop to finish (thanks jqm)
+		//then do all this. Because of reasons
+		$events.find('.event-body')
+			.filter(hasTextContents)
+			.seeMoreCollapsible();
+		updateFilters();
+	});
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
 	_.delay(scrollToHash, 2000);
