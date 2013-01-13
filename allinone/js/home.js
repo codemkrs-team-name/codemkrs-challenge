@@ -21,21 +21,6 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
-function filterSearch(keywords) {
-	if (!keywords || !keywords.trim())
-		return _.identity;
-	keywords = _.string.slugify(keywords).split('-');
-	return function(ev) {
-		var nameKeywords = _.string.slugify(ev.eventName).split('-');
-		var venueKeywords = _.string.slugify(ev.venue).split('-');
-		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
-		var matches = _.filter(keywords, function(keyword) {
-			return _.string.include(eventKeywords, keyword);
-		});
-		return matches.length == keywords.length;
-	}
-}
-
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
 		,$search 	= $('#search')
@@ -52,8 +37,25 @@ function runCurrentFilter(allEvents, eventTemplate) {
 	$events.find('a.favorite').favoriteMarker({
 		events: allEvents
 	});
-	$events.trigger('create');
+	$events.find('.event-body')
+		.filter(hasTextContents)
+		.seeMoreCollapsible()
+	$(':mobile-button').trigger('create')
+}
 
+function filterSearch(keywords) {
+	if (!keywords || !keywords.trim())
+		return _.identity;
+	keywords = _.string.slugify(keywords).split('-');
+	return function(ev) {
+		var nameKeywords = _.string.slugify(ev.eventName).split('-');
+		var venueKeywords = _.string.slugify(ev.venue).split('-');
+		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
+		var matches = _.filter(keywords, function(keyword) {
+			return _.string.include(eventKeywords, keyword);
+		});
+		return matches.length == keywords.length;
+	}
 }
 
 function initFilters() {
@@ -67,34 +69,6 @@ function initFilters() {
 	).find('option:first').prop('selected', true).trigger('change');
 	return $('#filters-area select');
 }
-
-$.widget('codemkrs.favoriteMarker', {
-	options: {
-		events: []
-	}
-	,_create: function() {
-		this._eventId = this.element.data('eventidentifier');
-		this._tagElement(this.favorite());
-		this.element.click(_.bind(function(){
-			this.favorite(!this.favorite());
-		}, this));
-	}
-	,favorite: function(isFavorite) {
-		var  x
-			,key = 'favorites:'+this._eventId
-			;
-		if(_.isUndefined(isFavorite))
-			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
-		if(isFavorite == true)
- 			localStorage[key] = '1';
- 		else
- 			localStorage.removeItem(key);
-		this._tagElement(isFavorite);
-	},
-	_tagElement: function(isFavorite) {
- 		this.element.toggleClass('selected', isFavorite);		
-	}
-});
 
 function filterRanking(ranking) { 
 	ranking = +ranking;
@@ -187,6 +161,48 @@ function haversineDistance(a,b) {
 function deg2rad(deg) {
   return deg * (Math.PI/180)
 }
+
+////////////////////////////////////////////////////
+$.widget('codemkrs.favoriteMarker', {
+	options: {
+		events: []
+	}
+	,_create: function() {
+		this._eventId = this.element.data('eventidentifier');
+		this._tagElement(this.favorite());
+		this.element.click(_.bind(function(){
+			this.favorite(!this.favorite());
+		}, this));
+	}
+	,favorite: function(isFavorite) {
+		var  x
+			,key = 'favorites:'+this._eventId
+			;
+		if(_.isUndefined(isFavorite))
+			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
+		if(isFavorite == true)
+ 			localStorage[key] = '1';
+ 		else
+ 			localStorage.removeItem(key);
+		this._tagElement(isFavorite);
+	},
+	_tagElement: function(isFavorite) {
+ 		this.element.toggleClass('selected', isFavorite);		
+	}
+});
+
+$.widget('codemkrs.seeMoreCollapsible',{
+	_create: function() {
+		this.element.hide();
+		this.$collapser = $('<button class="seeMoreCollapsible-collapser">').text("See More")
+			.insertBefore(this.element).button({mini: true});
+		this.$collapser.toggle(this.showMore(true), this.showMore(false));
+	}
+	,showMore: function(swtch) { return _.bind(function(){
+		this.element[swtch?'slideDown': 'slideUp']();
+	}, this) }
+
+});
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
@@ -200,13 +216,16 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+link.text+'</span></a>');
+	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite" href="javascript:void(0)" data-eventidentifier="'+this._id+'">F</a>');
 	});
 }
-
+//////////////////////////////////////////////////
+function hasTextContents() {
+	return !!this.innerText.trim();
+}
 function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
 
