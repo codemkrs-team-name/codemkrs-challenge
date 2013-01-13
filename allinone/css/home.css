@@ -154,7 +154,7 @@ nav #actions li {
     padding: 5px 6px 0 6px;
     width:32px;
     float:right;
-	height:44px;
+	height:39px;
 }
 
 #actions { margin: 0; }
@@ -257,7 +257,7 @@ nav #actions li.toggled {
 .actions {
 	background-color: #e8e8e8;
 	padding: 3px 2px 0;
-	text-align:center;
+	
 }
 
 .actions a {display:block; margin-right: 15px; margin-left:15px;}
@@ -310,7 +310,7 @@ li.event {
 #favorite-area {
 	text-align: center;
 	font-size: 16px;
-	padding: 13px 18px 11px;
+	padding: 13px 18px 13px;
 	color: #222;
 	text-shadow:1px 1px 1px white;
 }
