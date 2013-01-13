@@ -281,9 +281,9 @@ $.widget('codemkrs.favoriteMarker', {
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
 		this._showHideElement(false);
-		if(this.element.height() <= this.contentsHeight())
-			return;
 		this.element.addClass('collapsed');
+		if(this.element.height() >= this.contentsHeight())
+			return this.element.removeClass('collapsed');
 		this.$collapser = $('<div class="ico collapser ico-double-angle-up">')
 			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
