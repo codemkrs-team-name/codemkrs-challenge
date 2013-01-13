@@ -78,6 +78,7 @@ you can use the generic selector below, but it's slower:
 }
 .ico-office:before, .venue:before {
     content: "\e00c";
+	margin-right: 5px;
 }
 .ico-user:before, .artist:before {
     content: "\e00d";
@@ -169,7 +170,7 @@ nav #actions li.toggled {
 }   
 
 .event-header {
-	margin: 5px;
+	margin: 6px 5px 2px;	
 }
 .event-header > .image {
 	float: left;
@@ -286,11 +287,16 @@ li.event {
 	background-image: none;
 }
 .event .actions a {
-    text-decoration: none;
-    color: #333;
-	padding-left: 4px;
+	text-decoration: none;
+	color: #777;
+	padding: 6px 0 2px 4px;
 	vertical-align: bottom;
-    font-size: 1.5em;
+	font-size: 28px;
+	min-width: 28px;
+	line-height: 28px;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0 1px 1px white,0 2px 1px white;
 }
 
 .event .actions iframe {
