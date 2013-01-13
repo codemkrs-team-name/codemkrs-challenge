@@ -80,7 +80,7 @@ function filterEvents(allEvents) {
 }
 
 function filterSearch(keywords) {
-	if (!keywords || !keywords.trim()) return fn(false);
+	if (!keywords || !keywords.trim()) return fn(true);
 	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
