@@ -228,7 +228,9 @@ function startWatchingLocation(callback) {
 	if(!navigator || !navigator.geolocation) return;
 	navigator.geolocation.watchPosition(update);  // GM - No work in browser sad face
 	function update(position){
-		callback({lat: position.coords.latitude, lon: position.coords.longitude});
+		position = {lat: position.coords.latitude, lon: position.coords.longitude};
+		callback(position);
+		window.map && window.map.setLocation(position);
 	}
 }
 
