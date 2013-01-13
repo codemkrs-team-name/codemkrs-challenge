@@ -355,3 +355,13 @@ li.event {
     background-color:lightgrey;
 	width: 100%;
 }
+
+.event-links {
+    margin: 0;
+    padding: 1.5em;
+}
+.event-links li {
+    display: block;
+    margin: .5em 0;
+    font-weight: bold;
+}

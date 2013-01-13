@@ -24,6 +24,8 @@
   <body>
   	<div data-role="page">
 
+  		<div id="events-popup" data-role="popup">
+  		</div>
   		<div data-role="header" data-theme="a" data-position="fixed"  style="border: 0px;">
   			<div id="header">
 				<div id='title'>
@@ -90,8 +92,9 @@
          {{html description}}
        </div>
 		{{#if links}}
-		<div id="eventlinks-{{_id}}" data-role="popup">
-	       <ul class="event-links">
+		<div class="event-links-container" style="display: none">
+	       <ul data-inset="true" class="event-links" >
+			<li data-role="divider" data-theme="a">Related Links</li>
 	         {{#each links}}
 	         <li>{{eventLink this}}</li>
 	         {{/each}}
