@@ -320,11 +320,11 @@ function extendHandlebars() {
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
 		if (!timestamp) return '';
 		var date = new Date(timestamp);
-		var dateFormat = 'H:MI PP';
+		var theDateF = 'H:MI PP';
 		var now = new Date();
-		if (timestamp > now.getTime()+1000*60*60*24*7) dateFormat = 'M/D, ' + dateFormat;
-		if (date.getDay() != now.getDay()) dateFormat = 'DDD ' + dateFormat;
-	  	return date.toFormat(dateFormat);
+		if (timestamp > now.getTime()+1000*60*60*24*7) theDateF = 'M/D, ' + theDateF;
+		if (date.getDay() != now.getDay()) theDateF = 'DDD ' + theDateF;
+	  	return date.toFormat(theDateF);
 	}));
 	Handlebars.registerHelper('eventImage', function() {
 		if(!this.image) return '';
