@@ -1,7 +1,7 @@
 (function(){
 
 var currentLocation = null;
-var showingFavorites = false;
+var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
@@ -10,16 +10,32 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	initToggles();
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
 		,$filters   	= initFilters()
-		,updateFilters = function() { runCurrentFilter(allEvents, eventTemplate) };
+		,updateFilters = function() {
+			var updateModeButton = function(name, icon) {
+				var button = $("#" + name + "-button");
+				if (mode != name) button.addClass('ico-'+icon).removeClass('ico-star-2');
+				else button.addClass('ico-star-2').removeClass('ico-'+icon);
+			}
+			updateModeButton('favorites', 'star');
+			updateModeButton('search', 'search');
+			updateModeButton('map', 'map');
+			
+			runCurrentFilter(allEvents, eventTemplate);
+		}
+		, modeButton = function(name) {
+			$("#" + name + "-button").click(function() {
+				mode = (mode == name) ? 'default' : name;
+				console.log(mode);
+				updateFilters();
+			});
+		}
 		;
 		
 	updateFilters();
 	$filters.on('change', updateFilters);
-	$("#favorite").click(function() {
-		$(this).toggleClass('ico-star').toggleClass('ico-star-2');
-		showingFavorites = !showingFavorites;
-		updateFilters();
-	});
+	modeButton('favorites');
+	modeButton('search');
+	modeButton('map');
 	$("#search").keydown(_.debounce(updateFilters, 500));
 });
 
@@ -43,19 +59,18 @@ function filterSearch(keywords) {
 
 function filterEvents(allEvents) {
 	var results = _.chain(allEvents);
-	if (showingFavorites) {
+	if (mode =='favorites') {
 		results = results.filter(function(ev) {
 			return +localStorage['favorites:'+ev._id];
 		});
-	} else {
-		var $search 	= $('#search')
-			,selVal		= function(name) { return $('#'+name+'-filter').val() }
-			;
+	} else if (mode == 'search') {
+		results = results.filter(filterSearch($('#search').val()));
+	} else if (mode == 'default') {
+		var selVal = function(name) { return $('#'+name+'-filter').val() };
 		results = results
 			.filter(filterRanking(selVal('ranking')))
 			.filter(filterDay(selVal('day')))
-			.filter(filterDistance(selVal('distance')))
-			.filter(filterSearch($search.is(':visible') && $search.val()));
+			.filter(filterDistance(selVal('distance')));
 	}
 	return results.sortBy('time').value();
 }
