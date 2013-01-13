@@ -20,7 +20,7 @@
       "href": "http://www.last.fm/music/The+Mumbles"
     }, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "the Mumbles, Eudora Evans and Deep Soul, Andy J. Forest", 
     "phone": "5045997770", 
     "location": {
@@ -84,7 +84,7 @@
     ], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Riccardo Crespo", 
     "location": {
       "lat": 29.9618425, 
@@ -102,7 +102,7 @@
       "href": "http://www.flickr.com/photos/76491999@N00/3463268850"
     }, 
     "address": "623 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Spotted Cat", 
+    "venue": "Spotted Cat Music Club", 
     "eventName": "Rights of Swing", 
     "location": {
       "lat": 29.9641005, 
@@ -168,7 +168,7 @@
     "links": [], 
     "image": null, 
     "address": "3016 S. Carrollton Avenue<br>\nNew Orleans, LA 70118", 
-    "venue": "Rock \u2018n' Bowl", 
+    "venue": "Mid-City Lanes Rock & Bowl", 
     "eventName": "Chuck Cavet and Flip Side", 
     "phone": "5048611700", 
     "location": {
@@ -186,6 +186,11 @@
         "type": "artist", 
         "link": "http://www.marcstonemusic.com", 
         "text": "Marc Stone"
+      }, 
+      {
+        "type": "artist_tip", 
+        "link": "http://www.digitaltipjar.com/mstone", 
+        "text": "Marc Stone (Digital Tip Jar)"
       }
     ], 
     "image": {
@@ -218,7 +223,7 @@
       "href": "http://www.last.fm/music/Cristina+Perez"
     }, 
     "address": "508 Frenchmen Street<br>\nNew Orleans, LA", 
-    "venue": "Maison", 
+    "venue": "The Maison", 
     "eventName": "Dave Easley, Cristina Perez, Eric Gordon's Lazy Boyz", 
     "location": {
       "lat": 29.9627822, 
@@ -257,7 +262,7 @@
       "href": ""
     }, 
     "address": "501 Napoleon Avenue<br>\nNew Orleans, LA 70115", 
-    "venue": "Tipitina's Uptown", 
+    "venue": "Tipitina's", 
     "eventName": "Cajun Fais Do Do feat. Bruce Daigrepont and Sunpie Barnes", 
     "phone": "5048958477", 
     "location": {
@@ -400,11 +405,11 @@
       }
     ], 
     "image": {
-      "src": "http://www.basinstreetrecords.com/2011/wp-content/themes/bsr/images/moneyshot/ruffins.jpg", 
+      "src": "http://www.jazzfm.com/wp-content/uploads/2010/10/kermit-ruffins.jpg", 
       "href": "http://www.last.fm/music/Kermit+Ruffins+&+the+BBQ+Swingers"
     }, 
     "address": "1535 Basin St<br>\nNew Orleans, LA", 
-    "venue": "Kermit\u2019s Treme Speakeasy Restaurant", 
+    "venue": "Kermit's Trem\u00e9 Speakeasy", 
     "eventName": "Kermit Ruffins and the BBQ Swingers", 
     "location": {
       "lat": 29.9637235, 
@@ -435,7 +440,7 @@
     "links": [], 
     "image": null, 
     "address": "3201 Esplanade Avenue<br>\nNew Orleans, LA", 
-    "venue": "Santa Fe Restaurant", 
+    "venue": "Santa Fe", 
     "eventName": "Ian McPhail Jazz Quartet", 
     "phone": "5049480077", 
     "location": {
@@ -451,7 +456,7 @@
     "links": [], 
     "image": null, 
     "address": "623 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Spotted Cat", 
+    "venue": "Spotted Cat Music Club", 
     "eventName": "Ben Polcer and the Grinders", 
     "location": {
       "lat": 29.9641005, 
@@ -507,7 +512,7 @@
     "links": [], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Salsa Dance Lesson", 
     "location": {
       "lat": 29.9618425, 
@@ -566,7 +571,7 @@
       "href": ""
     }, 
     "address": "3101 Bruxelles Street<br>\nNew Orleans, LA 70119", 
-    "venue": "Reserve of Orleans", 
+    "venue": "Reserve of New Orleans", 
     "eventName": "the Yisrael Trio", 
     "location": {
       "lat": 29.989205, 
@@ -641,7 +646,7 @@
     "links": [], 
     "image": null, 
     "address": "309 Decatur St<br>\nNew Orleans, LA 70116", 
-    "venue": "Hookah, The", 
+    "venue": "Hookah", 
     "eventName": "Taste feat. DJ RQ Away and Room Service Band", 
     "phone": "5049431101", 
     "location": {
@@ -673,7 +678,7 @@
     "links": [], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "La Tran-K Band", 
     "location": {
       "lat": 29.9618425, 
@@ -716,7 +721,7 @@
       "href": "http://www.flickr.com/photos/52996072@N04/5792540151"
     }, 
     "address": "1204 Decatur<br>\nNew Orleans, LA", 
-    "venue": "Palm Court Jazz Cafe", 
+    "venue": "Palm Court Jazz Caf\u00e9", 
     "eventName": "Lucien Barbarin and Sunday Night Swingsters", 
     "location": {
       "lat": 29.9607933, 
@@ -813,16 +818,15 @@
     "description": null, 
     "links": [], 
     "image": {
-      "src": "http://farm9.staticflickr.com/8464/8366678864_d27ec42116_s.jpg", 
-      "href": "http://www.flickr.com/photos/11607158@N03/8366678864"
+      "src": "http://farm6.staticflickr.com/5155/7404898444_73bae24dfa_s.jpg", 
+      "href": "http://www.flickr.com/photos/26984546@N07/7404898444"
     }, 
-    "address": "600 Bourbon Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Tropical Isle Original", 
-    "eventName": "Late As Usual", 
-    "phone": "5045291728", 
+    "address": "610 Bourbon St.<br>\nNew Orleans, LA", 
+    "venue": "Tropical Isle Bayou Club", 
+    "eventName": "Brandon Moreau and Cajungrass", 
     "location": {
-      "lat": 29.9578319, 
-      "lon": -90.0663256
+      "lat": 29.958062, 
+      "lon": -90.066116
     }, 
     "time": 1358132400, 
     "price": null
@@ -907,7 +911,7 @@
       "href": "http://www.last.fm/music/Hot+8+Brass+Band"
     }, 
     "address": "901 S. Peters St<br>\nNew Orleans, LA 70130", 
-    "venue": "Howlin Wolf (The Den)", 
+    "venue": "Howlin' Wolf - \"The Den\"", 
     "eventName": "Hot 8 Brass Band", 
     "phone": "5045229653", 
     "location": {
@@ -937,7 +941,7 @@
       "href": "http://www.joekrown.com/trio.htm"
     }, 
     "address": "8316 Oak Street<br>\nNew Orleans, LA 70118", 
-    "venue": "Maple Leaf Bar", 
+    "venue": "Maple Leaf", 
     "eventName": "Joe Krown Trio feat. Russell Batiste and Walter \"Wolfman\" Washington", 
     "phone": "5048669359", 
     "location": {
@@ -1000,7 +1004,7 @@
       "href": "http://www.flickr.com/photos/31221600@N02/5442944869"
     }, 
     "address": "623 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Spotted Cat", 
+    "venue": "Spotted Cat Music Club", 
     "eventName": "Pat Casey and the New Sound", 
     "location": {
       "lat": 29.9641005, 
@@ -1047,7 +1051,7 @@
     "links": [], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Salsa Salsa feat. DJ Cruz", 
     "location": {
       "lat": 29.9618425, 
@@ -1173,6 +1177,11 @@
         "type": "artist", 
         "link": "http://www.marcstonemusic.com", 
         "text": "Marc Stone"
+      }, 
+      {
+        "type": "artist_tip", 
+        "link": "http://www.digitaltipjar.com/mstone", 
+        "text": "Marc Stone (Digital Tip Jar)"
       }
     ], 
     "price": null, 
@@ -1202,7 +1211,7 @@
     ], 
     "image": null, 
     "address": "508 Frenchmen Street<br>\nNew Orleans, LA", 
-    "venue": "Maison", 
+    "venue": "The Maison", 
     "eventName": "Chicken and Waffles, Aurora Nealand and Royal Roses, Super Jam feat. Gene's Music Machine", 
     "location": {
       "lat": 29.9627822, 
@@ -1236,7 +1245,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Lil' Red & Big Bad", 
     "phone": "5045997770", 
     "location": {
@@ -1333,11 +1342,11 @@
       }
     ], 
     "image": {
-      "src": "http://www.basinstreetrecords.com/2011/wp-content/themes/bsr/images/moneyshot/ruffins.jpg", 
+      "src": "http://www.jazzfm.com/wp-content/uploads/2010/10/kermit-ruffins.jpg", 
       "href": "http://www.last.fm/music/Kermit+Ruffins+&+the+BBQ+Swingers"
     }, 
     "address": "1535 Basin St<br>\nNew Orleans, LA", 
-    "venue": "Kermit\u2019s Treme Speakeasy Restaurant", 
+    "venue": "Kermit's Trem\u00e9 Speakeasy", 
     "eventName": "Kermit Ruffins and the BBQ Swingers", 
     "location": {
       "lat": 29.9637235, 
@@ -1368,21 +1377,6 @@
     "links": [], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
-    "eventName": "Larry Foyen Big Band", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358208000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Larry Foyen Big Band", 
     "location": {
@@ -1390,7 +1384,7 @@
       "lon": -90.0576285
     }, 
     "time": 1358208000, 
-    "image": null
+    "price": null
   }, 
   {
     "ranking": 0, 
@@ -1510,7 +1504,7 @@
     "links": [], 
     "image": null, 
     "address": "440 Bourbon St<br>\nNew Orleans, LA 70130", 
-    "venue": "Fat Catz Music Club", 
+    "venue": "Fat Cats Music Club", 
     "eventName": "Ka-Nection Band", 
     "phone": "5045250303", 
     "location": {
@@ -1586,7 +1580,7 @@
       "href": ""
     }, 
     "address": "3101 Bruxelles Street<br>\nNew Orleans, LA 70119", 
-    "venue": "Reserve of Orleans", 
+    "venue": "Reserve of New Orleans", 
     "eventName": "the Yisrael Trio", 
     "location": {
       "lat": 29.989205, 
@@ -1626,7 +1620,7 @@
     "links": [], 
     "image": null, 
     "address": "3016 S. Carrollton Avenue<br>\nNew Orleans, LA 70118", 
-    "venue": "Rock \u2018n' Bowl", 
+    "venue": "Mid-City Lanes Rock & Bowl", 
     "eventName": "Disco Karaoke", 
     "phone": "5048611700", 
     "location": {
@@ -1781,7 +1775,7 @@
     "links": [], 
     "image": null, 
     "address": "2239 Saint Claude Avenue<br>\nNew Orleans, LA 70117", 
-    "venue": "Hi-Ho Lounge", 
+    "venue": "Hi Ho Lounge", 
     "eventName": "Bluegrass Pickin' Party", 
     "phone": "5049454446", 
     "location": {
@@ -1825,7 +1819,7 @@
   }, 
   {
     "ranking": 1, 
-    "description": null, 
+    "description": "<p>Reviewers have called their shows electrifying, aerobic, explosive. Charmaine and the band mix the hypnotic with the dramatic. Charmaine herself has been described as a crowd magnet, a frisky dynamo, versatile, vivacious, technically impressive. Her talent for comedy, her rhythmic wizardry, her spontaneity, her vocal and dramatic range all make for a spectacular, energetic, riveting presentation. One reviewer claims, \"Listening to Charmaine is like swallowing electricity and then washing it down with a roomful of appliances!\" </p>", 
     "links": [
       {
         "type": "artist", 
@@ -1854,7 +1848,7 @@
     "links": [], 
     "image": null, 
     "address": "542 S Jefferson Davis Parkway<br>\nNew Orleans, LA", 
-    "venue": "dmac\u2019s", 
+    "venue": "Dmac's Bar & Grill", 
     "eventName": "Danny Alexander", 
     "location": {
       "lat": 29.9658767, 
@@ -1869,7 +1863,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Smoky Greenwell's Blues Jam", 
     "phone": "5045997770", 
     "location": {
@@ -1937,7 +1931,7 @@
       "href": "http://www.flickr.com/photos/27518735@N00/7397944422"
     }, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Megan Blue and the Blue Trees", 
     "location": {
       "lat": 29.9618425, 
@@ -1945,24 +1939,6 @@
     }, 
     "time": 1358218800, 
     "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos Rum Bar & Grill", 
-    "eventName": "Megan Blue & The Blue Trees", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358218800, 
-    "image": {
-      "src": "http://farm8.staticflickr.com/7079/7397944422_dd5628ba65_s.jpg", 
-      "href": "http://www.flickr.com/photos/27518735@N00/7397944422"
-    }
   }, 
   {
     "ranking": 0, 
@@ -2082,7 +2058,7 @@
   }, 
   {
     "ranking": 1, 
-    "description": null, 
+    "description": "<p>Reviewers have called their shows electrifying, aerobic, explosive. Charmaine and the band mix the hypnotic with the dramatic. Charmaine herself has been described as a crowd magnet, a frisky dynamo, versatile, vivacious, technically impressive. Her talent for comedy, her rhythmic wizardry, her spontaneity, her vocal and dramatic range all make for a spectacular, energetic, riveting presentation. One reviewer claims, \"Listening to Charmaine is like swallowing electricity and then washing it down with a roomful of appliances!\" </p>", 
     "links": [
       {
         "type": "artist", 
@@ -2305,7 +2281,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Carolyn Broussard & The Scotch Hounds", 
     "phone": "5045997770", 
     "location": {
@@ -2344,6 +2320,11 @@
         "type": "artist", 
         "link": "http://www.marcstonemusic.com", 
         "text": "Marc Stone"
+      }, 
+      {
+        "type": "artist_tip", 
+        "link": "http://www.digitaltipjar.com/mstone", 
+        "text": "Marc Stone (Digital Tip Jar)"
       }
     ], 
     "price": null, 
@@ -2438,7 +2419,7 @@
       }
     ], 
     "image": {
-      "src": "http://www.basinstreetrecords.com/2011/wp-content/themes/bsr/images/moneyshot/ruffins.jpg", 
+      "src": "http://www.jazzfm.com/wp-content/uploads/2010/10/kermit-ruffins.jpg", 
       "href": "http://www.last.fm/music/Kermit+Ruffins+&+the+BBQ+Swingers"
     }, 
     "venue": "Bullet\u2019s Sports Bar", 
@@ -2484,7 +2465,7 @@
     "links": [], 
     "image": null, 
     "address": "508 Frenchmen Street<br>\nNew Orleans, LA", 
-    "venue": "Maison", 
+    "venue": "The Maison", 
     "eventName": "Gregory Agid, Magnitude", 
     "location": {
       "lat": 29.9627822, 
@@ -2521,7 +2502,7 @@
     ], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Jenna McSwain", 
     "location": {
       "lat": 29.9618425, 
@@ -2531,34 +2512,13 @@
     "price": null
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Jenna+McSwain", 
-        "text": "Jenna McSwain"
-      }
-    ], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos Rum Bar & Grill", 
-    "eventName": "Jenna McSwain", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358294400, 
-    "image": null
-  }, 
-  {
     "ranking": 1, 
     "description": "<p>Lake is stoking the embers of another extinguished tradition: the social dance and floor show. Every Monday at Mimi's in the Marigny, the Little Big Horns turn back the clock, reanimating Jelly Roll Morton, Bessie Smith and Duke Ellington as some of the city's best swing dancers instruct left-footed locals on the twists and twirls of the Charleston and Lindy Hop.</p>", 
     "links": [
       {
         "type": "artist", 
         "link": "http://www.bestofneworleans.com/gambit/meschiya-lake-and-the-little-big-horns/Content?oid=1279206", 
-        "text": "Meschiya Lake & The Little Big Horns\n"
+        "text": "Meschiya Lake"
       }
     ], 
     "price": null, 
@@ -2570,7 +2530,10 @@
       "lon": -90.0577182
     }, 
     "time": 1358294400, 
-    "image": null
+    "image": {
+      "src": "http://www.thepeoplesayproject.org/wp-content/uploads/2012/10/Meschiya+Lake+and+The+Little+Big+Horns+meschiya.jpeg", 
+      "href": "http://www.last.fm/music/+noredirect/Meschiya+Lake+&+The+Little+Big+Horns"
+    }
   }, 
   {
     "ranking": 0, 
@@ -2600,7 +2563,7 @@
     "links": [], 
     "image": null, 
     "address": "1001 Rue Toulouse<br>\nNew Orleans, LA 70112", 
-    "venue": "Bistreaux", 
+    "venue": "Maison Dupuy Hotel - Bistreaux", 
     "eventName": "Aaron Lopez-Barrantes", 
     "phone": "5045868000", 
     "location": {
@@ -2635,7 +2598,7 @@
     "links": [], 
     "image": null, 
     "address": "440 Bourbon St<br>\nNew Orleans, LA 70130", 
-    "venue": "Fat Catz Music Club", 
+    "venue": "Fat Cats Music Club", 
     "eventName": "Ka-Nection Band", 
     "phone": "5045250303", 
     "location": {
@@ -2686,7 +2649,7 @@
       "href": ""
     }, 
     "address": "3101 Bruxelles Street<br>\nNew Orleans, LA 70119", 
-    "venue": "Reserve of Orleans", 
+    "venue": "Reserve of New Orleans", 
     "eventName": "the Yisrael Trio", 
     "location": {
       "lat": 29.989205, 
@@ -2704,7 +2667,7 @@
       "href": "http://www.flickr.com/photos/10168334@N06/3811429581"
     }, 
     "address": "542 S Jefferson Davis Parkway<br>\nNew Orleans, LA", 
-    "venue": "dmac\u2019s", 
+    "venue": "Dmac's Bar & Grill", 
     "eventName": "Vincent Marini", 
     "location": {
       "lat": 29.9658767, 
@@ -2738,7 +2701,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Eudora Evans & Deep Soul", 
     "phone": "5045997770", 
     "location": {
@@ -2897,7 +2860,7 @@
     ], 
     "image": null, 
     "address": "2239 Saint Claude Avenue<br>\nNew Orleans, LA 70117", 
-    "venue": "Hi-Ho Lounge", 
+    "venue": "Hi Ho Lounge", 
     "eventName": "Kopecky Family Band + The Eastern Sea + Sports & Leisure", 
     "phone": "5049454446", 
     "location": {
@@ -2913,7 +2876,7 @@
     "links": [], 
     "image": null, 
     "address": "225 Decatur Street<br>\nNew Orleans, LA 70130", 
-    "venue": "House of Blues (The Parish)", 
+    "venue": "House of Blues - The Parish", 
     "eventName": "Give 'em the Light Open Mic Comedy Show", 
     "phone": "5045292583", 
     "location": {
@@ -2929,7 +2892,7 @@
     "links": [], 
     "image": null, 
     "address": "901 S. Peters St<br>\nNew Orleans, LA 70130", 
-    "venue": "Howlin Wolf (The Den)", 
+    "venue": "Howlin' Wolf - \"The Den\"", 
     "eventName": "Comedy Beast", 
     "phone": "5045229653", 
     "location": {
@@ -3155,27 +3118,6 @@
     ], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
-    "eventName": "Viper Mad", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358305200, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Viper+Mad", 
-        "text": "Viper Mad"
-      }
-    ], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Viper Mad", 
     "location": {
@@ -3183,7 +3125,7 @@
       "lon": -90.0576285
     }, 
     "time": 1358305200, 
-    "image": null
+    "price": null
   }, 
   {
     "ranking": 0, 
@@ -3285,7 +3227,7 @@
     "links": [], 
     "image": null, 
     "address": "542 S Jefferson Davis Parkway<br>\nNew Orleans, LA", 
-    "venue": "dmac\u2019s", 
+    "venue": "Dmac's Bar & Grill", 
     "eventName": "Creation Tuesday", 
     "location": {
       "lat": 29.9658767, 
@@ -3365,7 +3307,7 @@
     "links": [], 
     "image": null, 
     "address": "2239 Saint Claude Avenue<br>\nNew Orleans, LA 70117", 
-    "venue": "Hi-Ho Lounge", 
+    "venue": "Hi Ho Lounge", 
     "eventName": "Kopecky Family Band", 
     "phone": "5049454446", 
     "location": {
@@ -3484,7 +3426,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Street Legends Brass Band", 
     "phone": "5045997770", 
     "location": {
@@ -3648,7 +3590,7 @@
     "tags": "oi,punk,street punk,punk rock,british", 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "The Business", 
     "phone": "5045997770", 
     "location": {
@@ -3667,7 +3609,7 @@
     "links": [], 
     "image": null, 
     "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Carousel Bar (Hotel Monteleone)", 
+    "venue": "Carousel Lounge - Hotel Monteleone", 
     "eventName": "Michael and Ashley Lemmler", 
     "phone": "8005359595", 
     "location": {
@@ -3676,22 +3618,6 @@
     }, 
     "time": 1358377200, 
     "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Carousel Lounge - Hotel Monteleone", 
-    "eventName": "Michael & Ashley Lemmler", 
-    "phone": "8005359595", 
-    "location": {
-      "lat": 29.9543519, 
-      "lon": -90.067991
-    }, 
-    "time": 1358377200, 
-    "image": null
   }, 
   {
     "ranking": 0, 
@@ -3766,7 +3692,7 @@
     "links": [], 
     "image": null, 
     "address": "623 Frenchman Street<br>\nNew Orleans, LA 70116", 
-    "venue": "Spotted Cat", 
+    "venue": "Spotted Cat Music Club", 
     "eventName": "Free Swing Dance Lessons", 
     "location": {
       "lat": 29.9641005, 
@@ -3883,6 +3809,11 @@
         "type": "artist", 
         "link": "http://www.marcstonemusic.com", 
         "text": "Marc Stone"
+      }, 
+      {
+        "type": "artist_tip", 
+        "link": "http://www.digitaltipjar.com/mstone", 
+        "text": "Marc Stone (Digital Tip Jar)"
       }
     ], 
     "image": {
@@ -3890,7 +3821,7 @@
       "href": "http://www.last.fm/music/Marc+Stone"
     }, 
     "address": "914 North Peters St. <br>\nNew Orleans, LA 70116", 
-    "venue": "Galvez Restaurant", 
+    "venue": "Galvez Resteraunt", 
     "eventName": "Marc Stone's Dynamic Duos", 
     "phone": "5045851339", 
     "location": {
@@ -3932,7 +3863,7 @@
       "href": "http://www.last.fm/music/The+Upstarts"
     }, 
     "address": "508 Frenchmen Street<br>\nNew Orleans, LA", 
-    "venue": "Maison", 
+    "venue": "The Maison", 
     "eventName": "Rainy Days, the Upstarts", 
     "location": {
       "lat": 29.9627822, 
@@ -3966,21 +3897,6 @@
       "href": "http://www.flickr.com/photos/87735232@N07/8187652009"
     }, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
-    "eventName": "Leah Rucker", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358380800, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
     "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Leah Rucker", 
     "location": {
@@ -3988,10 +3904,7 @@
       "lon": -90.0576285
     }, 
     "time": 1358380800, 
-    "image": {
-      "src": "http://farm9.staticflickr.com/8207/8187652009_ed08f03a08_s.jpg", 
-      "href": "http://www.flickr.com/photos/87735232@N07/8187652009"
-    }
+    "price": null
   }, 
   {
     "ranking": 0, 
@@ -4076,34 +3989,12 @@
     "links": [], 
     "image": null, 
     "address": "1001 Rue Toulouse<br>\nNew Orleans, LA 70112", 
-    "venue": "Bistreaux", 
+    "venue": "Maison Dupuy Hotel - Bistreaux", 
     "eventName": "Aaron Lopez-Barrantes", 
     "phone": "5045868000", 
     "location": {
       "lat": 29.9592378, 
       "lon": -90.0683742
-    }, 
-    "time": 1358384400, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/Michael+Hebert", 
-        "text": "Michael Hebert"
-      }
-    ], 
-    "image": null, 
-    "address": "1001 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Buffa's Lounge", 
-    "eventName": "Michael Hebert", 
-    "phone": "5049490038", 
-    "location": {
-      "lat": 29.9654232, 
-      "lon": -90.0626099
     }, 
     "time": 1358384400, 
     "price": null
@@ -4125,15 +4016,21 @@
     "image": null
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
+    "ranking": 1, 
+    "description": "<p>Lake is stoking the embers of another extinguished tradition: the social dance and floor show. Every Monday at Mimi's in the Marigny, the Little Big Horns turn back the clock, reanimating Jelly Roll Morton, Bessie Smith and Duke Ellington as some of the city's best swing dancers instruct left-footed locals on the twists and twirls of the Charleston and Lindy Hop.</p><p>\u201cMr. McDermott is not simply a follower of tradition or a repository of old tunes. He composes within his wide-ranging idiom with a knowledgeable feeling for his sources and a sense of humor.\u201d The New York Times</p>", 
     "links": [
       {
         "type": "artist", 
-        "link": "http://www.last.fm/music/Meschiya+Lake+&+Tom+McDermott", 
-        "text": "Meschiya Lake & Tom McDermott"
+        "link": "http://www.bestofneworleans.com/gambit/meschiya-lake-and-the-little-big-horns/Content?oid=1279206", 
+        "text": "Meschiya Lake"
+      }, 
+      {
+        "type": "artist", 
+        "link": "http://mcdermottmusic.com", 
+        "text": "Tom McDermott"
       }
     ], 
+    "tags": "piano,jazz,new orleans,instrumental,jazz piano", 
     "price": null, 
     "address": "2828 Canal Street<br>\nNew Orleans, LA 70119", 
     "venue": "Chickie Wah Wah", 
@@ -4144,7 +4041,10 @@
       "lon": -90.0895672
     }, 
     "time": 1358384400, 
-    "image": null
+    "image": {
+      "src": "http://www.thepeoplesayproject.org/wp-content/uploads/2012/10/Meschiya+Lake+and+The+Little+Big+Horns+meschiya.jpeg", 
+      "href": "http://www.last.fm/music/+noredirect/Meschiya+Lake+&+The+Little+Big+Horns"
+    }
   }, 
   {
     "ranking": 0, 
@@ -4152,7 +4052,7 @@
     "links": [], 
     "image": null, 
     "address": "440 Bourbon St<br>\nNew Orleans, LA 70130", 
-    "venue": "Fat Catz Music Club", 
+    "venue": "Fat Cats Music Club", 
     "eventName": "Ka-Nection Band", 
     "phone": "5045250303", 
     "location": {
@@ -4237,7 +4137,7 @@
       "href": ""
     }, 
     "address": "3101 Bruxelles Street<br>\nNew Orleans, LA 70119", 
-    "venue": "Reserve of Orleans", 
+    "venue": "Reserve of New Orleans", 
     "eventName": "the Yisrael Trio", 
     "location": {
       "lat": 29.989205, 
@@ -4314,7 +4214,7 @@
     "links": [], 
     "image": null, 
     "address": "542 S Jefferson Davis Parkway<br>\nNew Orleans, LA", 
-    "venue": "dmac\u2019s", 
+    "venue": "Dmac's Bar & Grill", 
     "eventName": "Ron Hotstream and Tony Italiano", 
     "location": {
       "lat": 29.9658767, 
@@ -4355,7 +4255,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Blues-4-Sale", 
     "phone": "5045997770", 
     "location": {
@@ -4393,7 +4293,7 @@
     "links": [], 
     "image": null, 
     "address": "1001 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Buffa's Lounge", 
+    "venue": "Backroom at Buffa's", 
     "eventName": "Open Mic Night", 
     "phone": "5049490038", 
     "location": {
@@ -4430,22 +4330,6 @@
       "href": "http://www.flickr.com/photos/82556422@N00/537758173"
     }, 
     "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
-    "venue": "Carousel Bar (Hotel Monteleone)", 
-    "eventName": "Stephanie Jordan Jazz Band", 
-    "phone": "8005359595", 
-    "location": {
-      "lat": 29.9543519, 
-      "lon": -90.067991
-    }, 
-    "time": 1358388000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "214 Royal Street<br>\nNew Orleans, LA 70130", 
     "venue": "Carousel Lounge - Hotel Monteleone", 
     "eventName": "Stephanie Jordan Jazz Band", 
     "phone": "8005359595", 
@@ -4454,10 +4338,7 @@
       "lon": -90.067991
     }, 
     "time": 1358388000, 
-    "image": {
-      "src": "http://farm2.staticflickr.com/1361/537758173_20c173d36a_s.jpg", 
-      "href": "http://www.flickr.com/photos/82556422@N00/537758173"
-    }
+    "price": null
   }, 
   {
     "ranking": 0, 
@@ -4551,7 +4432,7 @@
     "image": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
     "links": [
       {
@@ -4601,7 +4482,7 @@
       "href": "http://www.flickr.com/photos/22756798@N07/5124995129"
     }, 
     "address": "1204 Decatur<br>\nNew Orleans, LA", 
-    "venue": "Palm Court Jazz Cafe", 
+    "venue": "Palm Court Jazz Caf\u00e9", 
     "eventName": "Lars Edegran and Topsy Chapman with Palm Court Jazz Band", 
     "location": {
       "lat": 29.9607933, 
@@ -4627,30 +4508,7 @@
     "image": null
   }, 
   {
-    "ranking": 0, 
-    "description": null, 
-    "links": [
-      {
-        "type": "artist", 
-        "link": "http://www.last.fm/music/+noredirect/Gal+Holiday+&+The+Honky+Tonk+Revue", 
-        "text": "Gal Holiday & The Honky Tonk Revue"
-      }
-    ], 
-    "tags": "alt-country,americana,western swing revival,under 2000 listeners", 
-    "image": null, 
-    "address": "3016 S. Carrollton Avenue<br>\nNew Orleans, LA 70118", 
-    "venue": "Rock \u2018n' Bowl", 
-    "eventName": "Gal Holiday and the Honky Tonk Revue", 
-    "phone": "5048611700", 
-    "location": {
-      "lat": 29.960865, 
-      "lon": -90.115774
-    }, 
-    "time": 1358388000, 
-    "price": null
-  }, 
-  {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
     "links": [], 
     "price": null, 
@@ -4801,7 +4659,7 @@
     "links": [], 
     "image": null, 
     "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos", 
+    "venue": "Mojitos Rum Bar & Grill", 
     "eventName": "Chris Polacek and Hubcap Kings", 
     "location": {
       "lat": 29.9618425, 
@@ -4809,21 +4667,6 @@
     }, 
     "time": 1358391600, 
     "price": null
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "price": null, 
-    "address": "437 Esplanade Avenue<br>\nNew Orleans, LA 70116", 
-    "venue": "Mojitos Rum Bar & Grill", 
-    "eventName": "Chris Polacek & The Hubcap Kings", 
-    "location": {
-      "lat": 29.9618425, 
-      "lon": -90.0576285
-    }, 
-    "time": 1358391600, 
-    "image": null
   }, 
   {
     "ranking": 0, 
@@ -4842,21 +4685,6 @@
       "src": "http://farm4.staticflickr.com/3254/2722387472_a33e60021b_s.jpg", 
       "href": "http://www.flickr.com/photos/27330325@N08/2722387472"
     }
-  }, 
-  {
-    "ranking": 0, 
-    "description": null, 
-    "links": [], 
-    "image": null, 
-    "address": "542 S Jefferson Davis Parkway<br>\nNew Orleans, LA", 
-    "venue": "dmac\u2019s", 
-    "eventName": "Lynn Drury and Cary Hudson", 
-    "location": {
-      "lat": 29.9658767, 
-      "lon": -90.0974114
-    }, 
-    "time": 1358391600, 
-    "price": null
   }, 
   {
     "ranking": 0, 
@@ -4906,7 +4734,7 @@
     "image": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": "<p>Developing out of a city that is inundated with musical vibrations, Gravity A exhilarates New Orleans' rich musical tapestry with their fresh, dynamic energy and innovative sound.  This five years old quartet is inspired by the soulful jazz expressions and second-line fusions of their hometown, yet still draws heavily upon the eclectic possibilities of electronic progressions.  Gravity A has become the torchbearer for the city's late night soundtrack featuring the unmistakable sound of true New Orleans funk, tight drum n' bass breaks and intoxicating trance.</p>", 
     "links": [
       {
@@ -4989,7 +4817,7 @@
     "price": null
   }, 
   {
-    "ranking": 0, 
+    "ranking": 1, 
     "description": null, 
     "links": [], 
     "image": {
@@ -5076,7 +4904,7 @@
     "links": [], 
     "price": null, 
     "address": "1331 Decatur Street<br>\nNew Orleans, LA 70116", 
-    "venue": "BMC", 
+    "venue": "Balcony Music Club", 
     "eventName": "Zena Moses & Rue Fiya", 
     "phone": "5045997770", 
     "location": {
