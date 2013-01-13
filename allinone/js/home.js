@@ -122,7 +122,6 @@ function initToggles() {
 function gettingEvents() {
 	return $.getJSON('events.json').pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
-			ev.ranking = _.random(1);
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = ev.time +'-'+ev.eventName;
