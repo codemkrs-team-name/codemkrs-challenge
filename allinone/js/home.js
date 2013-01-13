@@ -4,22 +4,42 @@ var currentLocation = null;
 
 startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
-initToggles();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
+	initToggles();
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
-		,$filters   	= initFilters() 
+		,$filters   	= initFilters()
+		,updateFilters = function() { runCurrentFilter(allEvents, eventTemplate) };
 		;
-	runCurrentFilter(allEvents, eventTemplate);
-	$filters.on('change', function() { runCurrentFilter(allEvents, eventTemplate) });
-
+		
+	updateFilters();
+	$filters.on('change', updateFilters);
+	$("#search").keydown(_.debounce(updateFilters, 500));
+	$("#search").blur(updateFilters);
 });
-
-console && console.log("Gigs Guru: Live and Tight");
 
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
+function filterSearch(keywords) {
+	return function(ev) {
+		if (_.isString(keywords) && _.isEmpty(keywords.trim())) {
+			return true;
+		}
+		keywords = _.string.slugify(keywords).split('-');
+		var nameKeywords = _.string.slugify(ev.eventName).split('-');
+		var venueKeywords = _.string.slugify(ev.venue).split('-');
+		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
+		var matches = _.filter(keywords, function(keyword) {
+			return _.string.include(eventKeywords, keyword);
+		});
+		if (matches.length == keywords.length) {
+			console.log(keywords + " matches " + eventKeywords);
+		}
+		return matches.length == keywords.length;
+	}
+}
+
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
 		,selVal		= function(name) { return $('#'+name+'-filter').val() }
@@ -27,6 +47,7 @@ function runCurrentFilter(allEvents, eventTemplate) {
 				.filter(filterRanking(selVal('ranking')))
 				.filter(filterDay(selVal('day')))
 				.filter(filterDistance(selVal('distance')))
+				.filter(filterSearch($('#search').val()))
 				.sortBy('time')
 				.value()
 		;
@@ -52,7 +73,7 @@ function filterRanking(ranking) {
 	return function(ev) {
 		return !ranking || ev.ranking >= ranking;
 	}
-}
+}""
 function filterDay(daytime) { 
 	var day = new Date(parseInt(daytime, 10)).getDay();
 	return function(ev) { 
