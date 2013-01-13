@@ -1,5 +1,8 @@
 (function(){
 
+var currentLocation = null;
+
+startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
 initToggles();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
@@ -12,6 +15,7 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
 });
 
+console && console.log("Gigs Guru: Live and Tight");
 
 //////////////////////////////////////////////////////
 // Filters
@@ -56,7 +60,8 @@ function filterDay(daytime) {
 	}
 }
 function filterDistance(distance) { return function(ev) {
-	return true; //Implement this
+	if(!currentLocation)
+		return true;
 }}
 //////////////////////////////////////////////////////
 // Toggle Buttons
@@ -91,7 +96,7 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON('/events.json').pipe(stubAmmendEvents);
+	return $.getJSON('events.json').pipe(stubAmmendEvents);
 
 	//  $.Deferred(function(d){
 	// 	d.resolve( _.map(_.range(35), function(i) {
@@ -128,6 +133,13 @@ function pageInitializing() {
 	return $.Deferred(function(d){
 		$(document).on('pageinit', function() { d.resolve() });
 	});
+}
+
+//////////////////////////////////////////////////
+
+function startWatchingLocation(callback) {
+	if(!navigator || !navigator.geolocation) return;
+	navigator.geolocation.watchPosition(callback);
 }
 
 ///////////////////////////////////////////////////
