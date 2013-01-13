@@ -308,12 +308,19 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
+		var linkTypes = {
+			venue: 'More info about this venue',
+			artist: 'More info about this artist',
+			gcal: 'View this event on Google Calendar',
+			artist_tip: 'Leave this artist a tip',
+		};
+	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="link-name">' + linkTypes[link.type] + '</span></a>');
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
 	});
-	Handlebars.registerHelper('twitterButton', function() {
+	// JF - this shit is lagging out my phone
+	/*Handlebars.registerHelper('twitterButton', function() {
 		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
  			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
 			;
@@ -321,7 +328,7 @@ function extendHandlebars() {
 	  		 '<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>'
 	  		+'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>'
 	  		);
-	});
+	});*/
 }
 //////////////////////////////////////////////////
 function hasTextContents() {
