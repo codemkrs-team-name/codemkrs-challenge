@@ -26,8 +26,8 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"]:before {
 */
-.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .artist_tip:before, .ico-dollar:before, .ico-info:before {
-    font-family: 'gigsguru';
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .artist_tip:before, .ico-dollar:before, .ico-info:before, .ico-angle-down:before, .ico-angle-up:before, .ui-icon-arrow-d:before, .ico-arrow-up-alt1, .ico-arrow-down-alt1 {
+    font-family: 'gigsguru' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -89,6 +89,34 @@ you can use the generic selector below, but it's slower:
 .ico-info:before {
 	content: "\e00f";
 }
+.ico-angle-down:before {
+	content: "\f107";
+}
+.ico-angle-up:before {
+	content: "\f106";
+}
+.ico-arrow-up-alt1:before {
+	content: "\e010";
+}
+.ico-arrow-down-alt1:before {
+	content: "\e011";
+}
+
+
+.ui-icon-arrow-d {
+	background-image:none;
+	background:none;
+	border-radius:0px;
+	font-size: 1.3em;
+	color:#450f3e;
+}
+.ui-icon-arrow-d:before {
+	
+	content: "\e011";
+}
+
+
+
 
 body {
     
