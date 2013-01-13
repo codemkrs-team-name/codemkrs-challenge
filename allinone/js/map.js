@@ -32,6 +32,7 @@ var map = {
 			    {
 			      center: coords,
 			      zoom: 14,
+            mapTypeControl: false,
 			      mapTypeId: google.maps.MapTypeId.ROADMAP
 			    }
 		    );
