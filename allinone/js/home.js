@@ -37,6 +37,7 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	modeButton('search');
 	modeButton('map');
 	$("#search").keydown(_.debounce(updateFilters, 500));
+	scrollToHash();
 });
 
 //////////////////////////////////////////////////////
@@ -157,7 +158,7 @@ function gettingEvents() {
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
-			ev._id = ev.time +'-'+ev.eventName;
+			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
 		})
 	});
@@ -248,6 +249,13 @@ $.widget('codemkrs.seeMoreCollapsible',{
 	}, this) }
 
 });
+///////////////////////////////////////////////////
+function scrollToHash() {
+	if(!location.hash) return;
+	$('html, body').animate({
+    	scrollTop: $(location.hash).offset().top
+	});
+}
 ///////////////////////////////////////////////////
 function extendHandlebars() {
 	Handlebars.registerHelper('html', truthyOr('', function(html) {
