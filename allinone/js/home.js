@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 (function(){
 
 var currentLocation = null;
@@ -201,6 +202,8 @@ function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
 
 =======
+=======
+>>>>>>> fixing the shit i broke
 (function(){
 
 var currentLocation = null;
@@ -209,6 +212,7 @@ startWatchingLocation(function(loc){ return currentLocation = loc });
 extendHandlebars();
 $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 
+<<<<<<< HEAD
 	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
 		,$filters   	= initFilters() 
 		;
@@ -223,6 +227,42 @@ console && console.log("Gigs Guru: Live and Tight");
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
+=======
+	initToggles();
+	var  eventTemplate 	= Handlebars.compile($("#event-template").html())
+		,$filters   	= initFilters()
+		,updateFilters = function() { runCurrentFilter(allEvents, eventTemplate) };
+		;
+		
+	updateFilters();
+	$filters.on('change', updateFilters);
+	$("#search").keydown(_.debounce(updateFilters, 500));
+	$("#search").blur(updateFilters);
+});
+
+//////////////////////////////////////////////////////
+// Filters
+/////////////////////////////////////////////////////
+function filterSearch(keywords) {
+	return function(ev) {
+		if (_.isString(keywords) && _.isEmpty(keywords.trim())) {
+			return true;
+		}
+		keywords = _.string.slugify(keywords).split('-');
+		var nameKeywords = _.string.slugify(ev.eventName).split('-');
+		var venueKeywords = _.string.slugify(ev.venue).split('-');
+		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
+		var matches = _.filter(keywords, function(keyword) {
+			return _.string.include(eventKeywords, keyword);
+		});
+		if (matches.length == keywords.length) {
+			console.log(keywords + " matches " + eventKeywords);
+		}
+		return matches.length == keywords.length;
+	}
+}
+
+>>>>>>> fixing the shit i broke
 function runCurrentFilter(allEvents, eventTemplate) {
 	var  $events 	= $('#events-list')
 		,selVal		= function(name) { return $('#'+name+'-filter').val() }
@@ -230,6 +270,10 @@ function runCurrentFilter(allEvents, eventTemplate) {
 				.filter(filterRanking(selVal('ranking')))
 				.filter(filterDay(selVal('day')))
 				.filter(filterDistance(selVal('distance')))
+<<<<<<< HEAD
+=======
+				.filter(filterSearch($('#search').val()))
+>>>>>>> fixing the shit i broke
 				.sortBy('time')
 				.value()
 		;
@@ -392,5 +436,8 @@ function extendHandlebars() {
 function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
 
+<<<<<<< HEAD
 >>>>>>> 093716fbc6413aa69bd97b1fe25ab845565a6803
+=======
+>>>>>>> fixing the shit i broke
 })();
