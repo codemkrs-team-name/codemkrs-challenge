@@ -25,6 +25,24 @@ var map = {
 		});
 		this._markers.push(marker);
 	},
+  setLocation: function(loc) {
+    if(loc) {
+      if(!this._locmarker) {
+        this._locmarker =  new google.maps.Marker({
+          clickable: false,
+          icon: new google.maps.MarkerImage('//maps.gstatic.com/mapfiles/mobile/mobileimgs2.png',
+            new google.maps.Size(22,22),
+            new google.maps.Point(0,18),
+            new google.maps.Point(11,11)),
+            shadow: null,
+          zIndex: 999,
+          map: this._handle
+        });
+      }
+      var coords = new google.maps.LatLng(loc.lat, loc.lon);
+      this._locmarker.setPosition(coords);
+    }
+  },
 	center: function(loc) {
 		var coords = new google.maps.LatLng(loc.lat, loc.lon);
 		if (!this._handle) {
