@@ -328,7 +328,13 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<img src="'+this.image.src+'" alt="'+this.eventName+'" class="event-image"/>');
 	});
 	Handlebars.registerHelper('eventLink', truthyOr('', function(link) {
-	  	return new Handlebars.SafeString('<a href="'+link.link+'"><span class="icon '+link.type+'"></span><span class="link-name">'+(link.text||link.type)+'</span></a>');
+	  	return new Handlebars.SafeString([
+	  		 '<a href="'+link.link+'">'
+	  		,'<span class="icon '+link.type+'"></span>'
+	  		,'<span class="link-name">'
+	  			,(link.text||link.type)
+	  		,'</span></a>'
+	  	].join(''));
 	}));
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
