@@ -21,7 +21,6 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		updateFilters();
 	});
 	$("#search").keydown(_.debounce(updateFilters, 500));
-	$("#search").blur(updateFilters);
 });
 
 //////////////////////////////////////////////////////
@@ -45,18 +44,18 @@ function filterSearch(keywords) {
 function filterEvents(allEvents) {
 	var results = _.chain(allEvents);
 	if (showingFavorites) {
-		results.filter(function(ev) {
+		results = results.filter(function(ev) {
 			return +localStorage['favorites:'+ev._id];
 		});
 	} else {
 		var $search 	= $('#search')
 			,selVal		= function(name) { return $('#'+name+'-filter').val() }
 			;
-		results
+		results = results
 			.filter(filterRanking(selVal('ranking')))
 			.filter(filterDay(selVal('day')))
 			.filter(filterDistance(selVal('distance')))
-			.filter(filterSearch($search.is(':visible') && $search.val()))
+			.filter(filterSearch($search.is(':visible') && $search.val()));
 	}
 	return results.sortBy('time').value();
 }
@@ -76,7 +75,7 @@ function runCurrentFilter(allEvents, eventTemplate) {
 			.filter(hasTextContents)
 			.seeMoreCollapsible()
 		$(':mobile-button').trigger('create')
-	}\
+	}
 }
 
 function initFilters() {
