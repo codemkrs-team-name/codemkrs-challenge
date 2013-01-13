@@ -29,7 +29,7 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	updateFilters();
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
-	scrollToHash();
+	_.delay(scrollToHash, 2000);
 });
 
 //////////////////////////////////////////////////////
@@ -304,9 +304,10 @@ $.widget('codemkrs.seeMoreCollapsible',{
 });
 ///////////////////////////////////////////////////
 function scrollToHash() {
-	if(!location.hash || ~location.hash.indexOf('#!') ) return;
+	if(!location.hash || !~location.hash.indexOf('#!') ) return;
+	var $event = $('#'+location.hash.replace(/^#!/, '')).show()
 	$('html, body').animate({
-    	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
+    	scrollTop: $event.offset().top-100
 	});
 }
 ///////////////////////////////////////////////////
