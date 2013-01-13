@@ -251,12 +251,6 @@ nav #actions li.toggled {
 
 
 #filters-area {
-    text-align: center;
-	margin-top: 52px;
-}
-
-.actions {
-	background-color: #e8e8e8;
 	padding: 0 2px 0;
 	text-align:center;
 }
@@ -292,12 +286,14 @@ li.event {
     text-align: center;
 }
 .event-links {
-	margin-bottom: 5px;
+    margin: 1em;
+    padding: 0;
 }
 .event-links li {
-	margin-bottom: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
 }
-
 #search-area, #favorite-area {
 	border-bottom: 1px solid #ccc;
 	padding: 6px 4px 5px;
@@ -321,6 +317,9 @@ li.event {
 .ui-body-c, .ui-overlay-c {
 	background-color: #f1f1f1;
 	background-image: none;
+}
+.actions {
+	text-align:center;
 }
 .event .actions a {
 	text-decoration: none;

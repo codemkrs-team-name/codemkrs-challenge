@@ -36,8 +36,6 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
 	_.delay(scrollToHash, 2000);
-	$("#loading").hide();
-	$("#body").show();
 });
 
 //////////////////////////////////////////////////////
@@ -352,30 +350,21 @@ function extendHandlebars() {
 	});
 	Handlebars.registerHelper('mapLink', function() {
 		if(!this.location || !this.location.lat || !this.location.lon) return '';
-		https://maps.google.com/?z=16&q=This+is+text+in+my+bubble@29.956763%2C-90.067645
 		var  locStr = ''+this.location.lat+','+this.location.lon
 			,link = 'https://maps.google.com/?'+$.param({ z:16, q:((this.venue||'').replace("@", "at")+'@'+locStr) })
 			; 
 	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank"  class="ico ico-map-pin-fill"></a>');
 	});
 
-	var appendTwitterButtonScript = _.debounce(function(){
-		$('body').append('<script>!function(d,s,id){'
-			+'var js,fjs=d.getElementsByTagName(s)[0];'
-			+'if(!d.getElementById(id)){js=d.createElement(s);'
-			+'js.id=id;js.src="https://platform.twitter.com/widgets.js";'
-			+'fjs.parentNode.insertBefore(js,fjs);}}'
-		+'(document,"script","twitter-wjs");</script>');
-	}, 10);
-	var twitterEnabled = featureEnabled('twitter');
 	Handlebars.registerHelper('twitterButton', function() {
-		if(!twitterEnabled) //TODO - GM - this should render only for currently viewable items. causing immense slowdown otherwise
-			return ''; 
-		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
- 			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
-			;
-		appendTwitterButtonScript();
-	  	return new Handlebars.SafeString('<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>');
+		var query = {
+			hashtags: 'nola,codemkrs',
+			tw_p: 'tweet_button',
+			url: 'http://gigsguru.com/#!' + this._id,
+			original_referer: 'http://gigsguru.com/',
+			text: this.eventName
+		};
+	  	return new Handlebars.SafeString('<a href="https://twitter.com/intent/tweet?' + $.param(query) + '" target="_blank" class="ico ico-twitter-old"></a>');
 	});
 }
 //////////////////////////////////////////////////
