@@ -155,10 +155,7 @@ nav #actions li {
     padding: 5px 6px 0 6px;
     width:32px;
     float:right;
-<<<<<<< HEAD
-=======
 	height:39px;
->>>>>>> 483292ab22c69ac3876b9a27cf01f85a789899ef
 }
 
 #actions { margin: 0; }
@@ -268,7 +265,7 @@ padding-top: 44px !important;
 	padding: 0 2px 0;
 }
 
-.actions a {display:block; margin-right: 15px; margin-left:15px;}
+.actions a {display:block; margin-right: 10px; margin-left:10px;}
 
 #events-list .actions >div{
     display: inline-block;
