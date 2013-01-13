@@ -1,40 +1,33 @@
 @font-face {
-    font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot');
-    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.svg#icomoon') format('svg'),
-        url('../fonts/icomoon.woff') format('woff'),
-        url('../fonts/icomoon.ttf') format('truetype');
+    font-family: 'gigsguru';
+    src:url('../fonts/gigsguru.eot');
+    src:url('../fonts/gigsguru.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gigsguru.svg#gigsguru') format('svg'),
+        url('../fonts/gigsguru.woff') format('woff'),
+        url('../fonts/gigsguru.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* From jQuery Ui */
-.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-.ui-helper-clearfix { display: inline-block; }
-/* required comment for clearfix to work in Opera \*/
-* html .ui-helper-clearfix { height:1%; }
-.ui-helper-clearfix { display:block; }
-/* end clearfix */
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons 
-[data-icon]:before {
-    font-family: 'icomoon';
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-ico]:before {
+    font-family: 'gigsguru';
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-}*/
+}
+
 
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
+[class*="ico-"]:before {
 */
-.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-pin:before, .ico-star:before, .ico-star-2:before, .ico-search:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before {
-    font-family: 'icomoon';
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before {
+    font-family: 'gigsguru';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -50,17 +43,11 @@ you can use the generic selector below, but it's slower:
 .ico-map-pin-fill:before {
     content: "\e002";
 }
-.ico-pin:before {
-    content: "\e003";
-}
 .ico-star:before {
     content: "\e004";
 }
 .ico-star-2:before {
     content: "\e005";
-}
-.ico-search:before {
-    content: "\e006";
 }
 .ico-phone:before {
     content: "\e007";
@@ -74,8 +61,27 @@ you can use the generic selector below, but it's slower:
 .ico-list:before {
     content: "\e008";
 }
-
-
+.ico-double-angle-down:before {
+    content: "\f103";
+}
+.ico-double-angle-up:before {
+    content: "\f102";
+}
+.ico-search:before {
+    content: "\e003";
+}
+.ico-calendar:before {
+    content: "\e006";
+}
+.ico-cd:before {
+    content: "\e00b";
+}
+.ico-office:before {
+    content: "\e00c";
+}
+.ico-user:before {
+    content: "\e00d";
+}
 body {
     
     font-size:14px; 
@@ -228,3 +234,11 @@ li.event {
 .event-body+.collapser {
     text-align: center;
 }
+
+#search-area {
+    padding:10px;
+    background-color:lightgrey;
+}
+
+#actions li {height: 56px;}
+
