@@ -29,7 +29,6 @@
 				<div id='title'>
 					<img id='logo' src='img/logo.png' /><span>gigs guru</span>
 				</div>
-	
 	  			<nav>
 	  				<ul id="actions">
 	  					<li data-toggletarget="#map-area" mode="map"><span id="map-button" class="ico ico-map">&nbsp;</span></li>
@@ -52,13 +51,13 @@
 	  			<div id="filters-area">
 	  				<fieldset data-role="controlgroup" data-type="horizontal">
 	  					<select id="ranking-filter" data-native-menu="false" data-mini="true">
-	  						<option value="1">Best</option>
+	  						<option value="1">Featured</option>
 	  						<option selected value="0">All</option>
 	  					</select>
 	
 	  					<select id="distance-filter" data-native-menu="false" data-mini="true">
-	  						<option selected value="1">&lt; 1 Mile</option>
-	  						<option value="1000">Anywhere</option>
+	  						<option value="1">&lt; 1 Mile</option>
+	  						<option selected value="1000">Anywhere</option>
 	  					</select>
 	
 	  					<select id="day-filter" data-native-menu="false" data-mini="true">
@@ -102,41 +101,10 @@
        {{#if phone}}
        <a class="phone ico ico-phone" href="tel:{{phone}}"></a>
        {{/if}}
+       {{mapLink}}
        {{twitterButton}}
      </div>
    </li>	
-  	</script>
-  	<script id="event-template-josh" type="text/x-handlebars-template">
-
-	<div class="event myEvent">
-	  <span class="image left">{{eventImage}}</span>
-	  <h3>{{eventName}}</h3>  
-	  <ul class='eventDetails'>
-	    <li class="venue">{{venue}}</li>
-	    <li class="time">{{time time}}</li>
-	    <li class="source">{{html source}}</li>     
-	  </ul>
-
-	  <div class="description">
-	    {{html description}}
-	    <ul class="event-links">
-	      {{#each links}}
-	      <li>{{eventLink this}}</li>
-	      {{/each}}
-	    </ul>
-	  </div>
-
-	  <ul class="actions">
-	    <li><span class='ico ico-star'>&nbsp;</span></li>
-	    <li><span class='ico ico-twitter-old'>&nbsp;</span></li>
-	    <li><span class='ico ico-facebook'>&nbsp;</span></li>
-	    <li><span class='ico ico-phone'>&nbsp;</span></li>
-	    <li><span class='ico ico-map'>&nbsp;</span></li>
-
-	  </ul>
-
-	</div>  
-
   	</script>
   </body>
   </html>

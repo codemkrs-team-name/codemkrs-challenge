@@ -1,9 +1,8 @@
 (function(){
-var EVENTS_FILE = '/events.json';
 
 var pageHref = location.href.replace(/#.*/, '');
 
-var currentLocation = {lat:29.948697,lon:-90.104522}; // z=17
+var currentLocation = {lat:29.948697,lon:-90.104522}; //New Orleans
 var mode = 'default'; // can be 'default', 'search', 'map', or 'favorites'
 var updateFilters;
 
@@ -21,12 +20,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	};
 		
 	$events.html(_.reduce(_.map(allEvents,eventTemplate), add2, '') );
-	$events.find('a.favorite').favoriteMarker({
-		events: allEvents
-	});
 	$events.find('.event-body')
 		.filter(hasTextContents)
 		.seeMoreCollapsible();
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
 	updateFilters();
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
@@ -49,20 +48,20 @@ function runCurrentFilter(allEvents) {
 	}
 	
 	$noResults.hide();
-	_(events).each(function(ev) {
+	_.each(events, function(ev) {
 		$('#' + ev._id).show();
 	});
 	return events;
 }
 
 function filterEvents(allEvents) {
+	var nowSeconds = new Date().getTime() - 1000*60*60;
 	var results = _.chain(allEvents).filter(function(ev) {
-		console.log(new Date(ev.time) + ' | ' + new Date(new Date().getTime() - 1000*60*60));
-		return ev.time >= new Date().getTime() - 1000*60*60;
+		return ev.time >= nowSeconds;
 	});
 	if (mode =='favorite') {
 		results = results.filter(function(ev) {
-			return +localStorage['favorites:'+ev._id];
+			return getLocalStorage('favorites:'+ev._id);
 		});
 	} else if (mode == 'search') {
 		results = results.filter(filterSearch($('#search').val()));
@@ -79,7 +78,7 @@ function filterEvents(allEvents) {
 }
 
 function filterSearch(keywords) {
-	if (!keywords || !keywords.trim()) return false;
+	if (!keywords || !keywords.trim()) return fn(false);
 	keywords = _.string.slugify(keywords).split('-');
 	return function(ev) {
 		var nameKeywords = _.string.slugify(ev.eventName).split('-');
@@ -182,14 +181,35 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	return $.getJSON(EVENTS_FILE).pipe(function massageData(allEvents){
+	var eventsUrl = 'events.json?'+$.param({_:new Date().getTime()});
+
+	if(featureEnabled('nocache') )
+		var gettingFromLocal = gettingFromLocalStorage()
+
+	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
 			ev.time = ev.time*1000;			//unix seconds to milliseconds
 			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
 			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
 		})
+	}).done(function storeEvents(allEvents){
+		setLocalStorage('lastEvents',{
+			 lastRun: new Date().getTime()
+			,events: allEvents
+		});
 	});
+
+	function gettingFromLocalStorage() {
+		var  store = getLocalStorage('lastEvents')
+			,lastRun = store && store.lastRun && new Date(store.lastRun)
+			;
+		if(!store || !store.events || !lastRun)
+			return null;
+		if(lastRun >= new Date().add({hours: -6}))	//happened more recently than 6 hours ago
+			return $.Deferred(resolveDeferred(store.events));
+		return null;
+	}
 }
 ///////////////////////////////////////////////////
 
@@ -241,9 +261,9 @@ $.widget('codemkrs.favoriteMarker', {
 			,key = 'favorites:'+this._eventId
 			;
 		if(_.isUndefined(isFavorite))
-			return +localStorage[key] == true;	//GM - oh yeah, totally necessary
+			return getLocalStorage(key) == true;	//GM - oh yeah, totally necessary
 		if(isFavorite == true)
- 			localStorage[key] = '1';
+ 			setLocalStorage(key, 1);
  		else
  			localStorage.removeItem(key);
 		this._tagElement(isFavorite);
@@ -260,7 +280,7 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
-		this._showHideElement(true);
+		this._showHideElement(false);
 		if(this.element.height() <= this.contentsHeight())
 			return;
 		this.element.addClass('collapsed');
@@ -284,7 +304,7 @@ $.widget('codemkrs.seeMoreCollapsible',{
 });
 ///////////////////////////////////////////////////
 function scrollToHash() {
-	if(!location.hash) return;
+	if(!location.hash || ~location.hash.indexOf('#!') ) return;
 	$('html, body').animate({
     	scrollTop: $('#'+location.hash.replace(/^#!/, '')).offset().top-100
 	});
@@ -319,16 +339,33 @@ function extendHandlebars() {
 	Handlebars.registerHelper('favoriteEvent', function() {
 	  	return new Handlebars.SafeString('<a class="favorite ico ico-star" href="javascript:void(0)" data-eventidentifier="'+this._id+'"></a>');
 	});
-	// JF - this shit is lagging out my phone
-	/*Handlebars.registerHelper('twitterButton', function() {
+	Handlebars.registerHelper('mapLink', function() {
+		if(!this.location || !this.location.lat || !this.location.lon) return '';
+		https://maps.google.com/?z=16&q=This+is+text+in+my+bubble@29.956763%2C-90.067645
+		var  locStr = ''+this.location.lat+','+this.location.lon
+			,link = 'https://maps.google.com/?'+$.param({ z:16, q:((this.venue||'').replace("@", "at")+'@'+locStr) })
+			; 
+	  	return new Handlebars.SafeString('<a href="'+link+'" target="_blank"  class="ico ico-map-pin-fill"></a>');
+	});
+
+	var appendTwitterButtonScript = _.debounce(function(){
+		$('body').append('<script>!function(d,s,id){'
+			+'var js,fjs=d.getElementsByTagName(s)[0];'
+			+'if(!d.getElementById(id)){js=d.createElement(s);'
+			+'js.id=id;js.src="https://platform.twitter.com/widgets.js";'
+			+'fjs.parentNode.insertBefore(js,fjs);}}'
+		+'(document,"script","twitter-wjs");</script>');
+	}, 10);
+	var twitterEnabled = featureEnabled('twitter');
+	Handlebars.registerHelper('twitterButton', function() {
+		if(!twitterEnabled) //TODO - GM - this should render only for currently viewable items. causing immense slowdown otherwise
+			return ''; 
 		var  twitArgs = {url: pageHref+'#!'+this._id, text: this.eventName, hashtags: 'nola,codemkrs' }
  			,twitData = _.map(twitArgs, function(v, k){return 'data-'+k+'="'+v.replace('"','')+'"'}).join(' ')
 			;
-	  	return new Handlebars.SafeString(
-	  		 '<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>'
-	  		+'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>'
-	  		);
-	});*/
+		appendTwitterButtonScript();
+	  	return new Handlebars.SafeString('<a href="https://twitter.com/share" '+twitData+' class="twitter-share-button" data-lang="en">Tweet</a>');
+	});
 }
 //////////////////////////////////////////////////
 function hasTextContents() {
@@ -336,5 +373,19 @@ function hasTextContents() {
 }
 function add2(x, y) { return x+y }
 function truthyOr(def, fn) { return function(x){return x ? fn.apply(this, arguments) : def }}
+function fn(val) { return function fn() { return val } }
+function resolveDeferred(val) { return function resolvedDeferred(d) { d.resolve(val) } }
 
+function getLocalStorage(key) {
+	var v = localStorage[key];
+	if(!v) return v;
+	try { return JSON.parse(v) } catch(e) {}
+	return  null; 
+}
+function setLocalStorage(key, obj) {
+	localStorage[key] = JSON.stringify(obj);
+}
+function featureEnabled(feature) {
+	return !!~(location.search||'').indexOf(feature);
+}
 })();
