@@ -26,8 +26,8 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"]:before {
 */
-.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .venue:before, .artist_tip:before, .ico-dollar:before {
-    font-family: 'gigsguru';
+.ico-map:before, .ico-map-2:before, .ico-map-pin-fill:before, .ico-star:before, .ico-star-2:before, .ico-phone:before, .ico-twitter-old:before, .ico-facebook:before, .ico-list:before, .ico-double-angle-down:before, .ico-double-angle-up:before, .ico-search:before, .ico-calendar:before, .ico-cd:before, .ico-office:before, .ico-user:before, .gcal:before, .artist:before, .artist_tip:before, .ico-dollar:before, .ico-info:before, .ico-angle-down:before, .ico-angle-up:before, .ui-icon-arrow-d:before, .ico-arrow-up-alt1, .ico-arrow-down-alt1 {
+    font-family: 'gigsguru' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -76,7 +76,7 @@ you can use the generic selector below, but it's slower:
 .ico-cd:before {
     content: "\e00b";
 }
-.ico-office:before, .venue:before {
+.ico-office:before {
     content: "\e00c";
 	margin-right: 5px;
 }
@@ -115,9 +115,15 @@ you can use the generic selector below, but it's slower:
 	content: "\e011";
 }
 
-body {
-    
+
+
+
+body {    
     font-size:14px; 
+}
+
+a {
+	color:#777;	
 }
 
 .ui-content {
@@ -144,8 +150,6 @@ body {
 #logo {padding: 5px 8px; width: 34px; height: 34px;}
 
 nav #actions li {
-	word-spacing: -4px;
-	letter-spacing: -1px;
     display: inline-block;
     padding: 5px 6px 0 6px;
     width:32px;
@@ -243,19 +247,13 @@ nav #actions li.toggled {
 .icon.gcal:after{
     content: "\0BF0";
 }
-.icons.venue:after{
-    content: "\2302";
-}
+
 
 #filters-area {
     text-align: center;
 	
 }
 
-.myEvent {clear:both; border: 2px solid #450f3e; margin-bottom: 10px; }
-.myEvent .image img {max-width: 100px; max-height: 100px;}
-.eventDetials {list-style:none;}
-.eventDetails li {display:inline;}
 .actions {
 	background-color: #e8e8e8;
 	padding: 3px 2px 0;
@@ -328,7 +326,7 @@ li.event {
 .event .actions a {
 	text-decoration: none;
 	color: #777;
-	padding: 6px 0 2px 8px;
+	padding: 6px 0 2px 4px;
 	vertical-align: bottom;
 	font-size: 28px;
 	min-width: 28px;

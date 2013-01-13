@@ -37,6 +37,9 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
 	_.delay(scrollToHash, 2000);
+	$('#title').click(function() {
+		//TODO - GM - reset to default state somehow
+	});
 });
 
 //////////////////////////////////////////////////////
