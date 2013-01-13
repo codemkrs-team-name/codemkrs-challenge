@@ -146,11 +146,16 @@ nav #actions li.toggled {
     width: 89%;
     display: inline-block;
 }   
-.left {
-    float: left;
+
+.event-header {
+    display: table;
+}
+.event-header>* {
+    display: table-cell;
 }
 .details {
     padding-left: .2em;
+    vertical-align: top;
 }
 .event-name {
     width: 100%;
@@ -214,4 +219,12 @@ nav #actions li.toggled {
 }
 li.event {
     display: block;
+}
+.event-body.collapsed {
+    max-height: 4.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.event-body+.collapser {
+    text-align: center;
 }

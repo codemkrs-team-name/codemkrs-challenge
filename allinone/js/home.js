@@ -42,19 +42,20 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 //////////////////////////////////////////////////////
 // Filters
 /////////////////////////////////////////////////////
-function filterSearch(keywords) {
-	if (!keywords || !keywords.trim())
-		return _.identity;
-	keywords = _.string.slugify(keywords).split('-');
-	return function(ev) {
-		var nameKeywords = _.string.slugify(ev.eventName).split('-');
-		var venueKeywords = _.string.slugify(ev.venue).split('-');
-		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
-		var matches = _.filter(keywords, function(keyword) {
-			return _.string.include(eventKeywords, keyword);
-		});
-		return matches.length == keywords.length;
-	}
+function runCurrentFilter(allEvents, eventTemplate) {
+	var  $events 	= $('#events-list')
+		,events = filterEvents(allEvents);
+		;
+	if (!events.length)
+		return $events.html("No results to display.");
+
+	$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
+	$events.find('a.favorite').favoriteMarker({
+		events: allEvents
+	});
+	$events.find('.event-body')
+		.filter(hasTextContents)
+		.seeMoreCollapsible()
 }
 
 function filterEvents(allEvents) {
@@ -75,21 +76,18 @@ function filterEvents(allEvents) {
 	return results.sortBy('time').value();
 }
 
-function runCurrentFilter(allEvents, eventTemplate) {
-	var  $events 	= $('#events-list')
-		,events = filterEvents(allEvents);
-		;
-	if (!events.length) {
-		$events.html("No results to display.");
-	} else {
-		$events.html(_.reduce(_.map(events,eventTemplate), add2, '') );
-		$events.find('a.favorite').favoriteMarker({
-			events: allEvents
+function filterSearch(keywords) {
+	if (!keywords || !keywords.trim())
+		return _.identity;
+	keywords = _.string.slugify(keywords).split('-');
+	return function(ev) {
+		var nameKeywords = _.string.slugify(ev.eventName).split('-');
+		var venueKeywords = _.string.slugify(ev.venue).split('-');
+		var eventKeywords = _.union(nameKeywords, venueKeywords).join('-');
+		var matches = _.filter(keywords, function(keyword) {
+			return _.string.include(eventKeywords, keyword);
 		});
-		$events.find('.event-body')
-			.filter(hasTextContents)
-			.seeMoreCollapsible()
-		$(':mobile-button').trigger('create')
+		return matches.length == keywords.length;
 	}
 }
 
@@ -228,9 +226,9 @@ $.widget('codemkrs.favoriteMarker', {
 
 $.widget('codemkrs.seeMoreCollapsible',{
 	_create: function() {
-		this.element.hide();
-		this.$collapser = $('<button class="seeMoreCollapsible-collapser">').text("See More")
-			.insertBefore(this.element).button({mini: true});
+		this.element.addClass('collapsed');
+		this.$collapser = $('<div class="ico collapser ico-double-angle-up">').html('U')
+			.insertAfter(this.element);
 		this.$collapser.toggle(this.showMore(true), this.showMore(false));
 	}
 	,showMore: function(swtch) { return _.bind(function(){
