@@ -1,5 +1,17 @@
 (function(){
 
+document.__consolePolyfill = document.__consolePolyfill || {};
+console.time = console.time || function(name) {
+	document.__consolePolyfill[name] = new Date().getTime()
+}
+console.timeEnd = console.timeEnd || function(name) {
+	var t = (new Date().getTime() - document.__consolePolyfill[name]) / 1000
+	console.log('timed', name, t);
+	return t;
+}
+
+console.log('starting load');
+console.time('load');
 var pageHref = location.href.replace(/#.*/, '');
 
 var currentLocation = {lat:29.948697,lon:-90.104522}; //New Orleans
@@ -28,10 +40,12 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 		//it HAS to be visible at the time of initialization to calculate content vs container height
 		//SOOOO wait for the current event loop to finish (thanks jqm)
 		//then do all this. Because of reasons
-		$events.find('.event-body')
-			.filter(hasTextContents)
-			.seeMoreCollapsible();
+		// $events.find('.event-body')
+		// 	.filter(hasTextContents)
+		// 	.seeMoreCollapsible();
 		updateFilters();
+		console.timeEnd('load');
+		console.log('ended load');
 	});
 	$filters.on('change', updateFilters);
 	$("#search").keydown(_.debounce(updateFilters, 250));
@@ -48,15 +62,14 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 function runCurrentFilter(allEvents) {
 	var  $noResults = $('#no-results')
 		,$events = $('#events-list')
-		,events = filterEvents(allEvents);
+		,events = filterEvents(allEvents)
 		;
-	
 	if (mode == 'map') return events;
 	
 	$noResults.toggle(_.any(events.length));
 	$events.toggle(!_.any(events.length));
 	$events.children('.event').hide();
-	$(_.map(events, function(ev) { return '#'+ev._id }).join(',')).show()
+	_.each(events, function(ev) { $('#'+ev._id ).show() }); //shockingly, this actually preforms significantly better than a comma-separated id list
 	return events;
 }
 
