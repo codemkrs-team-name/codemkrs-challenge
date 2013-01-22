@@ -203,7 +203,7 @@ nav #actions li.toggled {
 }   
 
 .event-header {
-	margin: 6px 5px 2px;	
+	margin: 10px;	
 }
 .event-header > .image {
 	float: left;
@@ -234,8 +234,11 @@ nav #actions li.toggled {
 }
 #events-list {
 	padding: 0;
-	margin: 12px 0 6px;
+	margin: 12px auto;
+	max-width: 700px;
 }
+
+
 
 #events-list .icon {
     margin-right: 1em;
@@ -260,7 +263,7 @@ padding-top: 44px !important;
 
 .actions {
 	
-	text-align:center;
+	text-align:right;
 	background-color: #e8e8e8;
 	padding: 0 2px 0;
 }
@@ -279,14 +282,15 @@ p {
 li.event {
     display: block;
 	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-	border-radius: 4px;
+	border-radius: 10px;
 	border: 1px solid #ddd;
-	margin: 0 5px 8px 5px;
+	margin: 0 5px 12px 5px;
 	padding: 0;
 	background-color: #f7f7f7;
 }
 .event-body {
 	clear: left;
+	margin: 0px 10px 10px 10px;
 }
 .event-body.collapsed {
     overflow: hidden;
@@ -328,9 +332,7 @@ li.event {
 	background-color: #f1f1f1;
 	background-image: none;
 }
-.actions {
-	text-align:center;
-}
+
 .event .actions a {
 	text-decoration: none;
 	color: #777;
