@@ -206,10 +206,14 @@ function gettingEvents() {
 	if(!featureEnabled('nocache') )
 		gettingFromLocal = gettingFromLocalStorage()
 
+	var utcMillisecondsOffset = 1000*60*60*(parseInt(new Date().getUTCOffset(), 10)/100); //TODO - GM - this drops the minutes component
+	// (ms/sec)*(sec/min)*(min/hr)*(hr offset)
+
 	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
+		window.originalEvents = $.extend(true, [], allEvents);
 		return _.map(allEvents, function(ev) {
-			ev.time = ev.time*1000;			//unix seconds to milliseconds
-			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			//unix seconds to milliseconds
+			ev.time = ev.time*1000+utcMillisecondsOffset;					//unix seconds to milliseconds + timezone offset
+			ev._date = new Date(ev.time).toFormat('YYYY-MM-DD');			
 			ev._id = _.string.slugify(ev.time +'-'+ev.eventName);
 			return ev;
 		})
