@@ -200,10 +200,11 @@ function initToggles() {
 ///////////////////////////////////////////////////
 
 function gettingEvents() {
-	var eventsUrl = 'events.json?'+$.param({_:new Date().getTime()});
-
-	if(featureEnabled('nocache') )
-		var gettingFromLocal = gettingFromLocalStorage()
+	var  gettingFromLocal
+		,eventsUrl = 'events.json?'+$.param({_:new Date().getTime()})
+		;
+	if(!featureEnabled('nocache') )
+		gettingFromLocal = gettingFromLocalStorage()
 
 	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
 		return _.map(allEvents, function(ev) {
