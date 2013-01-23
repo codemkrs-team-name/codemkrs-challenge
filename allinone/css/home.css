@@ -156,6 +156,7 @@ nav #actions li {
     width:32px;
     float:right;
 	height:39px;
+	cursor:pointer;
 }
 
 #actions { margin: 0; }
@@ -267,6 +268,8 @@ padding-top: 44px !important;
 	background-color: #e8e8e8;
 	padding: 0 2px 0;
 }
+
+
 
 .actions a {display:block; margin-right: 10px; margin-left:10px;}
 
