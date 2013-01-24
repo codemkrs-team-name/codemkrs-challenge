@@ -115,6 +115,7 @@ function initFilters() {
 		,days = _.map(_.range(3), function(d) { return new Date().add({days: d}) })
 		;
 	$day.html(
+		'<option value="all">Any day</option>' +
 		_.map(days, function(d) {
 			return '<option value='+d.getTime()+'>'+d.toFormat('DDD MMM D')+'</option>'
 		}).join('')
@@ -129,6 +130,9 @@ function filterRanking(ranking) {
 	}
 }
 function filterDay(daytime) { 
+	if (daytime == 'all') return function(ev) { 
+		return true;
+	}
 	var date = new Date(parseInt(daytime, 10)).toFormat('YYYY-MM-DD');
 	return function(ev) { 
 		return date == ev._date;
