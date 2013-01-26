@@ -210,7 +210,8 @@ function gettingEvents() {
 	if(!featureEnabled('nocache') )
 		gettingFromLocal = gettingFromLocalStorage()
 
-	var utcMillisecondsOffset = 1000*60*60*(parseInt(new Date().getUTCOffset(), 10)/100); //TODO - GM - this drops the minutes component
+	//TODO - GM - the incoming times don't seem to be utc
+	var utcMillisecondsOffset = 0; //1000*60*60*(parseInt(new Date().getUTCOffset(), 10)/100); //TODO - GM - this drops the minutes component
 	// (ms/sec)*(sec/min)*(min/hr)*(hr offset)
 
 	return gettingFromLocal || $.getJSON(eventsUrl).pipe(function massageData(allEvents){
