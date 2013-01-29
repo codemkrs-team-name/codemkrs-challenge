@@ -165,7 +165,7 @@ a {
 #title { float:left; font-family: monospace; font-size: 18pt;}
 #title span {font-weight: bold;
 text-shadow: 0 -1px 1px #000; vertical-align: top; color: #bb993b; position: relative; top: 7px; left: 3px; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; }
-#logo {padding: 5px 8px; width: 34px; height: 34px;}
+#logo {}
 
 nav #actions li {
     display: inline-block;
