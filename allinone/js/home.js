@@ -430,6 +430,17 @@ function extendHandlebars() {
 		};
 	  	return new Handlebars.SafeString('<a href="https://twitter.com/intent/tweet?' + $.param(query) + '" target="_blank" class="ico ico-twitter-old"></a>');
 	});
+	
+	Handlebars.registerHelper('sourceLink', function() {
+		if(!this.source) return '';
+	    var anchor = "source";
+		if (this.source.indexOf('offbeat') != -1)	anchor = 'offbeat';
+		else if (this.source.indexOf('wwoz') != -1)	anchor = 'wwoz';
+		else if (this.source.indexOf('barryfest') != -1)	anchor = 'barryfest';
+		
+	  	return new Handlebars.SafeString('source: <a href="'+ this.source +'" target="_blank">' + anchor + '</a>');
+	});
+		
 }
 //////////////////////////////////////////////////
 function hasTextContents() {
