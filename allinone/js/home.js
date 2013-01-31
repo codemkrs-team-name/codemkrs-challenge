@@ -431,15 +431,14 @@ function extendHandlebars() {
 	  	return new Handlebars.SafeString('<a href="https://twitter.com/intent/tweet?' + $.param(query) + '" target="_blank" class="ico ico-twitter-old"></a>');
 	});
 	
+	var anchroSources = ['offbeat', 'wwoz', 'barryfest'];
 	Handlebars.registerHelper('sourceLink', function() {
 		if(!this.source) return '';
-	    var anchor = "source";
-		if (this.source.indexOf('offbeat') != -1)	anchor = 'offbeat';
-		else if (this.source.indexOf('wwoz') != -1)	anchor = 'wwoz';
-		else if (this.source.indexOf('barryfest') != -1)	anchor = 'barryfest';
-		
+		var anchor = _.find(anchroSources, function(s){ return ~this.source.indexOf(s) }, this)
+		if(!anchor) return ''
 	  	return new Handlebars.SafeString('source: <a href="'+ this.source +'" target="_blank">' + anchor + '</a>');
 	});
+
 		
 }
 //////////////////////////////////////////////////
