@@ -51,9 +51,6 @@ $.when(gettingEvents(), pageInitializing()).done(function(allEvents){
 	$("#search").keydown(_.debounce(updateFilters, 250));
 	_.delay(scrollToHash, 2000);
 	setupInfoPopup();
-	$('#title').click(function() {
-		//TODO - GM - reset to default state somehow
-	});
 });
 
 //////////////////////////////////////////////////////
@@ -115,10 +112,10 @@ function initFilters() {
 		,days = _.map(_.range(3), function(d) { return new Date().add({days: d}) })
 		;
 	$day.html(
-		'<option value="all">Any day</option>' +
 		_.map(days, function(d) {
 			return '<option value='+d.getTime()+'>'+d.toFormat('DDD MMM D')+'</option>'
 		}).join('')
+		+ '<option value="all">Any day</option>'
 	).find('option:first').prop('selected', true).trigger('change');
 	return $('#filters-area select');
 }
@@ -189,6 +186,13 @@ $.widget('codemkrs.toggleAreaTab', {
 });
 
 function initToggles() {
+	$('#title').click(function resetDefaultState() {
+		$(':codemkrs-toggleAreaTab').each(function(){
+			$(this).toggleAreaTab('onOff', false)()
+		});
+		updateFilters && updateFilters(mode = 'default');
+
+	});
     $('[data-toggletarget]').each(function() {
         $(this).toggleAreaTab({
              target: $(this).data('toggletarget')
