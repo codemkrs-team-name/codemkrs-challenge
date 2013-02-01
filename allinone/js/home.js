@@ -388,7 +388,7 @@ function extendHandlebars() {
 	Handlebars.registerHelper('time', truthyOr('', function(timestamp) {
 		if (!timestamp) return '';
 		var date = new Date(timestamp);
-		var theDateF = 'H:MI';  //TODO - GM - Add back PP formatting (pm/am) - right now everything is am
+		var theDateF = 'H:MI PP';
 		var now = new Date();
 		if (timestamp > now.getTime()+1000*60*60*24*7) theDateF = 'M/D, ' + theDateF;
 		if (date.getDay() != now.getDay()) theDateF = 'DDD ' + theDateF;

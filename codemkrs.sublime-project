@@ -10,7 +10,13 @@
 			[
 				"node_modules"
 			],
-			"path": "."
+			"path": "/W/codemkrs-challenge"
+		},
+		{
+			"path": "/W/codemkrs-app"
+		},
+		{
+			"path": "/W/temp/codemkrs"
 		}
 	],
 	"settings":
