@@ -163,12 +163,13 @@ $.widget('codemkrs.toggleAreaTab', {
 			,$listview = $("#list-view")
 		;
         this.element.toggleClass('toggled', swtch);
-        $(this.options.target)[swtch?'slideDown':'slideUp']();
+        $(this.options.target).toggle(swtch).trigger('targetshown.toggleareatab', swtch);
+
         if(swtch) this._trigger('collapse');
         mode = swtch ? selectedMode : 'default';
     	if (selectedMode == 'map') {
-    		$mapview[swtch?'show':'hide']();
-    		$listview[swtch?'hide':'show']();
+    		$mapview.toggle(swtch);
+    		$listview.toggle(!swtch);
 			var events = updateFilters();
     		if (swtch) {
     			map.center(currentLocation);
@@ -204,6 +205,10 @@ function initToggles() {
         	}
         });
     });	
+
+    $('#search-area').on('targetshown.toggleareatab', function(e, isVisible){
+    	isVisible && $(this).find('input').focus()
+    });
 }
 ///////////////////////////////////////////////////
 
